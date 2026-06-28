@@ -60,7 +60,7 @@ export default function Navbar() {
             {NAV_LINKS.map(link => (
               <Link
                 key={link.path}
-                to={link.path}
+                href={link.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   pathname === link.path
                     ? "text-primary bg-primary/5"
@@ -102,7 +102,7 @@ export default function Navbar() {
                 {NAV_LINKS.map(link => (
                   <Link
                     key={link.path}
-                    to={link.path}
+                    href={link.path}
                     className={`block px-4 py-3 rounded-lg text-sm font-medium ${
                       pathname === link.path
                         ? "bg-primary/10 text-primary"

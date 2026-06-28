@@ -8,7 +8,7 @@ export default function ServiceCard({ service }) {
 
   return (
     <Link
-      to={`/services/${service.slug}`}
+      href={`/services/${service.slug}`}
       className="group bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
     >
       <div className="relative aspect-[16/9] overflow-hidden bg-muted">

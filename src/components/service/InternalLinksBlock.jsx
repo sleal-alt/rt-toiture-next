@@ -24,7 +24,7 @@ export default function InternalLinksBlock({ slug, serviceName }) {
             {otherServices.map(s => (
               <li key={s.slug}>
                 <Link
-                  to={`/services/${s.slug}`}
+                  href={`/services/${s.slug}`}
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition group"
                 >
                   <ArrowRight className="w-3.5 h-3.5 shrink-0 group-hover:translate-x-0.5 transition-transform" />
@@ -54,7 +54,7 @@ export default function InternalLinksBlock({ slug, serviceName }) {
             {featuredCommunes.map(c => (
               <Link
                 key={c.slug}
-                to={`/couvreur/${c.slug}`}
+                href={`/couvreur/${c.slug}`}
                 className="inline-flex items-center gap-1 text-xs font-medium px-3 py-1.5 rounded-full bg-card border border-border/50 hover:border-primary/40 hover:text-primary transition"
               >
                 <MapPin className="w-3 h-3" />

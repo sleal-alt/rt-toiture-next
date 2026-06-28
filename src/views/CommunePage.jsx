@@ -86,7 +86,7 @@ export default function CommunePage() {
               <h3 className="font-heading text-xl font-bold mt-8 mb-4">Nos Services à {commune.name}</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                 {SERVICES.map(s => (
-                  <Link key={s.slug} to={`/services/${s.slug}`} className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl hover:bg-primary/5 transition">
+                  <Link key={s.slug} href={`/services/${s.slug}`} className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl hover:bg-primary/5 transition">
                     <Check className="w-4 h-4 text-primary shrink-0" />
                     <span className="text-sm font-medium">{s.shortTitle} à {commune.name}</span>
                   </Link>
@@ -113,7 +113,7 @@ export default function CommunePage() {
                 {commune.nearby.map(n => {
                   const nearbyCommune = COMMUNES.find(c => c.name === n);
                   return nearbyCommune ? (
-                    <Link key={n} to={`/couvreur/${nearbyCommune.slug}`} className="px-4 py-2 bg-muted/50 rounded-full text-sm hover:bg-primary/10 hover:text-primary transition">
+                    <Link key={n} href={`/couvreur/${nearbyCommune.slug}`} className="px-4 py-2 bg-muted/50 rounded-full text-sm hover:bg-primary/10 hover:text-primary transition">
                       Couvreur {n}
                     </Link>
                   ) : (

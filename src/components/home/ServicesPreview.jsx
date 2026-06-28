@@ -27,7 +27,7 @@ export default function ServicesPreview() {
                 transition={{ delay: i * 0.07 }}
               >
                 <Link
-                  to={`/services/${service.slug}`}
+                  href={`/services/${service.slug}`}
                   className="group bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
                 >
                   <div className="relative aspect-[16/9] overflow-hidden bg-muted">

@@ -28,7 +28,7 @@ export default function ZonesSection() {
           {COMMUNES.map(c => (
             <Link
               key={c.slug}
-              to={`/couvreur/${c.slug}`}
+              href={`/couvreur/${c.slug}`}
               className="group flex items-center gap-2 p-3 bg-white/5 hover:bg-primary rounded-xl border border-white/10 hover:border-primary transition-all duration-200 text-sm"
             >
               <MapPin className="w-4 h-4 text-secondary shrink-0" />

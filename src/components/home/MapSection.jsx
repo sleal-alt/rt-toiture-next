@@ -106,7 +106,7 @@ export default function MapSection() {
                       </p>
                       <p className="text-xs text-muted-foreground mt-0.5 mb-2">Haute-Savoie (74)</p>
                       <Link
-                        to={`/couvreur/${commune.slug}`}
+                        href={`/couvreur/${commune.slug}`}
                         className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline"
                       >
                         Voir la page <ExternalLink className="w-3 h-3" />
@@ -126,7 +126,7 @@ export default function MapSection() {
             {COMMUNES_GEO.sort((a, b) => a.name.localeCompare(b.name)).map((commune) => (
               <Link
                 key={commune.slug}
-                to={`/couvreur/${commune.slug}`}
+                href={`/couvreur/${commune.slug}`}
                 onMouseEnter={() => setHovered(commune.slug)}
                 onMouseLeave={() => setHovered(null)}
                 className={`flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium transition-colors group ${
