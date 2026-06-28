@@ -1,3 +1,3 @@
 'use client'
-import PlanDuSite from '@/pages/PlanDuSite'
+import PlanDuSite from '@/views/PlanDuSite'
 export default function PlanDuSitePage() { return <PlanDuSite /> }

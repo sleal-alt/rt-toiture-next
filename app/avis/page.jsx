@@ -1,3 +1,3 @@
 'use client'
-import Avis from '@/pages/Avis'
+import Avis from '@/views/Avis'
 export default function AvisPage() { return <Avis /> }

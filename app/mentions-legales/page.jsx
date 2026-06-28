@@ -1,3 +1,3 @@
 'use client'
-import MentionsLegales from '@/pages/MentionsLegales'
+import MentionsLegales from '@/views/MentionsLegales'
 export default function MentionsLegalesPage() { return <MentionsLegales /> }

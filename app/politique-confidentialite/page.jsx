@@ -1,3 +1,3 @@
 'use client'
-import PolitiqueConfidentialite from '@/pages/PolitiqueConfidentialite'
+import PolitiqueConfidentialite from '@/views/PolitiqueConfidentialite'
 export default function PolitiqueConfidentialitePage() { return <PolitiqueConfidentialite /> }

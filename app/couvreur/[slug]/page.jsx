@@ -1,3 +1,3 @@
 'use client'
-import CommunePage from '@/pages/CommunePage'
+import CommunePage from '@/views/CommunePage'
 export default function CouvreurPage() { return <CommunePage /> }

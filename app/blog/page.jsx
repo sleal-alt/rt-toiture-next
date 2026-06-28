@@ -1,3 +1,3 @@
 'use client'
-import Blog from '@/pages/Blog'
+import Blog from '@/views/Blog'
 export default function BlogPage() { return <Blog /> }

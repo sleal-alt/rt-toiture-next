@@ -7,20 +7,20 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
 import Layout from './components/layout/Layout';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import ServiceDetail from './pages/ServiceDetail';
-import Realisations from './pages/Realisations';
-import Avis from './pages/Avis';
-import Contact from './pages/Contact';
-import Devis from './pages/Devis';
-import APropos from './pages/APropos';
-import Blog from './pages/Blog';
-import CommunePage from './pages/CommunePage';
-import MentionsLegales from './pages/MentionsLegales';
-import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
-import PolitiqueCookies from './pages/PolitiqueCookies';
-import PlanDuSite from './pages/PlanDuSite';
+import Home from './views/Home';
+import Services from './views/Services';
+import ServiceDetail from './views/ServiceDetail';
+import Realisations from './views/Realisations';
+import Avis from './views/Avis';
+import Contact from './views/Contact';
+import Devis from './views/Devis';
+import APropos from './views/APropos';
+import Blog from './views/Blog';
+import CommunePage from './views/CommunePage';
+import MentionsLegales from './views/MentionsLegales';
+import PolitiqueConfidentialite from './views/PolitiqueConfidentialite';
+import PolitiqueCookies from './views/PolitiqueCookies';
+import PlanDuSite from './views/PlanDuSite';
 import CookieBanner from './components/shared/CookieBanner';
 
 const AuthenticatedApp = () => {

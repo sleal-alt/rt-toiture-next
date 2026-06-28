@@ -1,3 +1,3 @@
 'use client'
-import Devis from '@/pages/Devis'
+import Devis from '@/views/Devis'
 export default function DevisPage() { return <Devis /> }

@@ -1,3 +1,3 @@
 'use client'
-import Services from '@/pages/Services'
+import Services from '@/views/Services'
 export default function ServicesPage() { return <Services /> }

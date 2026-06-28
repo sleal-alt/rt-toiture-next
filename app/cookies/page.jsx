@@ -1,3 +1,3 @@
 'use client'
-import PolitiqueCookies from '@/pages/PolitiqueCookies'
+import PolitiqueCookies from '@/views/PolitiqueCookies'
 export default function CookiesPage() { return <PolitiqueCookies /> }
