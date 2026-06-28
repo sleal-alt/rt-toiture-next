@@ -1,2 +1,3 @@
 'use client'
-export default function HomePage() { return <h1>Test</h1> }
+import Home from '@/views/Home'
+export default function HomePage() { return <Home /> }

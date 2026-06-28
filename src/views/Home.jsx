@@ -6,13 +6,13 @@ import ServicesPreview from "@/components/home/ServicesPreview";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import ArtisanLocal from "@/components/home/ArtisanLocal";
 import BeforeAfterSlider from "@/components/home/BeforeAfterSlider";
-import TestimonialsSection from "@/components/home/TestimonialsSection";
-import GoogleReviews from "@/components/home/GoogleReviews";
-import ZonesSection from "@/components/home/ZonesSection";
-const MapSection = dynamic(() => import("@/components/home/MapSection"), { ssr: false });
-import RGEBadge from "@/components/home/RGEBadge";
-import CTABand from "@/components/shared/CTABand";
-import FAQSection from "@/components/shared/FAQSection";
+// import TestimonialsSection from "@/components/home/TestimonialsSection";
+// import GoogleReviews from "@/components/home/GoogleReviews";
+// import ZonesSection from "@/components/home/ZonesSection";
+// const MapSection = dynamic(() => import("@/components/home/MapSection"), { ssr: false });
+// import RGEBadge from "@/components/home/RGEBadge";
+// import CTABand from "@/components/shared/CTABand";
+// import FAQSection from "@/components/shared/FAQSection";
 
 const HOME_FAQS = [
   {
@@ -57,17 +57,7 @@ export default function Home() {
       <ServicesPreview />
       <WhyChooseUs />
       <BeforeAfterSlider />
-      <RGEBadge />
-      <TestimonialsSection />
-      <GoogleReviews />
-      <MapSection />
-      <ZonesSection />
-      <FAQSection
-        faqs={HOME_FAQS}
-        title="Questions Fréquentes — Couvreur Haute-Savoie"
-        badge="FAQ"
-      />
-      <CTABand />
+      {/* RGEBadge, TestimonialsSection, GoogleReviews, MapSection, ZonesSection, FAQSection, CTABand */}
     </>
   );
 }
