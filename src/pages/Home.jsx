@@ -1,4 +1,5 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import { IMAGES } from "@/lib/images";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesPreview from "@/components/home/ServicesPreview";
@@ -8,7 +9,7 @@ import BeforeAfterSlider from "@/components/home/BeforeAfterSlider";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import GoogleReviews from "@/components/home/GoogleReviews";
 import ZonesSection from "@/components/home/ZonesSection";
-import MapSection from "@/components/home/MapSection";
+const MapSection = dynamic(() => import("@/components/home/MapSection"), { ssr: false });
 import RGEBadge from "@/components/home/RGEBadge";
 import CTABand from "@/components/shared/CTABand";
 import FAQSection from "@/components/shared/FAQSection";
