@@ -58,7 +58,7 @@ export default function BeforeAfterSlider() {
               {/* AFTER (bg) */}
               <img
                 src={IMAGES.beforeAfter}
-                alt="Après nettoyage et traitement toiture Haute-Savoie"
+                alt="Après démoussage toiture Haute-Savoie — résultat RT Toiture 74"
                 className="w-full h-full object-cover absolute inset-0"
                 draggable="false"
                 loading="lazy"
@@ -69,8 +69,8 @@ export default function BeforeAfterSlider() {
                 style={{ width: `${position}%` }}
               >
                 <img
-                  src={IMAGES.zone}
-                  alt="Avant nettoyage toiture Haute-Savoie – mousse et salissures"
+                  src={IMAGES.beforeAfterBefore}
+                  alt="Avant démoussage toiture Haute-Savoie – mousse et lichens"
                   className="w-full h-full object-cover absolute inset-0"
                   style={{ width: `${10000 / position}%`, maxWidth: "none" }}
                   draggable="false"
