@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { SERVICES, COMPANY } from "@/lib/siteData";
 import { SERVICE_IMAGES } from "@/lib/images";
@@ -7,6 +8,7 @@ import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTABand from "@/components/shared/CTABand";
 import FAQSection from "@/components/shared/FAQSection";
 import ContactForm from "@/components/shared/ContactForm";
+import JsonLd from "@/components/seo/JsonLd";
 import { Phone, Check, ArrowRight, Shield, Clock, Award, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ExpertiseBlock from "@/components/service/ExpertiseBlock";
@@ -138,8 +140,48 @@ export default function ServiceDetail() {
   const prevImage = () => setLightbox(i => (i - 1 + images.length) % images.length);
   const nextImage = () => setLightbox(i => (i + 1) % images.length);
 
+  const BASE = 'https://rt-toiture74.fr';
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${BASE}/services/${slug}/#service`,
+    name: service.title,
+    description: service.metaDescription || service.description,
+    url: `${BASE}/services/${slug}`,
+    provider: { '@id': `${BASE}/#organization` },
+    areaServed: { '@type': 'AdministrativeArea', name: 'Haute-Savoie' },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: service.title,
+      itemListElement: [{ '@type': 'Offer', itemOffered: { '@type': 'Service', name: service.title } }],
+    },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: BASE },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: `${BASE}/services` },
+      { '@type': 'ListItem', position: 3, name: service.shortTitle, item: `${BASE}/services/${slug}` },
+    ],
+  };
+
+  const faqSchema = content.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: content.faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
   return (
     <>
+      <JsonLd data={serviceSchema} />
+      <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: service.shortTitle }]} />
 
       {/* Hero */}

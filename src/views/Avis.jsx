@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { TESTIMONIALS } from "@/lib/siteData";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";

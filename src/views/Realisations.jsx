@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { IMAGES } from "@/lib/images";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";

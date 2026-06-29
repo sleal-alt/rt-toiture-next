@@ -1,7 +1,9 @@
+'use client'
 import React from "react";
 import { COMMUNES, SERVICES, COMPANY } from "@/lib/siteData";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTABand from "@/components/shared/CTABand";
 import FAQSection from "@/components/shared/FAQSection";
@@ -43,9 +45,48 @@ export default function CommunePage() {
   }
 
   const content = getCommuneContent(commune);
+  const BASE = 'https://rt-toiture74.fr';
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: BASE },
+      { '@type': 'ListItem', position: 2, name: 'Zones d\'intervention', item: `${BASE}/services` },
+      { '@type': 'ListItem', position: 3, name: `Couvreur ${commune.name}`, item: `${BASE}/couvreur/${slug}` },
+    ],
+  };
+
+  const localServiceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `Couvreur à ${commune.name} (${commune.code})`,
+    description: content.metaDesc,
+    url: `${BASE}/couvreur/${slug}`,
+    provider: { '@id': `${BASE}/#organization` },
+    areaServed: {
+      '@type': 'City',
+      name: commune.name,
+      postalCode: commune.code,
+      addressCountry: 'FR',
+    },
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: content.faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  };
 
   return (
     <>
+      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={localServiceSchema} />
+      <JsonLd data={faqSchema} />
       <Breadcrumbs items={[{ label: "Zones d'intervention", href: "/services" }, { label: `Couvreur ${commune.name}` }]} />
 
       {/* Hero */}

@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { COMPANY } from "@/lib/siteData";
 import { IMAGES } from "@/lib/images";

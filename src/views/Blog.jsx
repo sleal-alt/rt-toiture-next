@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { BLOG_THEMES } from "@/lib/siteData";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";

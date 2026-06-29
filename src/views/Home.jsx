@@ -1,6 +1,8 @@
+'use client'
 import React from "react";
 import dynamic from "next/dynamic";
 import { IMAGES } from "@/lib/images";
+import JsonLd from "@/components/seo/JsonLd";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesPreview from "@/components/home/ServicesPreview";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
@@ -50,21 +52,32 @@ const HOME_FAQS = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: HOME_FAQS.map(faq => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+
 export default function Home() {
   return (
     <>
+      <JsonLd data={faqSchema} />
       <HeroSection heroImage={IMAGES.hero} />
       <ArtisanLocal />
       <ServicesPreview />
-      {/* <WhyChooseUs /> */}
-      {/* <BeforeAfterSlider /> */}
-      {/* <RGEBadge /> */}
-      {/* <TestimonialsSection /> */}
-      {/* <GoogleReviews /> */}
-      {/* <MapSection /> */}
-      {/* <ZonesSection /> */}
-      {/* <FAQSection faqs={HOME_FAQS} /> */}
-      {/* <CTABand /> */}
+      <WhyChooseUs />
+      <BeforeAfterSlider />
+      <RGEBadge />
+      <TestimonialsSection />
+      <GoogleReviews />
+      <MapSection />
+      <ZonesSection />
+      <FAQSection faqs={HOME_FAQS} />
+      <CTABand />
     </>
   );
 }
