@@ -15,15 +15,24 @@ const TRUST_ITEMS = [
 export default function HeroSection({ heroImage }) {
   return (
     <section className="relative min-h-[95vh] flex items-center overflow-hidden">
-      {/* Background */}
+      {/* Background video */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Couvreur professionnel Haute-Savoie – Reinhart Timothée Rénovation Toiture"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/images/maison-apres-face.jpg"
           className="w-full h-full object-cover object-center"
-          fetchpriority="high"
-        />
-        {/* Stronger gradient so text is crisp */}
+          aria-hidden="true"
+        >
+          <source src="/videos/drone-demossage.mp4" type="video/mp4" />
+          <img
+            src="/images/maison-apres-face.jpg"
+            alt="Couvreur professionnel Haute-Savoie – Reinhart Timothée Rénovation Toiture"
+            className="w-full h-full object-cover object-center"
+          />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-accent/95 via-accent/80 to-accent/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-accent/70 via-transparent to-transparent" />
       </div>
