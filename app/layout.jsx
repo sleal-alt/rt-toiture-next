@@ -48,33 +48,26 @@ const localBusinessSchema = {
   url: BASE_URL,
   logo: `${BASE_URL}/images/logo.png`,
   image: `${BASE_URL}/images/hero.png`,
-  description: 'Artisan couvreur certifié RGE en Haute-Savoie (74). Démoussage, traitement hydrofuge garanti 10 ans, couverture, zinguerie, étanchéité EPDM. Basé à Poisy, intervention dans tout le 74.',
+  description: 'Entreprise de rénovation de couverture et de tout travaux de toiture en Haute-Savoie (74). Démoussage, traitement hydrofuge garanti 10 ans, couverture, zinguerie, étanchéité EPDM Retridex. Artisan certifié RGE.',
   telephone: '+33669434142',
   email: 'maldinireinhardt74@gmail.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '48 Route des Creusettes',
-    addressLocality: 'Poisy',
-    postalCode: '74330',
-    addressRegion: 'Haute-Savoie',
-    addressCountry: 'FR',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 45.8715,
-    longitude: 6.0594,
-  },
-  areaServed: {
-    '@type': 'AdministrativeArea',
-    name: 'Haute-Savoie',
-    description: 'Département 74 — Annecy, Annemasse, Chamonix, Bonneville, Cluses, Sallanches, Megève et environs',
+  areaServed: [
+    {
+      '@type': 'AdministrativeArea',
+      name: 'Haute-Savoie',
+      containedInPlace: { '@type': 'Country', name: 'France' },
+    },
+  ],
+  serviceArea: {
+    '@type': 'GeoCircle',
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 45.8715, longitude: 6.0594 },
+    geoRadius: '80000',
   },
   priceRange: '€€',
   currenciesAccepted: 'EUR',
   paymentAccepted: 'Chèque, Virement, Espèces',
   openingHoursSpecification: [
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '07:30', closes: '18:30' },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '17:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '00:00', closes: '23:59' },
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
@@ -86,6 +79,7 @@ const localBusinessSchema = {
   hasCredential: [
     { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Certification RGE', name: 'Reconnu Garant de l\'Environnement' },
   ],
+  knowsAbout: ['Démoussage toiture', 'Traitement hydrofuge', 'Couverture', 'Zinguerie', 'Étanchéité EPDM', 'Peinture toiture'],
   sameAs: ['https://share.google/9bjVg8JW1pUi7lBct'],
   taxID: '938 199 213',
   legalName: 'Reinhart Timothée Rénovation Toiture-Couverture',
