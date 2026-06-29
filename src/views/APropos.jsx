@@ -4,6 +4,7 @@ import { COMPANY } from "@/lib/siteData";
 import { IMAGES } from "@/lib/images";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTABand from "@/components/shared/CTABand";
+import GoogleReviews from "@/components/home/GoogleReviews";
 import RGEBadge from "@/components/home/RGEBadge";
 import { Shield, MapPin, Award, Heart, Mountain, Hammer } from "lucide-react";
 
@@ -85,6 +86,7 @@ export default function APropos() {
       </section>
 
       <RGEBadge />
+      <GoogleReviews />
       <CTABand />
     </>
   );

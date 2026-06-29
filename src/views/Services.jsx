@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import SectionHeading from "@/components/shared/SectionHeading";
 import ServiceCard from "@/components/shared/ServiceCard";
 import CTABand from "@/components/shared/CTABand";
+import GoogleReviews from "@/components/home/GoogleReviews";
 
 export default function Services() {
   return (
@@ -61,6 +62,7 @@ export default function Services() {
         </div>
       </section>
 
+      <GoogleReviews />
       <CTABand />
     </>
   );

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTABand from "@/components/shared/CTABand";
+import GoogleReviews from "@/components/home/GoogleReviews";
 import FAQSection from "@/components/shared/FAQSection";
 import ContactForm from "@/components/shared/ContactForm";
 import JsonLd from "@/components/seo/JsonLd";
@@ -288,6 +289,7 @@ export default function ServiceDetail() {
       <InternalLinksBlock slug={slug} serviceName={service.shortTitle} />
 
       {content.faqs && <FAQSection faqs={content.faqs} title={`FAQ — ${service.shortTitle}`} />}
+      <GoogleReviews />
       <CTABand title={`Besoin d'un ${service.shortTitle.toLowerCase()} en Haute-Savoie ?`} />
 
       {/* Lightbox */}

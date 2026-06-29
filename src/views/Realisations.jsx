@@ -4,6 +4,7 @@ import { IMAGES } from "@/lib/images";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import SectionHeading from "@/components/shared/SectionHeading";
 import CTABand from "@/components/shared/CTABand";
+import GoogleReviews from "@/components/home/GoogleReviews";
 
 const PROJECTS = [
   { title: "Nettoyage toiture — Annecy", category: "Démoussage", location: "Annecy (74000)" },
@@ -59,6 +60,7 @@ export default function Realisations() {
         </div>
       </section>
 
+      <GoogleReviews />
       <CTABand title="Vous souhaitez un résultat similaire ?" />
     </>
   );

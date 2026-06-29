@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTABand from "@/components/shared/CTABand";
+import GoogleReviews from "@/components/home/GoogleReviews";
 import FAQSection from "@/components/shared/FAQSection";
 import ContactForm from "@/components/shared/ContactForm";
 import ServiceCard from "@/components/shared/ServiceCard";
@@ -177,6 +178,7 @@ export default function CommunePage() {
 
       <CommunePhotoGallery commune={commune.name} slug={slug} />
       <FAQSection faqs={content.faqs} title={`FAQ — Couvreur ${commune.name}`} />
+      <GoogleReviews />
       <CTABand title={`Couvreur à ${commune.name} — Devis Gratuit`} />
     </>
   );

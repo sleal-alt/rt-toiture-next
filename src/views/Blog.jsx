@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { BLOG_THEMES } from "@/lib/siteData";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTABand from "@/components/shared/CTABand";
+import GoogleReviews from "@/components/home/GoogleReviews";
 import { Droplets, Hammer, Layers, Zap, Info, ChevronRight, ArrowLeft, BookOpen } from "lucide-react";
 
 const ICONS = { Droplets, Hammer, Layers, Zap, Info };
@@ -154,6 +155,7 @@ export default function Blog() {
         </div>
       </section>
 
+      <GoogleReviews />
       <CTABand title="Une question sur votre toiture ?" subtitle="Nos experts sont disponibles pour vous conseiller gratuitement." />
     </>
   );
