@@ -27,16 +27,16 @@ export const SERVICE_IMAGES = {
     { url: "/images/apres-demossage-velux.jpg", alt: "Toiture imperméabilisée hydrofuge — RT Toiture 74", caption: "Protection pluie, neige et gel garantie 10 ans" },
   ],
   "revetement-hydrofuge-teinte": [
-    { url: "/images/avant-peinture-tuiles.jpg", alt: "Tuiles avant revêtement hydrofuge teinté Haute-Savoie", caption: "Avant — tuiles ternes et encrassées" },
-    { url: "/images/apres-peinture-rouge.jpg", alt: "Tuiles après revêtement hydrofuge teinté rouge Haute-Savoie", caption: "Après — teinte rouge vif, aspect neuf" },
-    { url: "/images/maison-apres-face.jpg", alt: "Maison après revêtement hydrofuge teinté rouge — Haute-Savoie", caption: "Résultat — toiture entièrement transformée" },
-    { url: "/images/maison-apres-cote.jpg", alt: "Vue côté maison après traitement hydrofuge teinté", caption: "Transformation complète de la couverture" },
+    { url: "/images/pendant-revetement-orange.jpg", alt: "Application revêtement hydrofuge teinté orange en cours — RT Toiture 74", caption: "Application en cours — contraste avant/après visible" },
+    { url: "/images/apres-revetement-orange.jpg", alt: "Toiture après revêtement hydrofuge teinté orange — RT Toiture 74", caption: "Résultat — tuiles canal teintées orange vif" },
+    { url: "/images/apres-peinture-rouge.jpg", alt: "Tuiles après revêtement hydrofuge teinté rouge Haute-Savoie", caption: "Teinte rouge vif — aspect neuf garanti" },
+    { url: "/images/maison-apres-face.jpg", alt: "Maison après revêtement hydrofuge teinté rouge — Haute-Savoie", caption: "Résultat global — toiture entièrement transformée" },
   ],
   "peinture-toiture": [
     { url: "/images/avant-mousse-grise.jpg", alt: "Toiture avant peinture — mousse et salissures Haute-Savoie", caption: "Avant peinture — toiture encrassée" },
     { url: "/images/apres-peinture-marron.jpg", alt: "Toiture après peinture marron — résultat RT Toiture 74", caption: "Après peinture — éclat retrouvé" },
+    { url: "/images/pendant-revetement-orange.jpg", alt: "Artisan en train de peindre la toiture — RT Toiture 74", caption: "Application professionnelle au rouleau" },
     { url: "/images/maison-apres-face.jpg", alt: "Maison après peinture toiture rouge bordeaux Haute-Savoie", caption: "Vue d'ensemble — maison transformée" },
-    { url: "/images/artisan-toit.jpg", alt: "Artisan RT Toiture 74 en intervention peinture toiture", caption: "Artisan certifié RGE en action" },
   ],
   "couverture-toiture": [
     { url: "/images/chantier-chalet.jpg", alt: "Chantier couverture toiture chalet Haute-Savoie — RT Toiture 74", caption: "Chantier de réfection — chalet savoyard" },
