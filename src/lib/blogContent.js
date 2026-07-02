@@ -958,6 +958,683 @@ export const BLOG_ARTICLES = [
       { slug: "bonneville", name: "Bonneville" }, { slug: "sallanches", name: "Sallanches" }, { slug: "cluses", name: "Cluses" },
     ]
   }
+,
+
+  {
+    slug: "prix-refaire-toiture-haute-savoie",
+    category: "Rénovation & Réparation",
+    title: "Quel Prix pour Refaire une Toiture en Haute-Savoie en 2025 ?",
+    metaTitle: "Prix Refaire Toiture Haute-Savoie 2025 — Tarifs & Devis Gratuit | RT Toiture 74",
+    metaDescription: "Combien coûte une réfection de toiture en Haute-Savoie en 2025 ? Tarifs détaillés par matériau (tuiles, ardoise, bac acier), facteurs de prix et devis gratuit artisan RGE.",
+    targetKeyword: "prix refaire toiture haute-savoie",
+    wordCount: 1550,
+    readTime: 7,
+    date: "2025-04-10",
+    intro: "Refaire une toiture en Haute-Savoie coûte entre 80 € et 200 €/m² selon les matériaux, l'accessibilité et l'état de la charpente. Pour une maison de 100 m² de toiture, comptez entre 8 000 € et 20 000 € TTC. Ces chiffres varient significativement selon votre commune (Annecy, Megève, Chamonix), l'altitude et la pente du toit. Voici les tarifs réels pratiqués par RT Toiture 74 en 2025, avec les facteurs qui font monter ou baisser la facture.",
+    sections: [
+      {
+        h2: "Tarifs par Matériau : Ce que Ça Coûte Vraiment en 2025",
+        priceTable: {
+          title: "Prix réfection complète toiture — Haute-Savoie 2025 (dépose + pose + matériaux)",
+          headers: ["Matériau", "Prix/m² TTC", "Durée de vie", "Idéal pour"],
+          rows: [
+            ["Tuiles béton", "80–120 €/m²", "30–40 ans", "Maisons < 800 m altitude"],
+            ["Tuiles terre cuite", "100–140 €/m²", "50–80 ans", "Rénovation tradition"],
+            ["Ardoise naturelle", "140–200 €/m²", "80–150 ans", "Haute altitude, prestige"],
+            ["Ardoise fibrociment", "90–130 €/m²", "30–50 ans", "Alternative économique"],
+            ["Bac acier", "70–110 €/m²", "30–50 ans", "Chalet, bâtiment agricole"],
+            ["Zinc joint debout", "150–220 €/m²", "80–100 ans", "Architecture moderne"],
+          ],
+          note: "Prix TTC 2025 — main d'œuvre, dépose, évacuation incluses. Hors charpente et isolation."
+        }
+      },
+      {
+        h2: "Les 5 Facteurs qui Font Varier le Prix en Haute-Savoie",
+        h3s: [
+          {
+            h3: "1. L'Altitude et l'Accessibilité",
+            content: "Au-dessus de 800 m (Megève, Chamonix, Les Gets), l'intervention nécessite du matériel spécifique, des équipes formées aux conditions alpines et des délais plus courts (fenêtres météo réduites). Comptez un surcoût de 10 à 20 % par rapport à la vallée. À Annecy ou Annemasse, l'accessibilité est généralement meilleure et les prix plus bas.",
+          },
+          {
+            h3: "2. La Pente du Toit",
+            content: "Une toiture avec une pente supérieure à 45° (fréquente dans les chalets savoyards) nécessite des équipements de sécurité renforcés et ralentit le travail. Au-delà de 60°, certains couvreurs appliquent un forfait sécurité de 500 à 1 500 €. La pente influence aussi le choix des matériaux : les tuiles béton standard ne conviennent pas aux pentes > 70°.",
+          },
+          {
+            h3: "3. L'État de la Charpente",
+            content: "Si la charpente présente des bois humides, des chevrons fissurés ou des attaques d'insectes xylophages, les travaux de réfection charpente s'ajoutent à la couverture : 50 à 150 €/m² selon l'ampleur. Un diagnostic charpente est systématiquement réalisé par RT Toiture 74 avant tout devis.",
+          },
+          {
+            h3: "4. La Complexité Architecturale",
+            content: "Lucarnes, noues, cheminées multiples, fenêtres de toit, solins complexes : chaque élément de zinguerie ajoute 300 à 1 500 € au devis. Un chalet savoyard avec 3 cheminées, 2 lucarnes et des noues multiples peut voir sa facture augmenter de 4 000 à 8 000 € par rapport à une toiture simple 2 pans.",
+          },
+          {
+            h3: "5. La Saison d'Intervention",
+            content: "Le printemps (avril-mai) et l'automne (septembre-octobre) sont les périodes de pointe en Haute-Savoie. Les délais s'allongent et certains artisans appliquent une légère majoration. L'été est la meilleure période pour obtenir des tarifs optimaux et des créneaux rapides. L'hiver, seules les urgences sont traitées avec un surcoût de 20 à 40 %.",
+          }
+        ],
+        caseStudy: {
+          title: "Villa à Annecy-le-Vieux — réfection complète tuiles terre cuite (2024)",
+          content: "M. Favre, villa de 120 m² de toiture, Annecy-le-Vieux. Toiture en tuiles béton de 1988, charpente saine. Choix : tuiles terre cuite Monier Huguenot ton pierre pour valorisation immobilière. Dépose + évacuation + new tuiles + faîtage + solins cheminée : 15 600 € TTC. TVA 10 % appliquée (résidence principale > 2 ans). Valeur immobilière estimée +18 000 € selon l'agent immobilier consulté."
+        }
+      },
+      {
+        h2: "Aides Financières : Réduire la Facture en 2025",
+        h3s: [
+          {
+            h3: "TVA Réduite à 10 %",
+            content: "La réfection de toiture sur une résidence principale de plus de 2 ans bénéficie de la TVA à 10 % (au lieu de 20 %). Condition : faire appel à un artisan déclarant la TVA — RT Toiture 74 applique automatiquement ce taux sur toutes les rénovations éligibles. Sur une facture de 15 000 €, l'économie est de 1 500 € par rapport au taux normal.",
+          },
+          {
+            h3: "MaPrimeRénov' et Éco-PTZ",
+            content: "Si votre réfection de toiture inclut une amélioration de l'isolation (sarking, isolation sous rampants), vous pouvez cumuler MaPrimeRénov' et un Éco-PTZ sans intérêt jusqu'à 50 000 €. L'artisan doit être certifié RGE — RT Toiture 74 est certifié RGE Qualibat, ce qui vous donne accès à ces aides. Simulation gratuite lors du devis.",
+          }
+        ]
+      },
+      {
+        h2: "Comment Obtenir un Devis Fiable en Haute-Savoie",
+        content: "Méfiez-vous des devis reçus sans visite sur place : une toiture ne peut pas être correctement chiffrée sur photo. RT Toiture 74 réalise systématiquement une visite de diagnostic gratuite avant tout devis, incluant : mesure précise de la surface, inspection de la charpente, relevé des éléments de zinguerie, évaluation de l'accessibilité. Le devis détaillé est remis sous 48h, avec une garantie de prix ferme pendant 3 mois."
+      }
+    ],
+    faqs: [
+      { question: "Quel est le prix moyen d'une toiture pour une maison de 100 m² en Haute-Savoie ?", answer: "Pour 100 m² de toiture en tuiles béton standard, comptez 10 000 à 14 000 € TTC dépose et repose complète. En tuiles terre cuite : 12 000 à 17 000 €. En ardoise naturelle : 16 000 à 22 000 €. Ces prix incluent la main d'œuvre, les matériaux, la dépose et l'évacuation des anciens matériaux." },
+      { question: "Faut-il un permis de construire pour refaire une toiture en Haute-Savoie ?", answer: "Non, si vous refaites à l'identique (mêmes matériaux, même pente, même aspect). Une déclaration préalable de travaux est nécessaire si vous changez l'aspect extérieur (couleur, matériau visible) en zone protégée ou ABF. RT Toiture 74 vérifie votre situation lors du diagnostic et vous accompagne dans les démarches si nécessaire." },
+      { question: "Combien de temps dure une réfection de toiture ?", answer: "Pour une maison standard de 100–150 m² : 5 à 10 jours de chantier. Les délais varient selon la météo (impossibilité de poser par vent > 50 km/h ou pluie), la complexité architecturale et la disponibilité des matériaux. RT Toiture 74 protège systématiquement la maison avec une bâche pendant toute la durée des travaux." },
+      { question: "Peut-on rénover la toiture en hiver en Haute-Savoie ?", answer: "Oui pour les urgences, mais les réfections complètes sont déconseillées en dessous de 5°C (problèmes d'adhérence des mortiers, risque de gel). La période optimale est avril-octobre. Pour les urgences hivernales, RT Toiture 74 intervient 7j/7 avec un bâchage provisoire en attente des conditions météo favorables." },
+      { question: "Quelle différence de prix entre tuiles béton et ardoise naturelle ?", answer: "L'ardoise naturelle coûte environ 40 à 60 % plus cher que les tuiles béton à la pose. Mais sa durée de vie est 3 à 4 fois supérieure (100 ans vs 30 ans). Sur la durée de vie complète, l'ardoise est souvent plus économique. En Haute-Savoie, l'ardoise est également plus adaptée aux fortes charges de neige." },
+    ],
+    relatedSlugs: ["signes-renover-toiture", "cout-demoussage-toiture-2025", "couverture-ardoise-prix-avantages"],
+    relatedServices: ["couverture-toiture", "demoussage-nettoyage-toiture"],
+    relatedCommunes: [
+      { slug: "annecy", name: "Annecy" }, { slug: "megeve", name: "Megève" },
+      { slug: "chamonix-mont-blanc", name: "Chamonix" }, { slug: "bonneville", name: "Bonneville" }, { slug: "annemasse", name: "Annemasse" },
+    ]
+  },
+
+  {
+    slug: "cout-demoussage-toiture-2025",
+    category: "Entretien & Nettoyage",
+    title: "Combien Coûte un Démoussage de Toiture en 2025 ? Tarifs Haute-Savoie",
+    metaTitle: "Prix Démoussage Toiture 2025 Haute-Savoie — Tarifs & Devis | RT Toiture 74",
+    metaDescription: "Tarifs complets du démoussage toiture en Haute-Savoie en 2025 : nettoyage, fongicide, hydrofuge. Prix au m², facteurs de coût, aides disponibles. Devis gratuit artisan RGE.",
+    targetKeyword: "cout demoussage toiture 2025",
+    wordCount: 1450,
+    readTime: 6,
+    date: "2025-02-15",
+    intro: "Un démoussage professionnel en Haute-Savoie coûte entre 20 et 45 €/m² selon la prestation choisie. Pour une maison de 100 m², la facture totale (nettoyage + fongicide + hydrofuge) s'échelonne de 2 500 à 6 000 € TTC. Ces prix, souvent surprenants à la hausse pour les propriétaires qui comparent avec des tarifs nationaux, s'expliquent par les conditions alpines spécifiques : accessibilité difficile, équipements de sécurité renforcés, et traitements adaptés aux micoclimats de Haute-Savoie.",
+    sections: [
+      {
+        h2: "Tarifs Complets 2025 par Type de Prestation",
+        priceTable: {
+          title: "Prix démoussage toiture Haute-Savoie 2025 — pour 100 m² de toiture",
+          headers: ["Prestation", "Prix unitaire", "Prix 100 m²", "Garantie"],
+          rows: [
+            ["Nettoyage basse pression seul", "12–18 €/m²", "1 200–1 800 €", "Aucune"],
+            ["Nettoyage + fongicide curatif", "18–28 €/m²", "1 800–2 800 €", "2–3 ans"],
+            ["Nettoyage + fongicide + hydrofuge", "30–45 €/m²", "3 000–4 500 €", "8–10 ans"],
+            ["Forfait entretien complet (+ faîtage + gouttières)", "35–60 €/m²", "3 500–6 000 €", "10 ans"],
+          ],
+          note: "Prix TTC 2025. Supplément accessibilité difficile (> 800 m altitude, toiture > 45°) : +15–25 %"
+        }
+      },
+      {
+        h2: "Pourquoi les Prix sont Plus Élevés en Haute-Savoie",
+        h3s: [
+          {
+            h3: "Des Produits Adaptés aux Conditions Alpines",
+            content: "Les fongicides et hydrofuges utilisés en plaine ne sont pas adaptés aux conditions extrêmes de Haute-Savoie : cycles gel/dégel intenses, UV élevés en altitude, humidité chronique. RT Toiture 74 utilise exclusivement des produits certifiés pour les zones alpines (résistance au gel jusqu'à -25°C, protection UV renforcée), qui coûtent 30 à 50 % plus cher que les produits standard.",
+          },
+          {
+            h3: "L'Équipement de Sécurité Obligatoire",
+            content: "En Haute-Savoie, les toitures présentent souvent des pentes supérieures à 35° (chalets savoyards). L'intervention nécessite : harnais antichute, ligne de vie, plateforme de travail adaptée, voire nacelle pour les configurations difficiles. Ce matériel spécifique représente 300 à 800 € de coût journalier supplémentaire, répercuté dans le tarif final.",
+          }
+        ],
+        caseStudy: {
+          title: "Chalet à La Clusaz — démoussage complet + hydrofuge (2024)",
+          content: "M. et Mme Bertrand, chalet de 140 m² de toiture, altitude 1 050 m, pente 55°. Mousse sur 60 % de la surface. Prestation : nettoyage basse pression, fongicide bi-composant, hydrofuge fluorosiloxane teinte transparente. Durée : 3 jours avec équipe de 3. Coût total : 7 200 € TTC (51 €/m² justifié par l'altitude et la pente). Résultat : toiture impeccable, garantie traitement 10 ans."
+        }
+      },
+      {
+        h2: "Ce qui est Inclus (et ce qui ne l'est pas) dans un Devis",
+        h3s: [
+          {
+            h3: "Inclus dans le prix RT Toiture 74",
+            content: "Diagnostic préalable gratuit sur place · Nettoyage complet de la toiture · Application fongicide curatif et préventif · Application hydrofuge (si prestation complète) · Nettoyage des gouttières (inclus dans forfait complet) · Certificat de traitement avec numéro de lot produits · Garantie décennale de l'entreprise · TVA à 10 % (résidence principale > 2 ans)",
+          },
+          {
+            h3: "Non inclus (à prévoir en option)",
+            content: "Réparations de tuiles cassées (+50 à 200 €/tuile) · Rejointoiement du faîtage (+400 à 900 €) · Remplacement de gouttières défectueuses (+60 à 120 €/ml) · Traitement de charpente (si champignons détectés en combles) · Protection des terrasses/jardins proches (fournie mais non facturée chez RT Toiture 74)",
+          }
+        ]
+      },
+      {
+        h2: "Démoussage DIY vs Professionnel : Le Vrai Calcul",
+        content: "Un kit de démoussage amateur (produit du commerce + pulvérisateur) coûte 150 à 400 € pour 100 m². Mais les produits grand public ne sont pas conformes au Règlement Biocide BPR n°528/2012 pour une application professionnelle, ont une efficacité de 2 à 3 fois inférieure aux produits professionnels, et ne comprennent aucune garantie de résultat. Sans compter le risque majeur de chute (première cause d'accidents graves du bricolage en France). Sur 10 ans, le coût total d'un entretien professionnel est souvent inférieur à celui de réfections répétées dues à un mauvais entretien amateur."
+      }
+    ],
+    faqs: [
+      { question: "Quel est le meilleur moment pour faire démoussage sa toiture en Haute-Savoie ?", answer: "Avril-mai et septembre-octobre sont les périodes idéales : températures douces (> 10°C), pas de risque de gel sur le traitement frais, artisans disponibles. Évitez juillet-août (période de chaleur qui réduit l'efficacité de certains fongicides) et novembre-mars (risque de gel)." },
+      { question: "Le démoussage est-il pris en charge par l'assurance ?", answer: "Non, le démoussage est un entretien courant qui n'est pas pris en charge par l'assurance habitation. En revanche, un historique d'entretien documenté (factures de démoussage) peut jouer en votre faveur en cas de sinistre, en prouvant que vous avez rempli votre obligation d'entretien." },
+      { question: "Combien de temps dure un traitement démoussage professionnel ?", answer: "Le chantier lui-même dure 1 à 2 jours pour 100 m² avec une équipe professionnelle. Le résultat final (mort complète des mousses et lichens) se voit après 2 à 4 semaines — les organismes meurent progressivement et sont emportés par la pluie. Après 2 mois, la toiture est parfaitement propre." },
+      { question: "Peut-on faire un démoussage sans nettoyage haute pression ?", answer: "Oui, et c'est même recommandé pour les tuiles fragiles (béton > 20 ans, ardoises anciennes). La méthode basse pression + fongicide curatif laissé agir 4 à 8 semaines donne d'excellents résultats sans endommager les matériaux. RT Toiture 74 utilise exclusivement la basse pression pour préserver la durée de vie des tuiles." },
+      { question: "Y a-t-il des aides pour financer un démoussage ?", answer: "Le démoussage seul n'ouvre pas droit à des aides. Mais si vous combinez démoussage + hydrofuge + isolation (sarking), l'ensemble peut être éligible à la TVA à 5,5 % et à MaPrimeRénov' avec un artisan RGE. RT Toiture 74 vous conseille lors du diagnostic pour optimiser votre financement." },
+    ],
+    relatedSlugs: ["quand-nettoyer-toiture-montagne", "traitement-anti-mousse-professionnel", "traitement-hydrofuge-indispensable"],
+    relatedServices: ["demoussage-nettoyage-toiture", "traitement-fongicide-toiture", "traitement-hydrofuge-toiture"],
+    relatedCommunes: [
+      { slug: "annecy", name: "Annecy" }, { slug: "chamonix-mont-blanc", name: "Chamonix" },
+      { slug: "megeve", name: "Megève" }, { slug: "cluses", name: "Cluses" }, { slug: "la-roche-sur-foron", name: "La Roche-sur-Foron" },
+    ]
+  },
+
+  {
+    slug: "gouttieres-bouchees-solution",
+    category: "Entretien & Nettoyage",
+    title: "Gouttières Bouchées : Causes, Risques et Solutions Durables",
+    metaTitle: "Gouttières Bouchées — Causes & Solutions Haute-Savoie 74 | RT Toiture",
+    metaDescription: "Gouttières bouchées en Haute-Savoie : feuilles, mousses, gel. Risques pour la façade et la toiture, méthodes de débouchage, prix et solutions préventives. Artisan RGE.",
+    targetKeyword: "gouttières bouchées solution",
+    wordCount: 1400,
+    readTime: 6,
+    date: "2025-08-20",
+    intro: "En Haute-Savoie, les gouttières bouchées sont la première cause de dégâts sur les façades et les fondations. Avec 1 182 mm de précipitations annuelles à Annecy et une végétation dense (mélèzes, sapins, châtaigniers), les gouttières s'obstruent 2 à 3 fois plus vite qu'en régions sèches. Une gouttière pleine d'eau qui gèle en hiver peut arracher les crochets et déformer l'ensemble du chéneau. Voici comment identifier le problème, le résoudre et éviter qu'il se reproduise.",
+    sections: [
+      {
+        h2: "Comment Savoir si vos Gouttières sont Bouchées",
+        h3s: [
+          {
+            h3: "Les 5 Signes Visibles",
+            content: "1. L'eau déborde par-dessus la gouttière pendant la pluie (au lieu de s'écouler dans la descente). 2. Traces de moisissures ou auréoles sur la façade sous les gouttières. 3. Végétation (herbes, mousses) visible dans la gouttière depuis le sol. 4. Bruits anormaux (gargouillis, clapotis) pendant les pluies. 5. En hiver, formation de glaçons inhabituellement longs sous les débordements.",
+          },
+          {
+            h3: "Les Conséquences si on ne Fait Rien",
+            content: "Une gouttière bouchée qui déborde en permanence provoque : infiltrations en pied de mur (fondations, cave), humidité chronique en façade (efflorescence, moisissures), dégradation du crépi et de l'enduit (coût de réfection : 2 000 à 8 000 €), et en hiver, formation de masse de glace qui écrase et déforme la gouttière. À Annecy ou Sallanches, une saison de gel avec gouttière bouchée peut nécessiter le remplacement complet du chéneau.",
+          }
+        ]
+      },
+      {
+        h2: "Solutions et Prix de Débouchage",
+        priceTable: {
+          title: "Tarifs débouchage et entretien gouttières Haute-Savoie 2025",
+          headers: ["Intervention", "Description", "Prix TTC"],
+          rows: [
+            ["Nettoyage gouttières seul", "Débouchage manuel + rinçage descentes", "150–350 €"],
+            ["Nettoyage complet + crépines", "Gouttières + descentes + pose crépines anti-feuilles", "250–500 €"],
+            ["Remplacement partiel zinc", "Remplacement section gouttière + refixation crochets", "200–600 €"],
+            ["Remplacement gouttières complet", "Dépose + nouvelle gouttière zinc ou alu (10 ml)", "600–1 500 €"],
+            ["Forfait bi-annuel (abonnement)", "2 nettoyages/an printemps + automne", "200–400 €/an"],
+          ],
+          note: "Tarifs pour maison individuelle standard. Supplément échafaudage si hauteur > 6 m."
+        },
+        caseStudy: {
+          title: "Maison à Cluses — gouttières bouchées depuis 3 ans (2024)",
+          content: "M. Tissot contacte RT Toiture 74 après que son assurance a refusé de prendre en charge des dégâts en façade. Diagnostic : gouttières non nettoyées depuis 3 ans, bouchées sur 70 % de la longueur, 4 crochets rouillés arrachés, descente obstruée par un nid d'oiseau. Intervention : nettoyage complet, remplacement 3 mètres de gouttière zinc, repose de 4 crochets inox, pose crépines. Coût : 680 € TTC. Dégâts façade évités estimés à 4 500 €."
+        }
+      },
+      {
+        h2: "Prévenir : Les Solutions Durables",
+        h3s: [
+          {
+            h3: "Les Crépines et Filets Anti-Feuilles",
+            content: "Posés à l'entrée des descentes de gouttière, les crépines empêchent les feuilles et débris de boucher la descente. Coût : 5 à 15 € par descente. Les filets anti-feuilles (posés sur toute la longueur de la gouttière) sont plus efficaces mais plus coûteux : 8 à 20 €/ml. En Haute-Savoie, où les arbres environnants perdent leurs aiguilles et feuilles en abondance, ces systèmes réduisent la fréquence de nettoyage de 2 fois/an à 1 fois/an.",
+          },
+          {
+            h3: "Le Nettoyage Bi-Annuel : le Rythme Idéal",
+            content: "En Haute-Savoie, le nettoyage des gouttières doit être réalisé deux fois par an : fin octobre (après la chute des feuilles, avant les premières gelées) et fin mars-avril (après l'hiver, pour évacuer les débris accumulés). RT Toiture 74 propose un abonnement entretien bi-annuel qui garantit que vos gouttières sont toujours propres aux moments critiques.",
+          }
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Peut-on nettoyer ses gouttières soi-même ?", answer: "Techniquement oui pour un rez-de-chaussée. Mais pour toute hauteur > 3 m, le risque de chute est sérieux — les gouttières mouillées sont glissantes et les échelles instables. RT Toiture 74 dispose d'équipements sécurisés et nettoie vos gouttières de façon professionnelle pour 150 à 350 €." },
+      { question: "Quelle matière choisir pour les gouttières en Haute-Savoie ?", answer: "Le zinc est le meilleur choix pour la Haute-Savoie : résistance au gel, durée de vie 40–60 ans, aspect esthétique. L'aluminium prélaqué est une alternative économique (durée de vie 25–35 ans). Le PVC est à éviter en altitude : il se fragilise par le froid et les UV." },
+      { question: "Mes gouttières sont correctement fixées si elles débordent ?", answer: "Pas nécessairement. Les gouttières peuvent déborder pour deux raisons distinctes : bouchée (obstruction) ou mal réglée (pente insuffisante vers la descente). RT Toiture 74 vérifie lors de chaque intervention la pente de vos gouttières et les refixe si nécessaire." },
+      { question: "Combien de temps dure un nettoyage de gouttières ?", answer: "Pour une maison de 100–150 m², le nettoyage complet (gouttières + descentes) prend 2 à 4 heures avec notre équipe. Nous intervenons dans tout le département 74 — prenez rendez-vous au 06 69 43 41 42." },
+      { question: "Les câbles chauffants sont-ils utiles dans les gouttières ?", answer: "Oui pour les maisons à altitude > 800 m ou celles ombragées où la glace s'accumule. Les câbles thermostatiques (enclenchement auto < 3°C) évitent la formation de bouchons de glace. Coût d'installation : 300–600 € pour une maison standard. RT Toiture 74 pose ces systèmes lors des interventions de zinguerie." },
+    ],
+    relatedSlugs: ["preparer-toiture-hiver-montagne", "entretien-toiture-montagne-guide", "zinguerie-tout-savoir"],
+    relatedServices: ["demoussage-nettoyage-toiture", "zinguerie"],
+    relatedCommunes: [
+      { slug: "annecy", name: "Annecy" }, { slug: "cluses", name: "Cluses" },
+      { slug: "sallanches", name: "Sallanches" }, { slug: "bonneville", name: "Bonneville" }, { slug: "annemasse", name: "Annemasse" },
+    ]
+  },
+
+  {
+    slug: "urgence-toiture-tempete",
+    category: "Rénovation & Réparation",
+    title: "Urgence Toiture après Tempête : Que Faire dans les 24h ?",
+    metaTitle: "Urgence Toiture Tempête Haute-Savoie — Intervention 24h | RT Toiture 74",
+    metaDescription: "Toiture endommagée par la tempête en Haute-Savoie ? Guide d'urgence : gestes immédiats, déclaration assurance (5 jours), réparations. RT Toiture 74 intervient 24–48h, 7j/7.",
+    targetKeyword: "urgence toiture tempête",
+    wordCount: 1420,
+    readTime: 6,
+    date: "2025-11-05",
+    intro: "Le foehn, les tempêtes de neige et les orages violents font partie du quotidien en Haute-Savoie. Après un épisode météorologique sévère, votre toiture peut présenter des tuiles arrachées, un faîtage décimenté, des gouttières décrochées ou des lucarnes endommagées. Les premières heures sont critiques : l'eau qui s'infiltre dans une charpente non protégée provoque des dégâts exponentiels. Voici le protocole d'urgence RT Toiture 74.",
+    sections: [
+      {
+        h2: "Dans l'Heure qui Suit : Sécuriser l'Intérieur",
+        h3s: [
+          {
+            h3: "Ne Montez JAMAIS sur le Toit après une Tempête",
+            content: "Une toiture après tempête est extrêmement dangereuse : tuiles déplacées créant des zones instables, surface mouillée glissante, vent résiduel imprévisible. Chaque année en France, plusieurs personnes meurent en voulant inspecter leur toiture après une intempérie. Évaluez les dégâts uniquement depuis le sol, à l'aide de jumelles si possible.",
+          },
+          {
+            h3: "Protéger l'Intérieur en Attendant",
+            content: "Si vous constatez des infiltrations : placez des seaux et des bâches plastique au sol, protégez les meubles et appareils électroniques, coupez les disjoncteurs des pièces touchées si l'eau approche des prises ou spots. Si le plafond bombe sous l'eau accumulée, percez-le délicatement en son point le plus bas avec un tournevis pour éviter l'effondrement.",
+          }
+        ]
+      },
+      {
+        h2: "Déclarer le Sinistre : Les 5 Jours Ouvrés",
+        content: "La loi impose de déclarer tout sinistre à votre assurance dans les 5 jours ouvrés. Passé ce délai, l'assureur peut réduire ou refuser l'indemnisation. Appelez votre assurance dans les 24h et demandez un numéro de sinistre. Parallèlement, documentez tous les dégâts en photos et vidéos datées avant toute réparation.",
+        priceTable: {
+          title: "Ce que couvre votre assurance MRH après une tempête",
+          headers: ["Dommage", "Couverture", "Franchise habituelle"],
+          rows: [
+            ["Tuiles arrachées par vent > 80 km/h", "Oui (garantie tempête)", "150–300 €"],
+            ["Gouttières décrochées", "Oui si vent prouvé", "150–300 €"],
+            ["Dégâts intérieurs (plafond, parquet)", "Oui (dégât des eaux)", "150–300 €"],
+            ["Chute d'arbre sur toiture", "Oui (garantie tempête)", "300–600 €"],
+            ["Dégâts de grêle", "Oui (garantie grêle)", "150–500 €"],
+            ["Faîtage vieilli décimenté", "Non (entretien)", "—"],
+          ],
+          note: "Vérifiez vos franchises et plafonds dans votre contrat MRH avant de déclarer"
+        }
+      },
+      {
+        h2: "L'Intervention d'Urgence RT Toiture 74",
+        h3s: [
+          {
+            h3: "Bâchage d'Urgence : Stopper l'Infiltration",
+            content: "La première intervention consiste à sécuriser la zone endommagée avec une bâche professionnelle, pour stopper les infiltrations dans l'attente de la réparation définitive. Cette intervention d'urgence coûte 200 à 500 € mais peut éviter des milliers d'euros de dégâts intérieurs. RT Toiture 74 intervient sous 24 à 48h dans tout le département 74, 7 jours sur 7.",
+          },
+          {
+            h3: "Réparation Définitive et Rapport pour l'Assurance",
+            content: "Après l'urgence, RT Toiture 74 établit un rapport détaillé (photos, description des dommages, évaluation des coûts) utilisable directement par votre assureur. Ce document facilite et accélère l'indemnisation. Nous coordonnons directement avec l'expert de l'assurance si nécessaire.",
+          }
+        ],
+        caseStudy: {
+          title: "Chamonix — foehn 130 km/h, 8 tuiles de faîtage arrachées (mars 2024)",
+          content: "Épisode de foehn violent le 14 mars 2024 sur la vallée de l'Arve. M. Durand, Chamonix : 8 tuiles de faîtage arrachées, gouttière nord décrochée sur 4 mètres. RT Toiture 74 contacté à 7h30, intervention le lendemain matin. Bâchage provisoire J+1, réparation définitive J+5 (délai météo). Déclaration assurance : prise en charge à 1 350 € après franchise de 300 €. Coût total travaux : 1 650 € TTC."
+        }
+      },
+      {
+        h2: "Prévenir les Dégâts de Tempête",
+        content: "La meilleure protection contre les dégâts de tempête est une toiture bien entretenue. Les tuiles de faîtage avec mortier frais résistent beaucoup mieux au vent qu'un mortier fissuré de 15 ans. Les crochets de tuile en inox résistent mieux que le zinc oxydé. Une inspection annuelle par RT Toiture 74 (100 à 200 €) permet d'identifier et de corriger les points faibles avant que le prochain foehn ne les révèle de façon brutale."
+      }
+    ],
+    faqs: [
+      { question: "RT Toiture 74 intervient-il la nuit et le week-end ?", answer: "Oui, RT Toiture 74 assure les urgences 7j/7, y compris les week-ends et jours fériés. Pour toute urgence toiture, appelez le 06 69 43 41 42. Un technicien vous répond et évalue la situation. Délai d'intervention : 24 à 48h selon les conditions météo et l'accessibilité." },
+      { question: "Combien coûte une intervention d'urgence toiture ?", answer: "Un bâchage d'urgence coûte 200 à 500 € selon la surface à couvrir et l'accessibilité. Si l'assurance prend en charge les dégâts (garantie tempête), ces frais d'urgence sont généralement inclus dans l'indemnisation. RT Toiture 74 vous fournit un devis immédiat lors de l'intervention." },
+      { question: "Que faire si une tuile tombe dans mon jardin après la tempête ?", answer: "Ramassez et conservez les tuiles tombées — elles serviront de modèle pour le remplacement (référence exacte, couleur, format). Ne remontez pas les tuiles vous-même. Photographiez leur emplacement d'origine sur le toit si vous pouvez le voir depuis le sol." },
+      { question: "Comment savoir si ma toiture a souffert d'une tempête sans y monter ?", answer: "Depuis le sol avec des jumelles : regardez le faîtage (tuiles basculées ?), les rives (tuiles déplacées ?), les gouttières (déformées ou décrochées ?). Depuis l'intérieur : montez aux combles avec une lampe et cherchez des points de lumière (= trous) ou des traces d'humidité sur la charpente." },
+      { question: "Mon assurance peut-elle refuser de couvrir les dégâts de tempête ?", answer: "Oui, si le sinistre résulte d'un défaut d'entretien manifeste (mortier de faîtage non refait depuis 20 ans, tuiles signalées défectueuses non remplacées). C'est pourquoi un historique d'entretien documenté (factures RT Toiture 74) est précieux. L'assurance ne peut pas refuser si les dégâts résultent d'un événement météo attesté (vent > 80 km/h)." },
+    ],
+    relatedSlugs: ["infiltration-eau-toit-urgence", "preparer-toiture-hiver-montagne", "toiture-grele-protection"],
+    relatedServices: ["couverture-toiture", "zinguerie"],
+    relatedCommunes: [
+      { slug: "chamonix-mont-blanc", name: "Chamonix" }, { slug: "sallanches", name: "Sallanches" },
+      { slug: "megeve", name: "Megève" }, { slug: "cluses", name: "Cluses" }, { slug: "bonneville", name: "Bonneville" },
+    ]
+  },
+
+  {
+    slug: "toiture-resistante-neige",
+    category: "Rénovation & Réparation",
+    title: "Quelle Toiture Résiste le Mieux à la Neige en Montagne ?",
+    metaTitle: "Toiture Résistante Neige Montagne Haute-Savoie — Guide Matériaux | RT Toiture 74",
+    metaDescription: "Quelle couverture choisir pour résister à la neige en Haute-Savoie ? Ardoise, bac acier, tuiles à forte pente : comparatif matériaux, charges réglementaires NV65, conseils expert.",
+    targetKeyword: "toiture resistante neige montagne",
+    wordCount: 1480,
+    readTime: 7,
+    date: "2025-10-15",
+    intro: "En Haute-Savoie, le choix des matériaux de couverture est directement lié à la capacité de la toiture à gérer la neige : son poids (jusqu'à 400 kg/m² pour la neige mouillée), son accumulation dans les angles morts, et les cycles de fonte/regel qui fatiguent les matériaux. Toutes les couvertures ne se valent pas face à ces contraintes. Ce guide expert vous aide à choisir la solution adaptée à votre altitude, votre commune et votre budget.",
+    sections: [
+      {
+        h2: "Les Charges de Neige Réglementaires par Zone en Haute-Savoie",
+        content: "La norme NV65 (Neige et Vent) divise le territoire français en zones de neige. La Haute-Savoie cumule les zones les plus contraignantes : de B1 (Annecy, 55 kg/m²) à D (haute montagne, > 300 kg/m²). Votre couvreur doit obligatoirement respecter ces charges lors de toute réfection ou construction neuve.",
+        priceTable: {
+          title: "Charges de neige réglementaires NV65 — communes Haute-Savoie",
+          headers: ["Zone NV65", "Communes", "Charge au sol (kg/m²)", "Contrainte toiture"],
+          rows: [
+            ["B1", "Annecy, Annemasse, vallée basse", "55", "Standard"],
+            ["B2", "Bonneville, La Roche-sur-Foron", "75", "Modérée"],
+            ["C1", "Cluses, Sallanches (fond vallée)", "100", "Renforcée"],
+            ["C2", "Megève (800–1200 m)", "140", "Forte"],
+            ["C3", "Chamonix, Les Gets, La Clusaz", "200", "Très forte"],
+            ["D", "Haute montagne (> 1800 m)", "> 300", "Exceptionnelle"],
+          ],
+          note: "La charge sur la toiture est réduite selon l'angle de pente — demandez le calcul précis à RT Toiture 74"
+        }
+      },
+      {
+        h2: "Comparatif des Matériaux face à la Neige",
+        h3s: [
+          {
+            h3: "L'Ardoise Naturelle : La Meilleure Performance",
+            content: "L'ardoise naturelle est le matériau de référence pour les zones de montagne enneigée. Sa surface lisse permet un déneigement naturel rapide (moins d'accumulation), sa résistance à la compression est excellente (> 1 000 kg/cm²), et elle supporte sans dommage les cycles de gel/dégel grâce à une absorption d'eau quasi nulle (< 0,6 % selon NF EN 12326). Durée de vie : 80 à 150 ans. Recommandée pour toutes les altitudes > 800 m.",
+          },
+          {
+            h3: "Le Bac Acier : Idéal pour les Grandes Surfaces",
+            content: "Le bac acier (ou acier galvanisé prélaqué) est très utilisé sur les chalets et bâtiments agricoles en Haute-Savoie. Sa surface lisse favorise le glissement de la neige (prévoir des arrête-neige si nécessaire), sa légèreté réduit les charges sur la charpente, et sa durée de vie atteint 40 à 60 ans avec entretien. Le bac acier est particulièrement adapté aux grandes surfaces simples sans complexité architecturale.",
+          },
+          {
+            h3: "Les Tuiles : Attention aux Zones à Fort Enneigement",
+            content: "Les tuiles béton ou terre cuite conviennent parfaitement jusqu'à 800 m d'altitude avec les bonnes précautions. Au-delà, leur texture rugueuse retient la neige (risque d'accumulation excessive) et leur porosité les expose à la gélifraction si elles ne sont pas traitées hydrofuge. Au-dessus de 1 200 m, l'ardoise ou le bac acier sont préférables.",
+          }
+        ],
+        caseStudy: {
+          title: "Réfection en ardoise naturelle à Les Contamines-Montjoie (1 170 m)",
+          content: "M. et Mme Perrin souhaitent rénover leur chalet de 160 m² de toiture à Les Contamines. Ancienne couverture en tuiles béton de 1975. Problème : accumulation de neige excessive dans les angles et 6 tuiles fissurées chaque hiver par le gel. Solution RT Toiture 74 : réfection complète en ardoise d'Angers (NF EN 12326 classe T1), pose sur liteaux inox, arrête-neige intégrés sur les 4 pans. Coût : 28 800 € TTC. Résultat : plus aucun problème de neige depuis 3 hivers."
+        }
+      },
+      {
+        h2: "Les Arrête-Neige : Obligatoires dans Certains Cas",
+        content: "En zone urbaine ou sur les maisons mitoyennes, les arrête-neige sont obligatoires au-dessus des entrées, voies de passage et accès pompiers. Ils retiennent la neige pour éviter les avalanches de toit — qui peuvent être mortelles. RT Toiture 74 calcule le nombre et la disposition des arrête-neige selon la charge de neige réglementaire de votre commune (DTU 40.11 et 40.12). Coût de pose : 15 à 35 €/ml selon le type (barre ou tuile spéciale)."
+      }
+    ],
+    faqs: [
+      { question: "Ma toiture peut-elle s'effondrer sous le poids de la neige ?", answer: "Une maison construite selon les normes NV65 en vigueur supporte les chutes normales sans risque. Les bâtiments à risque sont ceux construits avant 1970 (normes moins strictes), les extensions légères et les vérandas. En cas de doute après des chutes exceptionnelles, appelez RT Toiture 74 pour un diagnostic : 06 69 43 41 42." },
+      { question: "Doit-on déneiger sa toiture en Haute-Savoie ?", answer: "Pour une maison aux normes, non. Pour les bâtiments anciens, extensions légères ou après des chutes exceptionnelles (2× la normale), oui. Ne montez jamais sur une toiture enneigée vous-même — faites appel à des professionnels équipés." },
+      { question: "Quel est le meilleur matériau de toiture pour un chalet en montagne ?", answer: "Pour un chalet traditionnel savoyard : l'ardoise naturelle (durable, esthétique, performante) ou les tuiles de pays (aspect traditionnel jusqu'à 800 m). Pour un chalet contemporain : le bac acier prélaqué ou le zinc joint debout. RT Toiture 74 conseille selon l'altitude, le PLU et votre budget." },
+      { question: "Les panneaux solaires tiennent-ils sous la neige en montagne ?", answer: "Oui si l'installation est conforme à la charge de neige locale. Les panneaux génèrent de la chaleur qui accélère la fonte, réduisant l'accumulation. En revanche, une accumulation excessive peut temporairement réduire la production. Prévoir des arrête-neige spécifiques sous les panneaux." },
+      { question: "Comment savoir si ma toiture est adaptée à la zone de neige de ma commune ?", answer: "Consultez le Plan Local d'Urbanisme (PLU) de votre commune ou demandez à RT Toiture 74 lors d'un diagnostic. Nous calculons les charges de neige selon la norme NV65 et vérifions que votre structure est adaptée. Diagnostic gratuit sur place." },
+    ],
+    relatedSlugs: ["preparer-toiture-hiver-montagne", "couverture-ardoise-prix-avantages", "prix-refaire-toiture-haute-savoie"],
+    relatedServices: ["couverture-toiture"],
+    relatedCommunes: [
+      { slug: "chamonix-mont-blanc", name: "Chamonix" }, { slug: "megeve", name: "Megève" },
+      { slug: "sallanches", name: "Sallanches" }, { slug: "cluses", name: "Cluses" }, { slug: "bonneville", name: "Bonneville" },
+    ]
+  },
+
+  {
+    slug: "reparation-faitage-prix-methode",
+    category: "Rénovation & Réparation",
+    title: "Réparation du Faîtage : Prix, Méthode et Quand Intervenir",
+    metaTitle: "Réparation Faîtage Toiture — Prix 2025 Haute-Savoie | RT Toiture 74",
+    metaDescription: "Faîtage fissuré ou décimenté en Haute-Savoie ? Prix de réparation 2025, méthode de rejointoiement, signes d'alerte. Intervention rapide artisan RGE certifié Qualibat.",
+    targetKeyword: "réparation faîtage prix méthode",
+    wordCount: 1380,
+    readTime: 6,
+    date: "2025-07-18",
+    intro: "Le faîtage est le point le plus exposé de votre toiture : il subit les vents les plus forts, les plus grands écarts thermiques et les impacts directs des UV. En Haute-Savoie, où le foehn peut souffler à 130 km/h et les températures osciller de -15°C la nuit à +35°C sur une toiture sombre en été, le mortier de faîtage vieillit 2 à 3 fois plus vite qu'en régions tempérées. Un faîtage dégradé est la première cause d'infiltration que RT Toiture 74 constate lors de ses diagnostics.",
+    sections: [
+      {
+        h2: "Signes qu'il Faut Réparer le Faîtage",
+        h3s: [
+          {
+            h3: "Inspection Visuelle depuis le Sol",
+            content: "Avec une paire de jumelles, cherchez : fissures longitudinales dans le mortier (même fines), tuiles de faîtage basculées ou mal alignées, espaces visibles entre les tuiles de faîtage, mortier qui s'émiette (morceaux visibles dans les gouttières), ou tuiles de rive au sommet déplacées. Un seul de ces signes suffit pour planifier une intervention avant l'hiver.",
+          },
+          {
+            h3: "Depuis les Combles",
+            content: "Si vous avez accès aux combles, inspectez la ligne de faîtage de l'intérieur : humidité sur la panne faîtière, moisissures noires sur les bois, ou lumière visible à travers les tuiles au niveau du faîte. Ces signes indiquent une dégradation avancée nécessitant une intervention urgente.",
+          }
+        ]
+      },
+      {
+        h2: "Prix de Réparation du Faîtage en 2025",
+        priceTable: {
+          title: "Tarifs réparation faîtage Haute-Savoie 2025",
+          headers: ["Intervention", "Description", "Prix TTC"],
+          rows: [
+            ["Rejointoiement partiel (< 3 m)", "Décapage mortier + mortier hydraulique", "300–600 €"],
+            ["Rejointoiement complet (10 m)", "Dépose faîtière + nouveau mortier + repose", "600–1 200 €"],
+            ["Remplacement tuiles faîtières", "Dépose + nouvelles tuiles + mortier (10 pièces)", "400–900 €"],
+            ["Réfection faîtage + rives complètes", "Faîtage + tuiles de rive + solins", "1 200–3 000 €"],
+            ["Faîtage ventilé (remplacement total)", "Tuiles ventilées sans mortier, 10 ml", "800–1 800 €"],
+          ],
+          note: "Supplément si accès difficile ou pente > 45°. Devis gratuit au 06 69 43 41 42"
+        },
+        h3s: [
+          {
+            h3: "Le Faîtage Ventilé : La Solution Moderne",
+            content: "De plus en plus utilisé lors des réfections, le faîtage ventilé (sans mortier) remplace les tuiles de faîtage traditionnelles scellées au mortier. Il offre une ventilation naturelle de la sous-toiture (réduit la condensation), ne nécessite aucun entretien pendant 30 à 40 ans, et résiste parfaitement au foehn car les tuiles sont clips sur liteaux. RT Toiture 74 recommande cette solution lors de toute réfection de faîtage.",
+            caseStudy: {
+              title: "Maison à Thônes — faîtage fissuré sur 12 mètres (2024)",
+              content: "Mme Jacquemoud, Thônes. Faîtage fissuré sur toute la longueur après l'hiver 2023-2024. Infiltration débutante visible dans les combles. Solution : dépose complète de l'ancien faîtage mortier, nettoyage de la zone, pose de tuiles de faîtage ventilées clips (marque Terreal). Durée : 1 journée. Coût : 1 400 € TTC. Plus aucune intervention prévue sur 40 ans."
+            }
+          }
+        ]
+      },
+      {
+        h2: "Peut-on Réparer le Faîtage Soi-Même ?",
+        content: "Non recommandé pour trois raisons : le faîtage est au point le plus haut de la toiture (risque de chute maximal), le mortier hydraulique de qualité professionnelle (résistance gel/dégel garantie) est différent du mortier standard vendu en GSB, et une mauvaise exécution peut aggraver les problèmes (eau retenue derrière un bouchage mal fait). Le coût d'une intervention professionnelle (300 à 1 200 €) est toujours inférieur au coût des infiltrations résultant d'une réparation mal réalisée."
+      }
+    ],
+    faqs: [
+      { question: "Combien de temps dure la réparation d'un faîtage ?", answer: "Pour un rejointoiement de 10 mètres : 3 à 5 heures avec notre équipe. Pour une réfection complète avec remplacement des tuiles : 1 journée. La prise du mortier hydraulique nécessite 24 à 48h avant d'être opérationnel (à l'abri du gel et de la pluie)." },
+      { question: "Mon assurance couvre-t-elle la réparation du faîtage ?", answer: "Non, si la dégradation est due au vieillissement normal du mortier. Oui, si un foehn ou une tempête a arraché des tuiles de faîtage — dans ce cas, déclarez dans les 5 jours ouvrés. RT Toiture 74 établit un rapport de constat utilisable par votre assureur." },
+      { question: "Quelle est la durée de vie d'un faîtage au mortier ?", answer: "En Haute-Savoie, un faîtage au mortier traditionnel dure 15 à 25 ans selon l'exposition. Un faîtage ventilé (sans mortier) dure 35 à 50 ans. C'est pourquoi RT Toiture 74 recommande le faîtage ventilé lors de toute réfection." },
+      { question: "Le faîtage doit-il être refait lors d'une réfection complète de toiture ?", answer: "Toujours. Le faîtage est systématiquement déposé et refait lors d'une réfection de couverture. C'est inclus dans notre prix global de réfection." },
+      { question: "Comment savoir si c'est le faîtage qui provoque ma fuite ?", answer: "La fuite du faîtage se manifeste généralement en haut des combles, le long de la ligne de faîtage. Elle est souvent plus visible après des pluies avec vent (l'eau est poussée sous les tuiles). RT Toiture 74 réalise un diagnostic gratuit pour localiser précisément l'origine de toute infiltration." },
+    ],
+    relatedSlugs: ["signes-renover-toiture", "infiltration-eau-toit-urgence", "urgence-toiture-tempete"],
+    relatedServices: ["couverture-toiture", "zinguerie"],
+    relatedCommunes: [
+      { slug: "annecy", name: "Annecy" }, { slug: "thones", name: "Thônes" },
+      { slug: "megeve", name: "Megève" }, { slug: "sallanches", name: "Sallanches" }, { slug: "la-roche-sur-foron", name: "La Roche-sur-Foron" },
+    ]
+  },
+
+  {
+    slug: "couverture-ardoise-prix-avantages",
+    category: "Rénovation & Réparation",
+    title: "Couverture en Ardoise : Prix, Avantages et Pourquoi Choisir l'Ardoise en Montagne",
+    metaTitle: "Couverture Ardoise Prix & Avantages Haute-Savoie — Devis Gratuit | RT Toiture 74",
+    metaDescription: "Prix d'une couverture en ardoise naturelle en Haute-Savoie : 130–200 €/m². Avantages pour la montagne, comparatif ardoise vs tuiles, durée de vie 100+ ans. Artisan RGE.",
+    targetKeyword: "couverture ardoise prix avantages",
+    wordCount: 1420,
+    readTime: 6,
+    date: "2025-03-25",
+    intro: "L'ardoise naturelle est le matériau de couverture le plus noble et le plus durable pour les maisons de montagne. En Haute-Savoie, elle équipe les plus beaux chalets et maisons bourgeoises d'Annecy, Megève et Chamonix. Son coût initial (130 à 200 €/m²) est plus élevé que les tuiles béton, mais sa durée de vie de 80 à 150 ans en fait l'investissement le plus rentable sur le long terme. Voici tout ce que vous devez savoir avant de faire votre choix.",
+    sections: [
+      {
+        h2: "Pourquoi l'Ardoise est Parfaite pour la Haute-Savoie",
+        h3s: [
+          {
+            h3: "Résistance au Gel Exceptionnelle",
+            content: "L'ardoise naturelle présente une absorption d'eau quasi nulle (< 0,6 % selon la norme NF EN 12326 classe T1), ce qui la rend pratiquement insensible à la gélifraction. Quand une tuile béton poreuse peut se délaminer après 1 500 cycles gel/dégel (soit environ 15 ans à Megève), une ardoise de qualité supporte 10 000 cycles sans dommage. En altitude, c'est une différence déterminante.",
+          },
+          {
+            h3: "Surface Lisse = Neige qui Glisse",
+            content: "La surface lisse de l'ardoise favorise le glissement naturel de la neige, réduisant l'accumulation par rapport aux tuiles rugueuses. Cette propriété diminue les charges sur la charpente et réduit les risques lors des fortes chutes de neige. Des arrête-neige sont néanmoins à prévoir au-dessus des passages (voir réglementation locale).",
+          },
+          {
+            h3: "Pas d'Entretien Pendant 40 Ans",
+            content: "L'ardoise naturelle ne colonise quasiment pas les mousses et lichens car sa surface dense et lisse offre peu de prise aux racines. Un simple nettoyage à basse pression tous les 15 à 20 ans suffit — contre tous les 5 à 10 ans pour des tuiles béton. Sur 50 ans, l'économie d'entretien est de 3 000 à 8 000 €.",
+          }
+        ]
+      },
+      {
+        h2: "Prix d'une Couverture en Ardoise en 2025",
+        priceTable: {
+          title: "Tarifs couverture ardoise Haute-Savoie 2025",
+          headers: ["Type d'ardoise", "Origine", "Prix pose/m² TTC", "Durée de vie"],
+          rows: [
+            ["Ardoise d'Angers (Anjou)", "France", "160–200 €/m²", "100–150 ans"],
+            ["Ardoise d'Espagne (Galice)", "Espagne", "130–170 €/m²", "80–120 ans"],
+            ["Ardoise du Pays de Galles", "Royaume-Uni", "180–220 €/m²", "120–200 ans"],
+            ["Ardoise fibrociment", "Industrie", "90–130 €/m²", "30–50 ans"],
+          ],
+          note: "Prix TTC incluant dépose de l'ancienne couverture, pose, fournitures et crochets inox. Hors charpente."
+        }
+      },
+      {
+        h2: "Ardoise vs Tuiles : Le Comparatif sur 50 Ans",
+        content: "Sur 50 ans de durée de possession, l'ardoise naturelle est souvent moins chère que les tuiles béton car elle ne nécessite qu'une seule pose vs deux ou trois pour des tuiles. Un calcul simple pour 100 m² de toiture : Tuiles béton (120 €/m² × 1 + 50 € entretien tous les 7 ans × 7 fois) = 12 000 + 3 500 = 15 500 €. Ardoise d'Espagne (150 €/m² × 1 + 200 €/entretien tous les 20 ans × 2 fois) = 15 000 + 400 = 15 400 €. Et l'ardoise dure encore 50 ans de plus.",
+        caseStudy: {
+          title: "Chalet à Megève — réfection ardoise d'Espagne sur 180 m² (2023)",
+          content: "Famille Bonnard, chalet de 180 m² de toiture à Megève (1 100 m d'altitude). Ancienne couverture bac acier de 1978, rouillé et perforé. Choix : ardoise de Galice classe T1, crochets inox 316L, faîtage ventilé. Chantier : 12 jours, équipe de 4 couvreurs. Coût total : 31 500 € TTC. Garantie décennale + certificat ardoise origine traçable. Résultat : aspect exceptionnel, aucune intervention prévue avant 80 ans selon les certifications matériaux."
+        }
+      }
+    ],
+    faqs: [
+      { question: "Quelle ardoise choisir pour une maison en Haute-Savoie ?", answer: "Pour la montagne : ardoise naturelle classe T1 (absorption < 0,6 %) avec crochets en inox 316L (inoxydable). L'ardoise d'Angers (France) est le nec plus ultra, l'ardoise d'Espagne de Galice est une excellente alternative au meilleur rapport qualité/prix. Évitez l'ardoise fibrociment pour les altitudes > 800 m." },
+      { question: "Peut-on poser de l'ardoise sur une ancienne couverture en tuiles ?", answer: "Non, la dépose complète de l'ancienne couverture est nécessaire. L'ardoise nécessite une pose sur liteaux propres et une vérification complète de la charpente. La pose sans dépose préalable (recouvrement) est techniquement impossible avec l'ardoise." },
+      { question: "Faut-il un permis pour couvrir en ardoise en Haute-Savoie ?", answer: "Si vous êtes en zone ABF (Architectes des Bâtiments de France) ou en secteur protégé, une déclaration préalable est obligatoire. Dans les zones normales, si vous changez de matériau (tuiles → ardoise), une déclaration préalable est souvent requise. RT Toiture 74 vérifie la réglementation de votre commune lors du devis." },
+      { question: "Combien de temps dure la pose d'une toiture en ardoise ?", answer: "Pour 100 m² : 8 à 12 jours de chantier. La pose est plus longue qu'avec des tuiles car chaque ardoise est posée individuellement. RT Toiture 74 protège le bâtiment avec une bâche professionnelle tout au long du chantier." },
+      { question: "L'ardoise naturelle est-elle bruyante sous la pluie ?", answer: "Non, contrairement à une idée reçue. L'ardoise naturelle posée sur liteaux avec contre-liteaux et écran HPV est aussi silencieuse que les tuiles. Seul le bac acier peut être bruyant sous la pluie si l'isolation phonique est insuffisante." },
+    ],
+    relatedSlugs: ["prix-refaire-toiture-haute-savoie", "toiture-resistante-neige", "meilleurs-materiaux-couverture-montagne"],
+    relatedServices: ["couverture-toiture"],
+    relatedCommunes: [
+      { slug: "megeve", name: "Megève" }, { slug: "chamonix-mont-blanc", name: "Chamonix" },
+      { slug: "annecy", name: "Annecy" }, { slug: "sallanches", name: "Sallanches" }, { slug: "la-roche-sur-foron", name: "La Roche-sur-Foron" },
+    ]
+  },
+
+  {
+    slug: "aides-isolation-toiture-haute-savoie",
+    category: "Rénovation & Réparation",
+    title: "Aides pour l'Isolation de Toiture en Haute-Savoie : Guide Complet 2025",
+    metaTitle: "Aides Isolation Toiture Haute-Savoie 2025 — MaPrimeRénov', CEE | RT Toiture 74",
+    metaDescription: "Toutes les aides pour isoler votre toiture en Haute-Savoie en 2025 : MaPrimeRénov', Éco-PTZ, CEE, TVA 5,5 %. Conditions, montants et démarches avec artisan RGE certifié.",
+    targetKeyword: "aides isolation toiture haute-savoie",
+    wordCount: 1500,
+    readTime: 7,
+    date: "2025-01-20",
+    intro: "En Haute-Savoie, isoler sa toiture est doublement stratégique : pour le confort thermique (hivers rigoureux, canicules estivales de plus en plus fréquentes) et pour les économies d'énergie (une toiture mal isolée représente 25 à 30 % des déperditions thermiques d'une maison). En 2025, plusieurs dispositifs permettent de financer jusqu'à 90 % du coût de l'isolation par des aides publiques. Mais ces aides nécessitent impérativement de faire appel à un artisan certifié RGE — comme RT Toiture 74.",
+    sections: [
+      {
+        h2: "Les Aides Disponibles en 2025",
+        priceTable: {
+          title: "Aides isolation toiture Haute-Savoie 2025 — résidence principale",
+          headers: ["Aide", "Montant", "Conditions", "Cumulable ?"],
+          rows: [
+            ["MaPrimeRénov'", "Jusqu'à 75 €/m²", "RGE, revenus modestes", "Oui"],
+            ["CEE (Coup de Pouce)", "500–2 000 €", "RGE, remplacement chaudière", "Oui"],
+            ["Éco-PTZ", "Jusqu'à 50 000 €", "Résidence > 2 ans", "Oui"],
+            ["TVA réduite 5,5 %", "Sur tous les travaux", "RGE obligatoire", "Oui"],
+            ["Aide Anah Habiter Mieux", "Jusqu'à 50 % du coût", "Revenus très modestes", "Oui"],
+          ],
+          note: "Montants 2025 — peuvent évoluer en cours d'année. Simulation gratuite chez RT Toiture 74."
+        }
+      },
+      {
+        h2: "MaPrimeRénov' : La Prime Principale",
+        h3s: [
+          {
+            h3: "Comment Fonctionne MaPrimeRénov' pour la Toiture",
+            content: "MaPrimeRénov' finance l'isolation des toitures (par l'extérieur = sarking, ou par l'intérieur = combles) selon votre niveau de revenus. En 2025, les montants varient de 25 €/m² (revenus élevés) à 75 €/m² (revenus très modestes). Pour une maison de 100 m² de toiture, la prime peut atteindre 7 500 €. Condition sine qua non : l'artisan doit être certifié RGE (Reconnu Garant de l'Environnement). RT Toiture 74 est certifié RGE Qualibat.",
+          },
+          {
+            h3: "Les Travaux Éligibles",
+            content: "Sont éligibles à MaPrimeRénov' : l'isolation des combles par l'intérieur (laine de verre, laine de roche), l'isolation des rampants sous la couverture (laine soufflée ou panneaux), et l'isolation par l'extérieur (sarking). La résistance thermique minimale requise est R ≥ 6 m²K/W pour les combles perdus et R ≥ 4 m²K/W pour les rampants.",
+          }
+        ]
+      },
+      {
+        h2: "L'Isolation Sarking : Idéale lors d'une Réfection de Toiture",
+        h3s: [
+          {
+            h3: "Qu'est-ce que le Sarking ?",
+            content: "Le sarking est une isolation par l'extérieur posée sur la charpente, sous la couverture. Des panneaux isolants rigides (PIR, laine de bois) sont posés directement sur les chevrons, puis la couverture est refaite par-dessus. Avantage majeur : aucune perte de surface habitable intérieure, et la charpente est protégée. C'est la solution idéale à combiner avec une réfection de couverture en Haute-Savoie.",
+          },
+          {
+            h3: "Prix et Économies",
+            content: "Le sarking coûte 80 à 150 €/m² en supplément d'une réfection de toiture. Pour 100 m², comptez 8 000 à 15 000 € de surcoût. Avec MaPrimeRénov' (jusqu'à 75 €/m² = 7 500 €) + TVA à 5,5 % (économie ~2 000 €) + Éco-PTZ, le reste à charge peut descendre à 2 000–4 000 €. Et l'économie de chauffage annuelle estimée : 500 à 1 200 € selon la surface et le système de chauffage.",
+            caseStudy: {
+              title: "Maison à Rumilly — sarking + tuiles + MaPrimeRénov' (2024)",
+              content: "M. et Mme Petit, maison de 120 m² de toiture à Rumilly. Réfection complète tuiles + sarking 120 mm PIR. Coût total travaux : 22 500 € TTC. Aides perçues : MaPrimeRénov' 7 200 € + CEE 800 € + Éco-PTZ 10 000 €. Reste à charge effectif : 4 500 €. Économie chauffage estimée : 780 €/an → retour sur investissement en 5,8 ans."
+            }
+          }
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Faut-il être propriétaire pour bénéficier de MaPrimeRénov' ?", answer: "Oui pour les aides principales. Les locataires peuvent toutefois bénéficier des CEE si le propriétaire réalise les travaux. Les propriétaires bailleurs peuvent aussi bénéficier de MaPrimeRénov' sous conditions (logement loué à titre de résidence principale, loyer plafonné)." },
+      { question: "Qu'est-ce que la certification RGE et pourquoi est-elle obligatoire ?", answer: "RGE (Reconnu Garant de l'Environnement) est une certification attribuée par Qualibat ou d'autres organismes aux artisans qui respectent des critères de compétence en rénovation énergétique. Sans artisan RGE, aucune aide (MaPrimeRénov', Éco-PTZ, CEE) n'est accessible. RT Toiture 74 est certifié RGE Qualibat — son numéro est vérifiable sur le site officiel qualibat.com." },
+      { question: "Peut-on cumuler MaPrimeRénov' et l'Éco-PTZ ?", answer: "Oui, depuis 2022 ces deux aides sont cumulables sans condition de revenus pour l'Éco-PTZ. C'est la combinaison la plus courante pour financer l'isolation de toiture : MaPrimeRénov' couvre une partie du coût, l'Éco-PTZ (prêt sans intérêt) finance le reste à charge." },
+      { question: "Combien d'économies d'énergie peut-on espérer après isolation de toiture ?", answer: "En Haute-Savoie, une maison ancienne mal isolée consomme 250 à 400 kWh/m²/an. Après isolation de toiture performante (R ≥ 6), les économies représentent 20 à 35 % de la consommation de chauffage, soit 600 à 1 500 €/an pour une maison de 150 m²." },
+      { question: "Comment demander MaPrimeRénov' ?", answer: "Les démarches se font sur maprimerenov.gouv.fr avant le début des travaux. RT Toiture 74 vous accompagne : nous préparons le dossier technique (attestation RGE, devis conforme), vous guidons dans la demande en ligne et vous fournissons les documents nécessaires après travaux pour le versement de la prime." },
+    ],
+    relatedSlugs: ["prix-refaire-toiture-haute-savoie", "isolation-exterieur-toiture-sarking", "renovation-energetique-commencer"],
+    relatedServices: ["couverture-toiture"],
+    relatedCommunes: [
+      { slug: "annecy", name: "Annecy" }, { slug: "rumilly", name: "Rumilly" },
+      { slug: "bonneville", name: "Bonneville" }, { slug: "annemasse", name: "Annemasse" }, { slug: "sallanches", name: "Sallanches" },
+    ]
+  },
+
+  {
+    slug: "choisir-couvreur-haute-savoie",
+    category: "Rénovation & Réparation",
+    title: "Comment Choisir son Couvreur en Haute-Savoie ? Les 7 Critères Essentiels",
+    metaTitle: "Comment Choisir son Couvreur en Haute-Savoie — Guide 2025 | RT Toiture 74",
+    metaDescription: "7 critères pour choisir un bon couvreur en Haute-Savoie : garantie décennale, RGE, avis clients, devis détaillé. Eviter les arnaques et trouver un artisan de confiance.",
+    targetKeyword: "choisir couvreur haute-savoie",
+    wordCount: 1380,
+    readTime: 6,
+    date: "2025-06-12",
+    intro: "Chaque année en Haute-Savoie, des centaines de propriétaires font appel à des couvreurs non qualifiés ou à des démarcheurs frauduleux qui livrent des travaux de mauvaise qualité sans garantie. Avec des chantiers qui démarrent de 5 000 € et montent régulièrement à 20 000 € ou plus, le choix de votre couvreur est une décision cruciale. Voici les 7 critères que RT Toiture 74 vous recommande de vérifier avant de signer quoi que ce soit.",
+    sections: [
+      {
+        h2: "Les 7 Critères pour Choisir votre Couvreur",
+        h3s: [
+          {
+            h3: "1. La Garantie Décennale : Non Négociable",
+            content: "La garantie décennale couvre les dommages compromettant la solidité de l'ouvrage pendant 10 ans après la réception des travaux. Tout couvreur professionnel doit en disposer. Avant de signer, demandez l'attestation d'assurance décennale en cours de validité (elle mentionne l'année de couverture). Sans cette garantie, vous n'avez aucun recours en cas de problème dans les années suivantes.",
+          },
+          {
+            h3: "2. La Certification RGE (si Travaux Isolation)",
+            content: "Si vos travaux incluent une composante isolation (sarking, combles), le couvreur doit être certifié RGE pour que vous puissiez accéder aux aides (MaPrimeRénov', Éco-PTZ). Vérifiez sur qualibat.com ou renovation-info-service.gouv.fr. RT Toiture 74 est certifié RGE Qualibat numéro 8891.",
+          },
+          {
+            h3: "3. Le SIRET et l'Immatriculation",
+            content: "Vérifiez que l'entreprise est bien immatriculée sur societe.com ou infogreffe.fr. Un couvreur sans SIRET travaille au noir — vous n'avez aucune garantie et vous engagez votre responsabilité. Vérifiez aussi que l'activité déclarée inclut bien la couverture (code NAF 4391A).",
+          },
+          {
+            h3: "4. Les Avis Clients Vérifiés",
+            content: "Google Maps, Trustpilot, Pages Jaunes : cherchez les avis sur plusieurs plateformes. Méfiez-vous des entreprises avec uniquement 5 avis tous 5 étoiles (potentiellement faux). Une bonne entreprise a des dizaines d'avis authentiques avec des commentaires détaillés. RT Toiture 74 affiche 80+ avis Google à 4,9/5 avec des témoignages complets.",
+          },
+          {
+            h3: "5. La Visite sur Place Avant Devis",
+            content: "Refusez systématiquement tout devis établi sans visite préalable. Une toiture ne peut pas être correctement chiffrée sur photo ou par téléphone. Un couvreur sérieux visite le chantier, inspecte la charpente, mesure la surface et relève tous les points singuliers (cheminées, lucarnes, velux) avant de chiffrer.",
+          },
+          {
+            h3: "6. Un Devis Détaillé et Écrit",
+            content: "Le devis doit mentionner : la description précise des travaux, les matériaux utilisés avec références, les quantités, le prix unitaire et total TTC, le taux de TVA applicable, la durée du chantier, et les conditions de garantie. Fuyez les devis en deux lignes ou les accords verbaux.",
+          },
+          {
+            h3: "7. Méfiance envers le Démarchage à Domicile",
+            content: "Les fraudeurs dans le bâtiment utilisent massivement le démarchage à domicile : ils sonnent après une tempête en proposant des 'réparations urgentes' à prix très bas ou très élevé selon la technique. La règle d'or : ne jamais signer un devis le jour même d'un démarchage à domicile. Un vrai artisan n'a pas besoin de démarcher.",
+          }
+        ]
+      },
+      {
+        h2: "Les Red Flags à Fuir",
+        priceTable: {
+          title: "Signaux d'alerte pour identifier un mauvais couvreur",
+          headers: ["Signal d'alerte", "Risque", "Action"],
+          rows: [
+            ["Pas d'attestation décennale", "Aucun recours en cas de sinistre", "Refuser"],
+            ["Devis sans visite préalable", "Mauvais chiffrage, surprises en cours", "Exiger visite"],
+            ["Paiement comptant exigé", "Prestation non réalisée ou bâclée", "Refuser"],
+            ["Prix anormalement bas (< 50 €/m²)", "Matériaux low-cost, main d'oeuvre non qualifiée", "Se méfier"],
+            ["Démarchage après intempérie", "Fraude fréquente, urgence simulée", "Refuser"],
+            ["Pas de SIRET vérifiable", "Travail au noir, responsabilité propriétaire", "Refuser"],
+          ],
+          note: "En cas de doute, contactez RT Toiture 74 pour un devis de comparaison gratuit"
+        }
+      }
+    ],
+    faqs: [
+      { question: "Combien de devis faut-il demander pour des travaux de toiture ?", answer: "3 devis minimum pour des travaux > 5 000 €. Comparez non seulement les prix mais aussi les matériaux proposés, les délais, les garanties et le sérieux du couvreur lors de la visite. Le moins cher n'est presque jamais le meilleur choix en matière de toiture." },
+      { question: "Peut-on négocier le prix d'un couvreur ?", answer: "Modérément. Un artisan sérieux a des coûts fixes (matériaux, assurances, charges) qui ne lui permettent pas de brader. En revanche, vous pouvez négocier des prestations annexes (nettoyage chantier, évacuation des gravats), la date d'intervention (hors saison = parfois meilleur tarif) ou un abonnement d'entretien pluriannuel." },
+      { question: "Que faire si un couvreur fait un mauvais travail ?", answer: "1. Documentez les défauts (photos datées). 2. Envoyez une mise en demeure par lettre recommandée AR. 3. Saisissez la garantie décennale de l'assureur si > 2 ans de travaux. 4. Contactez la DGCCRF ou un médiateur de la consommation. 5. Si pas de décennale : tribunal de proximité ou judiciaire selon le montant." },
+      { question: "RT Toiture 74 intervient dans toute la Haute-Savoie ?", answer: "Oui, RT Toiture 74 intervient dans tout le département 74 : Annecy et agglomération, Annemasse, Bonneville, Cluses, Sallanches, La Roche-sur-Foron, Megève, Chamonix, Saint-Julien-en-Genevois et toutes les communes alentour. Délai moyen : 5 à 15 jours ouvrés hors urgence." },
+      { question: "Comment vérifier la certification RGE d'un couvreur ?", answer: "Sur renovation-info-service.gouv.fr (annuaire officiel) ou qualibat.com, saisissez le nom ou le numéro SIRET de l'entreprise. La certification doit être valide à la date de signature du devis et des travaux." },
+    ],
+    relatedSlugs: ["prix-refaire-toiture-haute-savoie", "aides-isolation-toiture-haute-savoie", "signes-renover-toiture"],
+    relatedServices: ["couverture-toiture", "demoussage-nettoyage-toiture"],
+    relatedCommunes: [
+      { slug: "annecy", name: "Annecy" }, { slug: "annemasse", name: "Annemasse" },
+      { slug: "bonneville", name: "Bonneville" }, { slug: "megeve", name: "Megève" }, { slug: "chamonix-mont-blanc", name: "Chamonix" },
+    ]
+  },
+
 ];
 
 export function getBlogArticle(slug) {
