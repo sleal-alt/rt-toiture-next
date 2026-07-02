@@ -1,19 +1,21 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
+import Link from "next/link";
 import { BLOG_THEMES } from "@/lib/siteData";
+import { BLOG_ARTICLES } from "@/lib/blogContent";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTABand from "@/components/shared/CTABand";
 import GoogleReviews from "@/components/home/GoogleReviews";
-import { Droplets, Hammer, Layers, Zap, Info, ChevronRight, ArrowLeft, BookOpen } from "lucide-react";
+import { Droplets, Hammer, Layers, Zap, Info, ChevronRight, ArrowLeft, BookOpen, Clock } from "lucide-react";
 
 const ICONS = { Droplets, Hammer, Layers, Zap, Info };
 
 const THEME_STYLES = {
-  blue:   { gradient: "from-blue-500 to-blue-700",   light: "bg-blue-50 text-blue-700 border-blue-200",   dot: "bg-blue-500",   iconBg: "bg-blue-100",   iconText: "text-blue-600",   tag: "bg-blue-100 text-blue-600" },
-  orange: { gradient: "from-orange-500 to-red-600",  light: "bg-orange-50 text-orange-700 border-orange-200", dot: "bg-orange-500", iconBg: "bg-orange-100", iconText: "text-orange-600", tag: "bg-orange-100 text-orange-600" },
-  slate:  { gradient: "from-slate-600 to-slate-800", light: "bg-slate-50 text-slate-700 border-slate-200",  dot: "bg-slate-500",  iconBg: "bg-slate-100",  iconText: "text-slate-600",  tag: "bg-slate-100 text-slate-600" },
-  green:  { gradient: "from-emerald-500 to-green-700", light: "bg-green-50 text-green-700 border-green-200", dot: "bg-green-500", iconBg: "bg-green-100",  iconText: "text-green-600",  tag: "bg-green-100 text-green-600" },
-  purple: { gradient: "from-purple-500 to-violet-700", light: "bg-purple-50 text-purple-700 border-purple-200", dot: "bg-purple-500", iconBg: "bg-purple-100", iconText: "text-purple-600", tag: "bg-purple-100 text-purple-600" },
+  blue:   { gradient: "from-blue-500 to-blue-700",   light: "bg-blue-50 text-blue-700 border-blue-200",   dot: "bg-blue-500",   tag: "bg-blue-100 text-blue-600" },
+  orange: { gradient: "from-orange-500 to-red-600",  light: "bg-orange-50 text-orange-700 border-orange-200", dot: "bg-orange-500", tag: "bg-orange-100 text-orange-600" },
+  slate:  { gradient: "from-slate-600 to-slate-800", light: "bg-slate-50 text-slate-700 border-slate-200",  dot: "bg-slate-500",  tag: "bg-slate-100 text-slate-600" },
+  green:  { gradient: "from-emerald-500 to-green-700", light: "bg-green-50 text-green-700 border-green-200", dot: "bg-green-500", tag: "bg-green-100 text-green-600" },
+  purple: { gradient: "from-purple-500 to-violet-700", light: "bg-purple-50 text-purple-700 border-purple-200", dot: "bg-purple-500", tag: "bg-purple-100 text-purple-600" },
 };
 
 function ThemeCard({ theme, onClick }) {
@@ -49,14 +51,13 @@ function ThemeCard({ theme, onClick }) {
   );
 }
 
-function ThemeDetail({ theme, onBack }) {
+function ThemeDetail({ theme, onBack, articleMap }) {
   const style = THEME_STYLES[theme.color];
   const Icon = ICONS[theme.icon];
   const count = theme.subthemes.reduce((a, s) => a + s.articles.length, 0);
 
   return (
     <div>
-      {/* Back */}
       <button
         onClick={onBack}
         className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
@@ -64,7 +65,6 @@ function ThemeDetail({ theme, onBack }) {
         <ArrowLeft className="w-4 h-4" /> Retour aux thèmes
       </button>
 
-      {/* Header */}
       <div className={`flex items-center gap-5 p-6 rounded-2xl bg-gradient-to-br ${style.gradient} text-white mb-8`}>
         <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
           <Icon className="w-7 h-7 text-white" />
@@ -79,7 +79,6 @@ function ThemeDetail({ theme, onBack }) {
         </div>
       </div>
 
-      {/* Sous-thèmes */}
       <div className="space-y-10">
         {theme.subthemes.map((sub, si) => (
           <div key={si}>
@@ -91,22 +90,39 @@ function ThemeDetail({ theme, onBack }) {
               </span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {sub.articles.map((article, ai) => (
-                <div
-                  key={ai}
-                  className="group flex items-start gap-3 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/25 hover:shadow-md cursor-pointer transition-all"
-                >
-                  <BookOpen className="w-4 h-4 text-muted-foreground/40 shrink-0 mt-0.5 group-hover:text-primary transition-colors" />
-                  <div>
-                    <p className="text-sm font-medium leading-snug group-hover:text-primary transition-colors">
-                      {article.title}
-                    </p>
-                    <span className="inline-flex items-center gap-1 mt-1.5 text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                      Lire <ChevronRight className="w-3 h-3" />
-                    </span>
+              {sub.articles.map((article, ai) => {
+                const publishedData = articleMap[article.slug];
+
+                if (publishedData) {
+                  return (
+                    <a
+                      key={ai}
+                      href={`/blog/${article.slug}`}
+                      className="group flex items-start gap-3 p-4 bg-card rounded-xl border border-primary/20 hover:border-primary/50 hover:shadow-md transition-all"
+                    >
+                      <BookOpen className="w-4 h-4 text-primary/60 shrink-0 mt-0.5 group-hover:text-primary transition-colors" />
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-medium leading-snug group-hover:text-primary transition-colors">
+                          {article.title}
+                        </p>
+                        <span className="inline-flex items-center gap-1 mt-1.5 text-xs text-primary font-medium">
+                          <Clock className="w-3 h-3" /> {publishedData.readTime} min · Lire <ChevronRight className="w-3 h-3" />
+                        </span>
+                      </div>
+                    </a>
+                  );
+                }
+
+                return (
+                  <div key={ai} className="flex items-start gap-3 p-4 bg-card rounded-xl border border-border/50 opacity-60">
+                    <BookOpen className="w-4 h-4 text-muted-foreground/30 shrink-0 mt-0.5" />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium leading-snug text-muted-foreground">{article.title}</p>
+                      <span className="inline-block mt-1.5 text-xs text-muted-foreground/50 bg-muted px-2 py-0.5 rounded-full">Bientôt</span>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         ))}
@@ -117,8 +133,20 @@ function ThemeDetail({ theme, onBack }) {
 
 export default function Blog() {
   const [activeTheme, setActiveTheme] = useState(null);
+
+  // Calculé au render — pas au niveau module — pour éviter tout problème de timing
+  const articleMap = useMemo(() => {
+    const map = {};
+    (BLOG_ARTICLES || []).forEach(a => { map[a.slug] = a; });
+    return map;
+  }, []);
+
   const totalArticles = BLOG_THEMES.reduce((acc, t) => acc + t.subthemes.reduce((a, s) => a + s.articles.length, 0), 0);
   const currentTheme = BLOG_THEMES.find(t => t.id === activeTheme);
+
+  const breadcrumbItems = currentTheme
+    ? [{ label: "Blog", href: "/blog" }, { label: currentTheme.label }]
+    : [{ label: "Blog" }];
 
   return (
     <>
@@ -138,11 +166,45 @@ export default function Blog() {
         </div>
       </section>
 
+      {/* Articles récents publiés */}
+      {(BLOG_ARTICLES || []).length > 0 && (
+        <section className="py-12 lg:py-16 border-b border-border/50">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Nouveaux articles</span>
+                <h2 className="font-heading text-2xl font-bold mt-3">Derniers Guides Publiés</h2>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {(BLOG_ARTICLES || []).slice(0, 6).map(a => {
+                const catColors = { "Entretien & Nettoyage": "bg-blue-100 text-blue-700", "Rénovation & Réparation": "bg-orange-100 text-orange-700" };
+                return (
+                  <Link key={a.slug} href={`/blog/${a.slug}`}
+                    className="group bg-card border border-border/50 rounded-2xl p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                  >
+                    <span className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-3 ${catColors[a.category] || "bg-muted text-muted-foreground"}`}>
+                      {a.category}
+                    </span>
+                    <h3 className="font-bold text-sm leading-snug mb-3 group-hover:text-primary transition-colors">{a.title}</h3>
+                    <p className="text-xs text-muted-foreground line-clamp-2 mb-4">{a.intro}</p>
+                    <div className="flex items-center justify-between text-xs text-muted-foreground">
+                      <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{a.readTime} min</span>
+                      <span className="text-primary font-medium flex items-center gap-1">Lire <ChevronRight className="w-3 h-3" /></span>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="py-16 lg:py-24 bg-muted/30 min-h-[60vh]">
         <div className="max-w-7xl mx-auto px-6">
           {!currentTheme ? (
             <>
-              <p className="text-muted-foreground text-sm mb-8 text-center">Choisissez un thème pour explorer les articles</p>
+              <p className="text-muted-foreground text-sm mb-8 text-center">Choisissez un thème pour explorer tous les articles</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {BLOG_THEMES.map(theme => (
                   <ThemeCard key={theme.id} theme={theme} onClick={() => setActiveTheme(theme.id)} />
@@ -150,7 +212,21 @@ export default function Blog() {
               </div>
             </>
           ) : (
-            <ThemeDetail theme={currentTheme} onBack={() => setActiveTheme(null)} />
+            <>
+              {/* Breadcrumb inline dans la section thème — toujours visible */}
+              <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8 flex-wrap">
+                <Link href="/" className="hover:text-primary transition">Accueil</Link>
+                <ChevronRight className="w-3.5 h-3.5 opacity-40" />
+                <Link href="/blog" className="hover:text-primary transition">Blog</Link>
+                <ChevronRight className="w-3.5 h-3.5 opacity-40" />
+                <span className="text-foreground font-semibold">{currentTheme.label}</span>
+              </nav>
+              <ThemeDetail
+                theme={currentTheme}
+                onBack={() => setActiveTheme(null)}
+                articleMap={articleMap}
+              />
+            </>
           )}
         </div>
       </section>

@@ -1,4 +1,5 @@
 import { SERVICES, COMMUNES } from '@/lib/siteData'
+import { BLOG_ARTICLES } from '@/lib/blogContent'
 
 const BASE = 'https://rt-toiture74.fr'
 const NOW = new Date().toISOString().split('T')[0]
@@ -28,5 +29,12 @@ export default function sitemap() {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...servicePages, ...communePages]
+  const blogPages = BLOG_ARTICLES.map(a => ({
+    url: `${BASE}/blog/${a.slug}`,
+    lastModified: a.date,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...servicePages, ...communePages, ...blogPages]
 }
