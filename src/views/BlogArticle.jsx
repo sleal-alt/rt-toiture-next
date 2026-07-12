@@ -341,6 +341,71 @@ export default function BlogArticle() {
             </div>
 
             <RelatedArticles slugs={article.relatedSlugs || []} />
+
+            {/* Maillage interne — Services & Communes */}
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 pt-10 border-t border-border/50">
+              {/* Services liés */}
+              <div>
+                <h2 className="font-heading text-base font-bold mb-4 flex items-center gap-2">
+                  <span className="w-1 h-4 bg-primary rounded-full inline-block" />
+                  Nos services à votre disposition
+                </h2>
+                <ul className="space-y-2">
+                  {(article.category === "Entretien & Nettoyage"
+                    ? ["demoussage-nettoyage-toiture","traitement-fongicide-toiture","traitement-hydrofuge-toiture","zinguerie","revetement-hydrofuge-teinte","peinture-toiture"]
+                    : ["couverture-toiture","etancheite-toit-terrasse-epdm","revetement-hydrofuge-teinte","peinture-toiture","demoussage-nettoyage-toiture","zinguerie"]
+                  ).map(serviceSlug => {
+                    const labels = {
+                      "demoussage-nettoyage-toiture": "Démoussage et Nettoyage Toiture",
+                      "traitement-fongicide-toiture": "Traitement Fongicide Toiture",
+                      "traitement-hydrofuge-toiture": "Traitement Hydrofuge Garanti 10 ans",
+                      "zinguerie": "Zinguerie — Gouttières & Chéneaux",
+                      "revetement-hydrofuge-teinte": "Revêtement Hydrofuge Teinté",
+                      "peinture-toiture": "Peinture Toiture Haute-Savoie",
+                      "couverture-toiture": "Couverture & Réfection Toiture",
+                      "etancheite-toit-terrasse-epdm": "Étanchéité Toit Terrasse EPDM",
+                    };
+                    return (
+                      <li key={serviceSlug}>
+                        <Link href={`/services/${serviceSlug}`} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition group">
+                          <ArrowRight className="w-3.5 h-3.5 shrink-0 group-hover:translate-x-0.5 transition-transform text-primary" />
+                          {labels[serviceSlug]}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+
+              {/* Zones d'intervention */}
+              <div>
+                <h2 className="font-heading text-base font-bold mb-4 flex items-center gap-2">
+                  <span className="w-1 h-4 bg-primary rounded-full inline-block" />
+                  Nous intervenons dans votre secteur
+                </h2>
+                <p className="text-xs text-muted-foreground mb-3">RT Toiture 74 — couvreur certifié RGE — intervient dans tout le département 74.</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    {slug:"annecy",name:"Annecy"},
+                    {slug:"annemasse",name:"Annemasse"},
+                    {slug:"chamonix-mont-blanc",name:"Chamonix"},
+                    {slug:"bonneville",name:"Bonneville"},
+                    {slug:"cluses",name:"Cluses"},
+                    {slug:"megeve",name:"Megève"},
+                    {slug:"sallanches",name:"Sallanches"},
+                    {slug:"saint-julien-en-genevois",name:"Saint-Julien"},
+                    {slug:"la-roche-sur-foron",name:"La Roche-sur-Foron"},
+                    {slug:"veyrier-du-lac",name:"Veyrier-du-Lac"},
+                  ].map(c => (
+                    <Link key={c.slug} href={`/couvreur/${c.slug}`}
+                      className="inline-flex items-center gap-1 text-xs font-medium px-2.5 py-1 rounded-full bg-muted/60 border border-border/50 hover:border-primary/40 hover:text-primary transition">
+                      <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      {c.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </article>
 
           <div className="lg:sticky lg:top-24 self-start">

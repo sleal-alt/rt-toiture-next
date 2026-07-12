@@ -4,36 +4,54 @@ import { BLOG_ARTICLES } from '@/lib/blogContent'
 const BASE = 'https://rt-toiture74.fr'
 const NOW = new Date().toISOString().split('T')[0]
 
+// Articles à haute intention commerciale — priorité maximale dans le blog
+const HIGH_INTENT_SLUGS = new Set([
+  'prix-refaire-toiture-haute-savoie',
+  'cout-demoussage-toiture-2025',
+  'choisir-couvreur-haute-savoie',
+  'aides-isolation-toiture-haute-savoie',
+  'subventions-maprimenrenov-toiture',
+  'certification-rge-importance',
+  'traitement-anti-mousse-professionnel',
+  'traitement-hydrofuge-indispensable',
+])
+
+// Communes à fort volume de recherche — priorité élevée
+const HIGH_PRIORITY_COMMUNES = new Set([
+  'annecy', 'annemasse', 'chamonix-mont-blanc', 'bonneville',
+  'cluses', 'megeve', 'sallanches', 'saint-julien-en-genevois',
+])
+
 export default function sitemap() {
   const staticPages = [
-    { url: BASE, lastModified: NOW, changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${BASE}/services`, lastModified: NOW, changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${BASE}/devis`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE}/contact`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/realisations`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/avis`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE}/a-propos`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.6 },
+    { url: BASE,                          lastModified: NOW, changeFrequency: 'weekly',  priority: 1.0 },
+    { url: `${BASE}/services`,            lastModified: NOW, changeFrequency: 'weekly',  priority: 0.95 },
+    { url: `${BASE}/devis`,               lastModified: NOW, changeFrequency: 'monthly', priority: 0.95 },
+    { url: `${BASE}/contact`,             lastModified: NOW, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/realisations`,        lastModified: NOW, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/avis`,                lastModified: NOW, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/a-propos`,            lastModified: NOW, changeFrequency: 'monthly', priority: 0.65 },
   ]
 
   const servicePages = SERVICES.map(s => ({
     url: `${BASE}/services/${s.slug}`,
     lastModified: NOW,
     changeFrequency: 'monthly',
-    priority: 0.9,
+    priority: 0.92,
   }))
 
   const communePages = COMMUNES.map(c => ({
     url: `${BASE}/couvreur/${c.slug}`,
     lastModified: NOW,
     changeFrequency: 'monthly',
-    priority: 0.8,
+    priority: HIGH_PRIORITY_COMMUNES.has(c.slug) ? 0.88 : 0.80,
   }))
 
   const blogPages = BLOG_ARTICLES.map(a => ({
     url: `${BASE}/blog/${a.slug}`,
     lastModified: a.date,
     changeFrequency: 'monthly',
-    priority: 0.7,
+    priority: HIGH_INTENT_SLUGS.has(a.slug) ? 0.85 : 0.72,
   }))
 
   return [...staticPages, ...servicePages, ...communePages, ...blogPages]

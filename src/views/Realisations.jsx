@@ -10,113 +10,129 @@ import { Play, X, ChevronLeft, ChevronRight } from "lucide-react";
 const PHOTOS = [
   {
     url: "/images/avant-demossage-velux.jpg",
-    alt: "Toiture avant démoussage — lichens et mousses — RT Toiture 74",
-    caption: "Avant démoussage — lichens et mousses",
+    alt: "Toiture avec velux avant démoussage — mousses et lichens à Annecy — RT Toiture 74",
+    title: "Démoussage toiture velux avant intervention — Annecy 74",
+    caption: "Avant démoussage — lichens et mousses sur velux",
     category: "Démoussage",
     label: "AVANT",
   },
   {
     url: "/images/apres-demossage-velux.jpg",
-    alt: "Toiture après démoussage professionnel — RT Toiture 74",
-    caption: "Après démoussage — résultat immédiat",
+    alt: "Toiture velux après démoussage professionnel à Annecy — résultat net RT Toiture 74",
+    title: "Velux toiture propre après démoussage — couvreur Annecy 74",
+    caption: "Après démoussage — résultat immédiat velux",
     category: "Démoussage",
     label: "APRÈS",
   },
   {
     url: "/images/avant-demossage-mousses.jpg",
-    alt: "Mousses et lichens sur tuiles avant traitement — Haute-Savoie",
-    caption: "Tuiles avec mousses avant nettoyage",
+    alt: "Mousses vertes épaisses sur tuiles béton avant traitement à Annemasse — RT Toiture 74",
+    title: "Tuiles béton envahies de mousses avant nettoyage — Annemasse 74",
+    caption: "Tuiles béton avec mousses avant nettoyage",
     category: "Démoussage",
     label: "AVANT",
   },
   {
     url: "/images/apres-demossage-net.jpg",
-    alt: "Tuiles propres après démoussage — RT Toiture 74",
+    alt: "Tuiles rouges propres après démoussage haute-pression à Bonneville — RT Toiture 74",
+    title: "Résultat démoussage toiture tuiles — Bonneville Haute-Savoie",
     caption: "Tuiles nettoyées — aspect neuf retrouvé",
     category: "Démoussage",
     label: "APRÈS",
   },
   {
     url: "/images/avant-demossage-lichens.jpg",
-    alt: "Lichens blancs sur toiture avant intervention",
-    caption: "Lichens blancs — diagnostic avant intervention",
+    alt: "Lichens blancs et orange sur toiture avant intervention à Chamonix — RT Toiture 74",
+    title: "Lichens toiture avant démoussage couvreur Chamonix 74",
+    caption: "Lichens blancs — diagnostic avant intervention Chamonix",
     category: "Démoussage",
     label: "AVANT",
   },
   {
     url: "/images/apres-demossage-propre.jpg",
-    alt: "Toiture nettoyée après démoussage — RT Toiture 74",
-    caption: "Toiture assainie et traitée",
+    alt: "Toiture assainie et traitée après démoussage à Cluses — artisan RGE RT Toiture 74",
+    title: "Toiture nettoyée après démoussage professionnel — Cluses 74",
+    caption: "Toiture assainie et traitée — Cluses",
     category: "Démoussage",
     label: "APRÈS",
   },
   {
     url: "/images/avant-peinture-tuiles.jpg",
-    alt: "Tuiles canal avant revêtement hydrofuge teinté",
-    caption: "Tuiles canal avant traitement",
+    alt: "Tuiles canal avant revêtement hydrofuge teinté à Megève — RT Toiture 74",
+    title: "Tuiles canal avant traitement hydrofuge coloré — Megève 74",
+    caption: "Tuiles canal avant traitement — Megève",
     category: "Peinture & Hydrofuge",
     label: "AVANT",
   },
   {
     url: "/images/apres-peinture-rouge.jpg",
-    alt: "Tuiles après revêtement hydrofuge teinté rouge — RT Toiture 74",
-    caption: "Après revêtement teinté rouge vif",
+    alt: "Tuiles après revêtement hydrofuge teinté rouge à Sallanches — RT Toiture 74",
+    title: "Revêtement hydrofuge rouge — résultat couvreur Sallanches 74",
+    caption: "Après revêtement teinté rouge vif — Sallanches",
     category: "Peinture & Hydrofuge",
     label: "APRÈS",
   },
   {
     url: "/images/pendant-revetement-orange.jpg",
-    alt: "Application revêtement hydrofuge teinté orange en cours",
+    alt: "Application revêtement hydrofuge orange en cours à Saint-Julien-en-Genevois — RT Toiture 74",
+    title: "Pose revêtement hydrofuge teinté orange — Saint-Julien-en-Genevois 74",
     caption: "Application en cours — contraste avant/après",
     category: "Peinture & Hydrofuge",
     label: "EN COURS",
   },
   {
     url: "/images/apres-revetement-orange.jpg",
-    alt: "Toiture après revêtement hydrofuge teinté orange",
+    alt: "Toiture après revêtement hydrofuge orange — résultat chantier à La Roche-sur-Foron — RT Toiture 74",
+    title: "Résultat revêtement hydrofuge orange — La Roche-sur-Foron 74",
     caption: "Résultat — tuiles canal orange vif",
     category: "Peinture & Hydrofuge",
     label: "APRÈS",
   },
   {
     url: "/images/avant-mousse-grise.jpg",
-    alt: "Toiture avec mousse grise dense avant peinture",
-    caption: "Avant peinture — mousse dense",
+    alt: "Toiture tuiles béton grise avec mousses noires avant peinture à Douvaine — RT Toiture 74",
+    title: "Toiture dégradée avant peinture — couvreur Douvaine Haute-Savoie",
+    caption: "Avant peinture — mousse dense et encrassement",
     category: "Peinture & Hydrofuge",
     label: "AVANT",
   },
   {
     url: "/images/apres-peinture-marron.jpg",
-    alt: "Toiture après peinture marron brillant — RT Toiture 74",
+    alt: "Toiture tuiles après peinture marron brillant à Veyrier-du-Lac — RT Toiture 74",
+    title: "Peinture toiture marron — résultat professionnel Veyrier-du-Lac 74",
     caption: "Après peinture marron — éclat retrouvé",
     category: "Peinture & Hydrofuge",
     label: "APRÈS",
   },
   {
     url: "/images/maison-apres-face.jpg",
-    alt: "Maison après rénovation toiture rouge bordeaux — RT Toiture 74",
-    caption: "Vue façade — maison transformée",
+    alt: "Maison avec toiture rénovée vue façade à Annecy — réfection complète RT Toiture 74",
+    title: "Réfection toiture complète maison — Annecy Haute-Savoie RT Toiture 74",
+    caption: "Vue façade — maison transformée après réfection",
     category: "Rénovation complète",
     label: "APRÈS",
   },
   {
     url: "/images/maison-apres-cote.jpg",
-    alt: "Vue côté maison après rénovation toiture",
+    alt: "Vue latérale maison après rénovation toiture complète à Poisy — RT Toiture 74",
+    title: "Rénovation toiture vue côté garage — Poisy Haute-Savoie",
     caption: "Vue côté garage — rénovation complète",
     category: "Rénovation complète",
     label: "APRÈS",
   },
   {
     url: "/images/chantier-chalet.jpg",
-    alt: "Chantier démoussage toiture chalet savoyard",
+    alt: "Chantier démoussage toiture chalet savoyard en montagne — Haute-Savoie RT Toiture 74",
+    title: "Démoussage chalet montagne en cours — couvreur Haute-Savoie RT Toiture 74",
     caption: "Chalet en Haute-Savoie — démoussage en cours",
     category: "Démoussage",
     label: "EN COURS",
   },
   {
     url: "/images/artisan-toit.jpg",
-    alt: "Artisan couvreur RT Toiture 74 en intervention",
-    caption: "Artisan certifié RGE en intervention",
+    alt: "Artisan couvreur certifié RGE RT Toiture 74 en intervention toiture Haute-Savoie",
+    title: "Couvreur RGE Qualibat en intervention — RT Toiture 74 Haute-Savoie",
+    caption: "Artisan certifié RGE en intervention — RT Toiture 74",
     category: "Rénovation complète",
     label: "CHANTIER",
   },
@@ -230,10 +246,10 @@ export default function Realisations() {
       <section className="bg-accent py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4">
-            Nos Réalisations en Haute-Savoie
+            Réalisations Toiture Haute-Savoie — Photos Avant/Après
           </h1>
-          <p className="text-white/70 text-lg">
-            Photos et vidéos de nos chantiers réels — démoussage, peinture toiture, hydrofuge et rénovation.
+          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+            Photos et vidéos de nos vrais chantiers à Annecy, Bonneville, Chamonix, Cluses et dans tout le 74 — démoussage, peinture toiture, hydrofuge, rénovation complète.
           </p>
         </div>
       </section>
@@ -271,8 +287,11 @@ export default function Realisations() {
                 <img
                   src={photo.url}
                   alt={photo.alt}
+                  title={photo.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                   loading="lazy"
+                  width="400"
+                  height="400"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300" />
                 <span className={`absolute top-2 left-2 text-white text-[10px] font-bold px-2 py-0.5 rounded-full ${LABEL_COLORS[photo.label] || "bg-primary"}`}>

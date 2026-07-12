@@ -51,6 +51,20 @@ const localBusinessSchema = {
   description: 'Entreprise de rénovation de couverture et de tout travaux de toiture en Haute-Savoie (74). Démoussage, traitement hydrofuge garanti 10 ans, couverture, zinguerie, étanchéité EPDM Retridex. Artisan certifié RGE.',
   telephone: '+33669434142',
   email: 'maldinireinhardt74@gmail.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '48 Route des Creusettes',
+    addressLocality: 'Poisy',
+    postalCode: '74330',
+    addressRegion: 'Haute-Savoie',
+    addressCountry: 'FR',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 45.8715,
+    longitude: 6.0594,
+  },
+  hasMap: 'https://maps.google.com/?q=48+Route+des+Creusettes+74330+Poisy',
   areaServed: [
     {
       '@type': 'AdministrativeArea',

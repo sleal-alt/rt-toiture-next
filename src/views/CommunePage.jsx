@@ -10,7 +10,7 @@ import GoogleReviews from "@/components/home/GoogleReviews";
 import FAQSection from "@/components/shared/FAQSection";
 import ContactForm from "@/components/shared/ContactForm";
 import ServiceCard from "@/components/shared/ServiceCard";
-import { Phone, ArrowRight, MapPin, Shield, Clock, Award, Check } from "lucide-react";
+import { Phone, ArrowRight, MapPin, Shield, Clock, Award, Check, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CommunePhotoGallery from "@/components/shared/CommunePhotoGallery";
 
@@ -172,6 +172,32 @@ export default function CommunePage() {
                 <ContactForm source={`commune-${slug}`} compact />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Articles de conseil */}
+      <section className="py-12 bg-muted/30 border-t border-border/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="font-heading text-xl font-bold mb-6 flex items-center gap-2">
+            <BookOpen className="w-5 h-5 text-primary" />
+            Guides et conseils pour votre toiture
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { slug: "quand-nettoyer-toiture-montagne", title: "Quand nettoyer sa toiture en montagne ?" },
+              { slug: "mousses-toit-dangereuses", title: "Les mousses sur le toit sont-elles dangereuses ?" },
+              { slug: "prix-refaire-toiture-haute-savoie", title: `Quel prix pour refaire une toiture à ${commune.name} ?` },
+              { slug: "traitement-hydrofuge-indispensable", title: "Traitement hydrofuge : pourquoi c'est indispensable ?" },
+              { slug: "detecter-fuite-toiture", title: "Comment détecter une fuite de toiture ?" },
+              { slug: "cout-demoussage-toiture-2025", title: "Combien coûte un démoussage de toiture en 2025 ?" },
+            ].map(art => (
+              <Link key={art.slug} href={`/blog/${art.slug}`}
+                className="flex items-start gap-3 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/40 hover:shadow-sm transition group">
+                <ArrowRight className="w-4 h-4 text-primary shrink-0 mt-0.5 group-hover:translate-x-0.5 transition-transform" />
+                <span className="text-sm font-medium text-foreground/80 group-hover:text-primary transition">{art.title}</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
