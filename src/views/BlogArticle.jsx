@@ -12,6 +12,7 @@ import { getBlogArticle, getRelatedArticles, BLOG_ARTICLES } from "@/lib/blogCon
 import { Button } from "@/components/ui/button";
 import JsonLd from "@/components/seo/JsonLd";
 import GoogleReviews from "@/components/home/GoogleReviews";
+import { BLOG_IMAGES } from "@/lib/blogImages";
 
 const CATEGORY_COLORS = {
   "Entretien & Nettoyage": { bg: "bg-blue-100 text-blue-700", hero: "from-blue-700 to-blue-900", border: "border-blue-200" },
@@ -223,6 +224,7 @@ export default function BlogArticle() {
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": `https://rt-toiture74.fr/blog/${slug}` },
     about: { "@type": "Service", name: "Rénovation et entretien de toiture", areaServed: "Haute-Savoie" },
+    ...(BLOG_IMAGES[slug] ? { image: `https://rt-toiture74.fr${BLOG_IMAGES[slug].src}` } : {}),
   };
 
   const faqSchema = article.faqs?.length ? {
@@ -268,6 +270,18 @@ export default function BlogArticle() {
       <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10 xl:gap-16">
           <article className="min-w-0">
+            {/* Photo illustration */}
+            {BLOG_IMAGES[slug] && (
+              <div className="w-full rounded-2xl overflow-hidden mb-8 aspect-video max-h-[420px]">
+                <img
+                  src={BLOG_IMAGES[slug].src}
+                  alt={BLOG_IMAGES[slug].alt}
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+              </div>
+            )}
+
             {/* Intro */}
             <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
               className="text-lg leading-relaxed text-muted-foreground mb-8 pb-8 border-b border-border/50">
