@@ -276,8 +276,11 @@ export default function BlogArticle() {
                 <img
                   src={BLOG_IMAGES[slug].src}
                   alt={BLOG_IMAGES[slug].alt}
+                  title={BLOG_IMAGES[slug].title}
                   className="w-full h-full object-cover"
                   loading="eager"
+                  width="800"
+                  height="450"
                 />
               </div>
             )}
