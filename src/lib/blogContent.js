@@ -1635,8 +1635,6 @@ export const BLOG_ARTICLES = [
     ]
   },
 
-,
-
   {
     slug: "zinguerie-tout-savoir",
     category: "Rénovation & Réparation",
@@ -2410,8 +2408,6 @@ export const BLOG_ARTICLES = [
     ]
   },
 
-,
-
   {
     slug: "erreurs-renovation-toiture",
     category: "Rénovation & Réparation",
@@ -2822,8 +2818,6 @@ export const BLOG_ARTICLES = [
       { slug: "chamonix-mont-blanc", name: "Chamonix" }, { slug: "annemasse", name: "Annemasse" }, { slug: "la-roche-sur-foron", name: "La Roche-sur-Foron" },
     ]
   },
-
-,
 
   {
     slug: "panneaux-solaires-toiture-haute-savoie",
