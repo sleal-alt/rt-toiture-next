@@ -2,7 +2,7 @@ import Providers from './providers'
 import JsonLd from '@/components/seo/JsonLd'
 import '@/index.css'
 
-const BASE_URL = 'https://rt-toiture74.fr'
+const BASE_URL = 'https://www.rt-toiture74.fr'
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
@@ -90,6 +90,13 @@ const localBusinessSchema = {
     worstRating: '1',
     reviewCount: '8',
   },
+  review: [
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Marie L.' }, reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, reviewBody: 'Travail impeccable sur notre toiture. Timothée est ponctuel, professionnel et le résultat est parfait. Notre toit a retrouvé sa jeunesse !' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Pierre D.' }, reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, reviewBody: 'Intervention rapide suite à une fuite après les fortes pluies. Réparation efficace et durable. Un artisan de confiance qui connaît son métier.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Sophie M.' }, reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, reviewBody: 'Excellent rapport qualité-prix pour le nettoyage complet de notre toiture. Le traitement hydrofuge garanti 10 ans nous rassure pour l\'avenir.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Jean-Marc R.' }, reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, reviewBody: 'En montagne, il faut un couvreur qui comprend les contraintes climatiques. Timothée a su adapter ses solutions à notre altitude. Résultat parfait.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Isabelle C.' }, reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, reviewBody: 'Rénovation complète de notre toiture de chalet. Un travail soigné, dans les délais et conforme au devis. Nous sommes ravis du résultat.' },
+  ],
   hasCredential: [
     { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Certification RGE', name: 'Reconnu Garant de l\'Environnement' },
   ],

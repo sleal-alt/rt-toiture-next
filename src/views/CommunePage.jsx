@@ -46,7 +46,7 @@ export default function CommunePage() {
   }
 
   const content = getCommuneContent(commune);
-  const BASE = 'https://rt-toiture74.fr';
+  const BASE = 'https://www.rt-toiture74.fr';
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',

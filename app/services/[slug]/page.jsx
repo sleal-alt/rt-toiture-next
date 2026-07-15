@@ -11,9 +11,9 @@ export async function generateMetadata({ params }) {
   return {
     title: service.metaTitle || `${service.title} — Haute-Savoie | RT Toiture`,
     description: service.metaDescription || service.description,
-    alternates: { canonical: `https://rt-toiture74.fr/services/${params.slug}` },
+    alternates: { canonical: `https://www.rt-toiture74.fr/services/${params.slug}` },
     openGraph: {
-      url: `https://rt-toiture74.fr/services/${params.slug}`,
+      url: `https://www.rt-toiture74.fr/services/${params.slug}`,
       title: service.metaTitle || service.title,
       description: service.metaDescription || service.description,
     },

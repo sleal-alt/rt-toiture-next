@@ -216,15 +216,15 @@ export default function BlogArticle() {
     dateModified: article.date,
     wordCount: article.wordCount || 1400,
     inLanguage: "fr-FR",
-    author: { "@type": "Organization", name: "RT Toiture 74", url: "https://rt-toiture74.fr" },
+    author: { "@type": "Organization", name: "RT Toiture 74", url: "https://www.rt-toiture74.fr" },
     publisher: {
       "@type": "Organization",
       name: "RT Toiture 74",
-      logo: { "@type": "ImageObject", url: "https://rt-toiture74.fr/images/logo.png" }
+      logo: { "@type": "ImageObject", url: "https://www.rt-toiture74.fr/images/logo.png" }
     },
-    mainEntityOfPage: { "@type": "WebPage", "@id": `https://rt-toiture74.fr/blog/${slug}` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.rt-toiture74.fr/blog/${slug}` },
     about: { "@type": "Service", name: "Rénovation et entretien de toiture", areaServed: "Haute-Savoie" },
-    ...(BLOG_IMAGES[slug] ? { image: `https://rt-toiture74.fr${BLOG_IMAGES[slug].src}` } : {}),
+    ...(BLOG_IMAGES[slug] ? { image: `https://www.rt-toiture74.fr${BLOG_IMAGES[slug].src}` } : {}),
   };
 
   const faqSchema = article.faqs?.length ? {

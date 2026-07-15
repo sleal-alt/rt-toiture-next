@@ -141,7 +141,7 @@ export default function ServiceDetail() {
   const prevImage = () => setLightbox(i => (i - 1 + images.length) % images.length);
   const nextImage = () => setLightbox(i => (i + 1) % images.length);
 
-  const BASE = 'https://rt-toiture74.fr';
+  const BASE = 'https://www.rt-toiture74.fr';
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',

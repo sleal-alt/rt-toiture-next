@@ -12,9 +12,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `Couvreur à ${name} (${code}) — Artisan Toiture RGE | RT Toiture 74`,
     description: `Couvreur professionnel à ${name} (${code}). Démoussage, traitement hydrofuge garanti 10 ans, couverture, zinguerie. Artisan RGE certifié. Intervention rapide. ☎ Devis gratuit 06 69 43 41 42.`,
-    alternates: { canonical: `https://rt-toiture74.fr/couvreur/${params.slug}` },
+    alternates: { canonical: `https://www.rt-toiture74.fr/couvreur/${params.slug}` },
     openGraph: {
-      url: `https://rt-toiture74.fr/couvreur/${params.slug}`,
+      url: `https://www.rt-toiture74.fr/couvreur/${params.slug}`,
       title: `Couvreur à ${name} — RT Toiture 74`,
       description: `Artisan couvreur certifié RGE à ${name} (${code}). Intervention rapide dans le ${code.slice(0, 2)}. Devis gratuit sous 24h.`,
     },

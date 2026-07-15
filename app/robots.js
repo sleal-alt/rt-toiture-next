@@ -15,7 +15,7 @@ export default function robots() {
         allow: '/',
       },
     ],
-    sitemap: 'https://rt-toiture74.fr/sitemap.xml',
-    host: 'https://rt-toiture74.fr',
+    sitemap: 'https://www.rt-toiture74.fr/sitemap.xml',
+    host: 'https://www.rt-toiture74.fr',
   }
 }

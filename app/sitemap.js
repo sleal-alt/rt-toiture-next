@@ -1,7 +1,7 @@
 import { SERVICES, COMMUNES } from '@/lib/siteData'
 import { BLOG_ARTICLES } from '@/lib/blogContent'
 
-const BASE = 'https://rt-toiture74.fr'
+const BASE = 'https://www.rt-toiture74.fr'
 const NOW = new Date().toISOString().split('T')[0]
 
 // Articles à haute intention commerciale — priorité maximale dans le blog

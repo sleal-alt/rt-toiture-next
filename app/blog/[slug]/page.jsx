@@ -12,17 +12,17 @@ export async function generateMetadata({ params }) {
   return {
     title: article.metaTitle,
     description: article.metaDescription,
-    alternates: { canonical: `https://rt-toiture74.fr/blog/${params.slug}` },
+    alternates: { canonical: `https://www.rt-toiture74.fr/blog/${params.slug}` },
     openGraph: {
-      url: `https://rt-toiture74.fr/blog/${params.slug}`,
+      url: `https://www.rt-toiture74.fr/blog/${params.slug}`,
       title: article.metaTitle,
       description: article.metaDescription,
       type: 'article',
       publishedTime: article.date,
       authors: ['RT Toiture 74'],
       images: BLOG_IMAGES[params.slug]
-        ? [{ url: `https://rt-toiture74.fr${BLOG_IMAGES[params.slug].src}`, width: 1200, height: 630, alt: BLOG_IMAGES[params.slug].alt }]
-        : [{ url: 'https://rt-toiture74.fr/images/hero.png', width: 1200, height: 630, alt: 'RT Toiture 74 — Artisan couvreur Haute-Savoie' }],
+        ? [{ url: `https://www.rt-toiture74.fr${BLOG_IMAGES[params.slug].src}`, width: 1200, height: 630, alt: BLOG_IMAGES[params.slug].alt }]
+        : [{ url: 'https://www.rt-toiture74.fr/images/hero.png', width: 1200, height: 630, alt: 'RT Toiture 74 — Artisan couvreur Haute-Savoie' }],
     },
   }
 }
