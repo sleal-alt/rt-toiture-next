@@ -145,7 +145,7 @@ export default function MapSection() {
               </Link>
             ))}
             <div className="mt-3 pt-3 border-t border-border">
-              <Link href="/couvreur/annecy">
+              <Link href="/couvreur">
                 <Button size="sm" className="w-full gap-2 text-xs">
                   Voir toutes les communes <ArrowRight className="w-3.5 h-3.5" />
                 </Button>

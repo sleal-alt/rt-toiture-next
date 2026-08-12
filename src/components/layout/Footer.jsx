@@ -90,7 +90,7 @@ export default function Footer() {
               </li>
             ))}
             <li>
-              <Link href="/services" className="text-primary font-medium hover:underline">Voir toutes les zones →</Link>
+              <Link href="/couvreur" className="text-primary font-medium hover:underline">Voir toutes les zones →</Link>
             </li>
           </ul>
         </div>
