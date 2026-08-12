@@ -54,6 +54,8 @@ const COMMUNES_GEO = [
   { slug: "chens-sur-leman",         name: "Chens-sur-Léman",         lat: 46.3229, lng: 6.2917 },
   { slug: "yvoire",                  name: "Yvoire",                  lat: 46.3753, lng: 6.3292 },
   { slug: "messery",                 name: "Messery",                 lat: 46.3614, lng: 6.3097 },
+  { slug: "poisy",                   name: "Poisy",                   lat: 45.9278, lng: 6.0725 },
+  { slug: "epagny-metz-tessy",       name: "Épagny-Metz-Tessy",       lat: 45.9408, lng: 6.1000 },
   { slug: "bonne",                   name: "Bonne",                   lat: 46.1669, lng: 6.3523 },
   { slug: "bons-en-chablais",        name: "Bons-en-Chablais",        lat: 46.2857, lng: 6.3626 },
   { slug: "saint-cergues",           name: "Saint-Cergues",           lat: 46.2341, lng: 6.2895 },

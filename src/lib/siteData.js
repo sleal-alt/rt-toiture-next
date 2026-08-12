@@ -121,6 +121,8 @@ export const COMMUNES = [
   { slug: "chens-sur-leman", name: "Chens-sur-Léman", code: "74140", nearby: ["Douvaine", "Sciez", "Veigy-Foncenex"] },
   { slug: "yvoire", name: "Yvoire", code: "74140", nearby: ["Excenevex", "Sciez", "Nernier"] },
   { slug: "messery", name: "Messery", code: "74140", nearby: ["Yvoire", "Nernier", "Chens-sur-Léman"] },
+  { slug: "poisy", name: "Poisy", code: "74330", nearby: ["Annecy", "Épagny-Metz-Tessy", "Pringy"] },
+  { slug: "epagny-metz-tessy", name: "Épagny-Metz-Tessy", code: "74330", nearby: ["Poisy", "Annecy", "Cran-Gevrier"] },
 ];
 
 export const TESTIMONIALS = [
