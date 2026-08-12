@@ -26,6 +26,7 @@ export default function sitemap() {
   const staticPages = [
     { url: BASE,                          lastModified: NOW, changeFrequency: 'weekly',  priority: 1.0 },
     { url: `${BASE}/services`,            lastModified: NOW, changeFrequency: 'weekly',  priority: 0.95 },
+    { url: `${BASE}/couvreur`,            lastModified: NOW, changeFrequency: 'weekly',  priority: 0.90 },
     { url: `${BASE}/devis`,               lastModified: NOW, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE}/contact`,             lastModified: NOW, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/realisations`,        lastModified: NOW, changeFrequency: 'monthly', priority: 0.85 },
