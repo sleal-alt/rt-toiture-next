@@ -41,7 +41,7 @@ function getCommuneContent(commune) {
 ${bati} Notre entreprise de couverture intervient à ${name} pour l'ensemble de nos prestations : démoussage et nettoyage de toiture, traitement fongicide, traitement hydrofuge garanti 10 ans, peinture de toiture, travaux de couverture et de zinguerie, ainsi que l'étanchéité de toit terrasse avec le système EPDM Retridex.
 
 En choisissant RT Toiture 74, artisan couvreur local, vous bénéficiez d'une réactivité maximale, d'un accompagnement personnalisé et d'un suivi rigoureux de votre chantier. Nous connaissons le parc immobilier de ${name} et des communes environnantes — ${nearby.join(", ")} — et vous proposons les solutions les plus adaptées à votre habitation et à son environnement.`,
-    faqs: [...faqLocal, ...baseFaqs],
+    faqs: [...faqLocal.map(f => ({ question: f.q, answer: f.a })), ...baseFaqs],
   };
 }
 
