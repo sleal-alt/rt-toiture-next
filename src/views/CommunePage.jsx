@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import { COMMUNES, SERVICES, COMPANY } from "@/lib/siteData";
+import { COMMUNE_DATA } from "@/lib/communeData";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import JsonLd from "@/components/seo/JsonLd";
@@ -18,22 +19,29 @@ function getCommuneContent(commune) {
   const name = commune.name;
   const code = commune.code;
   const nearby = commune.nearby;
+  const data = COMMUNE_DATA[commune.slug] || {};
+
+  const geo = data.geo || `${name} est une commune de Haute-Savoie desservie par RT Toiture 74.`;
+  const climat = data.climat || `Le climat de ${name} est typique de la Haute-Savoie, avec des précipitations importantes et des hivers enneigés.`;
+  const bati = data.bati || `Le parc immobilier de ${name} comprend des maisons individuelles et des constructions variées nécessitant un entretien régulier de la toiture.`;
+  const faqLocal = data.faqLocal || [];
+
+  const baseFaqs = [
+    { question: `Intervenez-vous rapidement à ${name} ?`, answer: `Oui, basés en Haute-Savoie, nous intervenons rapidement à ${name} (${code}). Pour les urgences (fuites, dégâts de tempête), nous proposons un service d'intervention 7j/7 au 06 69 43 41 42.` },
+    { question: `Êtes-vous certifié RGE pour travailler à ${name} ?`, answer: `Absolument. Nous sommes artisan certifié RGE et couvert par une assurance décennale. Notre certification vous permet de bénéficier des aides de l'État (MaPrimeRénov', CEE, Éco-PTZ) pour vos travaux de rénovation énergétique à ${name}.` },
+    { question: `Quels services proposez-vous à ${name} ?`, answer: `À ${name}, nous proposons : démoussage, nettoyage, traitement fongicide et hydrofuge (garanti 10 ans), peinture de toiture, couverture complète, zinguerie (gouttières zinc, solins, chéneaux) et étanchéité EPDM pour toit terrasse.` },
+  ];
 
   return {
     h1: `Couvreur à ${name} (${code}) — Artisan Toiture Haute-Savoie`,
     metaDesc: `Couvreur professionnel à ${name} (${code}). Rénovation, nettoyage, traitement hydrofuge garanti 10 ans. Artisan RGE. Devis gratuit ☎ 06 69 43 41 42`,
-    intro: `Vous recherchez un couvreur professionnel à ${name} et ses environs ? Reinhart Timothée Rénovation Toiture-Couverture intervient à ${name} (${code}) et dans les communes voisines de ${nearby.join(", ")} pour tous vos travaux de toiture. Artisan certifié RGE basé en Haute-Savoie, nous sommes votre partenaire de confiance pour l'entretien, la rénovation et la réparation de votre couverture.`,
-    body: `À ${name}, les toitures sont soumises aux conditions climatiques typiques de la Haute-Savoie : précipitations abondantes, neige en hiver, variations de température importantes entre les saisons, et humidité ambiante favorisant le développement des mousses et lichens. C'est pourquoi un entretien régulier par un couvreur professionnel est essentiel pour préserver l'intégrité et la longévité de votre couverture.
+    intro: `Vous recherchez un couvreur professionnel à ${name} ? ${geo} RT Toiture 74 intervient à ${name} (${code}) et dans les communes voisines de ${nearby.join(", ")} pour tous vos travaux de toiture.`,
+    body: `${climat}
 
-Notre entreprise de couverture intervient à ${name} pour l'ensemble de nos prestations : démoussage et nettoyage de toiture, traitement fongicide, traitement hydrofuge garanti 10 ans, peinture de toiture, travaux de couverture et de zinguerie, ainsi que l'étanchéité de toit terrasse avec le système EPDM Retridex. Chaque intervention est réalisée avec le plus grand soin par notre équipe qualifiée, dans le respect des normes DTU et des spécificités locales.
+${bati} Notre entreprise de couverture intervient à ${name} pour l'ensemble de nos prestations : démoussage et nettoyage de toiture, traitement fongicide, traitement hydrofuge garanti 10 ans, peinture de toiture, travaux de couverture et de zinguerie, ainsi que l'étanchéité de toit terrasse avec le système EPDM Retridex.
 
-En choisissant un artisan couvreur local à ${name}, vous bénéficiez d'une réactivité maximale, d'un accompagnement personnalisé et d'un suivi rigoureux de votre chantier. Notre connaissance approfondie du parc immobilier de ${name} et des communes environnantes — ${nearby.join(", ")} — nous permet de vous proposer les solutions les plus adaptées à votre habitation.`,
-    faqs: [
-      { question: `Comment obtenir un devis pour mes travaux à ${name} ?`, answer: `Nous réalisons un devis gratuit et personnalisé après diagnostic sur place à ${name}. Contactez-nous par téléphone ou via le formulaire, nous vous répondons sous 24h.` },
-      { question: `Intervenez-vous rapidement à ${name} ?`, answer: `Oui, basés en Haute-Savoie, nous intervenons rapidement à ${name} (${code}). Pour les urgences (fuites, dégâts de tempête), nous proposons un service d'intervention 7j/7.` },
-      { question: `Êtes-vous certifié pour travailler à ${name} ?`, answer: `Absolument. Nous sommes artisan certifié RGE et couvert par une assurance décennale. Notre certification vous permet de bénéficier des aides de l'État pour vos travaux de rénovation énergétique à ${name}.` },
-      { question: `Quels services proposez-vous à ${name} ?`, answer: `À ${name}, nous proposons : démoussage, nettoyage, traitement fongicide et hydrofuge (garanti 10 ans), peinture de toiture, couverture complète, zinguerie et étanchéité EPDM pour toit terrasse.` },
-    ],
+En choisissant RT Toiture 74, artisan couvreur local, vous bénéficiez d'une réactivité maximale, d'un accompagnement personnalisé et d'un suivi rigoureux de votre chantier. Nous connaissons le parc immobilier de ${name} et des communes environnantes — ${nearby.join(", ")} — et vous proposons les solutions les plus adaptées à votre habitation et à son environnement.`,
+    faqs: [...faqLocal, ...baseFaqs],
   };
 }
 
