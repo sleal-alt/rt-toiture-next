@@ -1,12 +1,30 @@
+'use client'
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { COMPANY, SERVICES, COMMUNES } from "@/lib/siteData";
 import { Phone, Mail, MapPin, Clock, Shield, Award, Star, ExternalLink } from "lucide-react";
 import GoogleReviewButton from "@/components/shared/GoogleReviewButton";
 
 const GOOGLE_BUSINESS_URL = "https://share.google/9bjVg8JW1pUi7lBct";
 
+// Mapping silo → label du lien commune dans le footer
+const SILO_CONFIG = {
+  "/zingueur":           { basePath: "/zingueur",          label: "Zingueur",    index: "/zingueur" },
+  "/demoussage-toiture": { basePath: "/demoussage-toiture", label: "Démoussage",  index: "/demoussage-toiture" },
+  "/couvreur":           { basePath: "/couvreur",           label: "Couvreur",    index: "/couvreur" },
+};
+
+function getSiloConfig(pathname) {
+  for (const [prefix, config] of Object.entries(SILO_CONFIG)) {
+    if (pathname.startsWith(prefix)) return config;
+  }
+  return SILO_CONFIG["/couvreur"];
+}
+
 export default function Footer() {
+  const pathname = usePathname();
+  const silo = getSiloConfig(pathname);
   return (
     <footer className="bg-accent text-accent-foreground">
       {/* CTA Band */}
@@ -86,11 +104,11 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             {COMMUNES.slice(0, 10).map(c => (
               <li key={c.slug}>
-                <Link href={`/couvreur/${c.slug}`} className="text-muted-foreground hover:text-primary transition">Couvreur {c.name}</Link>
+                <Link href={`${silo.basePath}/${c.slug}`} className="text-muted-foreground hover:text-primary transition">{silo.label} {c.name}</Link>
               </li>
             ))}
             <li>
-              <Link href="/couvreur" className="text-primary font-medium hover:underline">Voir toutes les zones →</Link>
+              <Link href={silo.index} className="text-primary font-medium hover:underline">Voir toutes les zones →</Link>
             </li>
           </ul>
         </div>
