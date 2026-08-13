@@ -48,6 +48,16 @@ export default function sitemap() {
     priority: HIGH_PRIORITY_COMMUNES.has(c.slug) ? 0.88 : 0.80,
   }))
 
+  const zingueurPages = [
+    { url: `${BASE}/zingueur`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.90 },
+    ...COMMUNES.map(c => ({
+      url: `${BASE}/zingueur/${c.slug}`,
+      lastModified: NOW,
+      changeFrequency: 'monthly',
+      priority: HIGH_PRIORITY_COMMUNES.has(c.slug) ? 0.86 : 0.78,
+    })),
+  ]
+
   const blogPages = BLOG_ARTICLES.map(a => ({
     url: `${BASE}/blog/${a.slug}`,
     lastModified: a.date,
@@ -55,5 +65,5 @@ export default function sitemap() {
     priority: HIGH_INTENT_SLUGS.has(a.slug) ? 0.85 : 0.72,
   }))
 
-  return [...staticPages, ...servicePages, ...communePages, ...blogPages]
+  return [...staticPages, ...servicePages, ...communePages, ...zingueurPages, ...blogPages]
 }
