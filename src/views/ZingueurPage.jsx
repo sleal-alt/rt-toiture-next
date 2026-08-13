@@ -33,15 +33,27 @@ function getZingueurContent(commune) {
   const geo = data.geo || `${name} est une commune de Haute-Savoie desservie par RT Toiture 74.`;
   const climat = data.climat || `Le climat de ${name} est typique de la Haute-Savoie avec des précipitations importantes.`;
   const bati = data.bati || `Le parc immobilier de ${name} comprend des maisons individuelles et constructions variées.`;
+  const expertiseZingueur = data.expertiseZingueur || `À ${name}, notre expertise en zinguerie couvre l'ensemble des prestations : gouttières zinc naturel, chéneaux encaissés, solins de cheminée et de velux, noues et faîtages en zinc. Nous utilisons exclusivement du zinc titane (norme EN 988) d'épaisseur adaptée aux conditions climatiques locales, garantissant une durée de vie de 40 à 60 ans.`;
+  const processus = data.processus || `Chaque intervention de zinguerie à ${name} débute par un diagnostic complet : contrôle d'épaisseur des éléments existants, test d'étanchéité des soudures, vérification des fixations. Devis détaillé sous 24h, réalisation par notre équipe salariée, garantie décennale.`;
+  const realisation = data.realisation || `Nous intervenons régulièrement à ${name} pour des remplacements de gouttières PVC par du zinc naturel, des reprises de solins, des réfections de chéneaux et des poses d'arrête-neige.`;
 
   return {
     h1: `Zingueur à ${name} (${code}) — Gouttières Zinc & Zinguerie`,
-    intro: `Vous cherchez un zingueur qualifié à ${name} ? ${geo} RT Toiture 74 intervient à ${name} (${code}) pour tous vos travaux de zinguerie : gouttières zinc, chéneaux, solins et zinguerie de façade.`,
-    body: `${climat} C'est pourquoi une zinguerie de qualité est indispensable à ${name} : des gouttières et chéneaux bien dimensionnés évacuent efficacement les eaux pluviales et protègent les fondations, les façades et la structure de votre bâtiment.
-
-${bati} Nos zingueurs interviennent à ${name} pour toutes les installations et réparations : remplacement de gouttières zinc ou aluminium, pose de chéneaux encastrés, reprise des solins autour des cheminées et velux, réfection des noues et faîtages en zinc. Nous utilisons exclusivement du zinc naturel (qualité VMZINC) qui garantit une durée de vie de 40 à 60 ans selon les expositions.
-
-En tant qu'artisan RGE certifié, RT Toiture 74 vous accompagne de A à Z dans vos travaux de zinguerie à ${name} : diagnostic gratuit, devis personnalisé, réalisation soignée et garantie décennale sur tous nos travaux. Nous intervenons également dans les communes proches de ${nearby.join(", ")}.`,
+    intro: `Vous cherchez un zingueur qualifié à ${name} ? ${geo} RT Toiture 74 intervient à ${name} (${code}) pour tous vos travaux de zinguerie : gouttières zinc, chéneaux, solins, noues et zinguerie de façade.`,
+    sections: [
+      {
+        h2: `Expertise zinguerie locale à ${name}`,
+        text: expertiseZingueur,
+      },
+      {
+        h2: `Contexte et spécificités de ${name}`,
+        text: `${climat}\n\n${bati}\n\nUne zinguerie bien dimensionnée et correctement exécutée protège les fondations, les façades et la structure de votre bâtiment. À ${name}, nous adaptons le choix des matériaux et des sections hydrauliques aux conditions climatiques locales.`,
+      },
+      {
+        h2: `Notre processus d'intervention à ${name}`,
+        text: `${processus}\n\n${realisation}\n\nNous intervenons également dans les communes voisines : ${nearby.join(", ")}.`,
+      },
+    ],
     faqs: [
       {
         question: `Pourquoi remplacer les gouttières en PVC par des gouttières zinc à ${name} ?`,
@@ -151,8 +163,13 @@ export default function ZingueurPage() {
               <h2 className="font-heading text-2xl font-bold mb-6">
                 Votre Zingueur de Confiance à {commune.name}
               </h2>
-              {content.body.split("\n\n").map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
+              {content.sections.map((section, si) => (
+                <div key={si} className="mb-8">
+                  <h3 className="font-heading text-xl font-semibold mb-3 text-foreground">{section.h2}</h3>
+                  {section.text.split("\n\n").map((p, pi) => (
+                    <p key={pi} className="text-muted-foreground leading-relaxed mb-3">{p}</p>
+                  ))}
+                </div>
               ))}
 
               {/* Services zinguerie */}

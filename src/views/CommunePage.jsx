@@ -23,24 +23,37 @@ function getCommuneContent(commune) {
 
   const geo = data.geo || `${name} est une commune de Haute-Savoie desservie par RT Toiture 74.`;
   const climat = data.climat || `Le climat de ${name} est typique de la Haute-Savoie, avec des précipitations importantes et des hivers enneigés.`;
-  const bati = data.bati || `Le parc immobilier de ${name} comprend des maisons individuelles et des constructions variées nécessitant un entretien régulier de la toiture.`;
+  const bati = data.bati || `Le parc immobilier de ${name} comprend des maisons individuelles et des constructions variées.`;
+  const expertise = data.expertise || `Notre équipe intervient régulièrement à ${name} pour tous types de travaux de couverture, avec une connaissance approfondie des pathologies locales liées au climat de Haute-Savoie.`;
+  const materiaux = data.materiaux || `Tuiles mécaniques en terre cuite ou béton, ardoise naturelle, zinc pour la zinguerie.`;
+  const processus = data.processus || `Chaque intervention à ${name} débute par un diagnostic gratuit sur place, suivi d'un devis détaillé remis sous 24h. Les travaux sont réalisés par notre équipe salariée avec remise d'un certificat de garantie décennale à la réception.`;
+  const realisation = data.realisation || `Nous intervenons régulièrement à ${name} pour des démoussages, traitements hydrofuges, réfections de couverture et travaux de zinguerie.`;
   const faqLocal = data.faqLocal || [];
 
   const baseFaqs = [
-    { question: `Intervenez-vous rapidement à ${name} ?`, answer: `Oui, basés en Haute-Savoie, nous intervenons rapidement à ${name} (${code}). Pour les urgences (fuites, dégâts de tempête), nous proposons un service d'intervention 7j/7 au 06 69 43 41 42.` },
-    { question: `Êtes-vous certifié RGE pour travailler à ${name} ?`, answer: `Absolument. Nous sommes artisan certifié RGE et couvert par une assurance décennale. Notre certification vous permet de bénéficier des aides de l'État (MaPrimeRénov', CEE, Éco-PTZ) pour vos travaux de rénovation énergétique à ${name}.` },
-    { question: `Quels services proposez-vous à ${name} ?`, answer: `À ${name}, nous proposons : démoussage, nettoyage, traitement fongicide et hydrofuge (garanti 10 ans), peinture de toiture, couverture complète, zinguerie (gouttières zinc, solins, chéneaux) et étanchéité EPDM pour toit terrasse.` },
+    { question: `Intervenez-vous en urgence à ${name} ?`, answer: `Oui, nous assurons un service d'intervention 7j/7 à ${name} (${code}) pour les urgences : fuite active, tuiles arrachées par le vent, dégâts de tempête. Appelez le 06 69 43 41 42. Nous pouvons réaliser un bâchage provisoire dans la journée si nécessaire, pour protéger l'intérieur en attendant la réparation définitive.` },
+    { question: `Êtes-vous certifié RGE pour travailler à ${name} ?`, answer: `Oui, RT Toiture 74 est artisan certifié RGE Qualibat, couvert par une assurance décennale et une responsabilité civile professionnelle. Notre certification RGE vous permet de bénéficier des aides de l'État (MaPrimeRénov', CEE, Éco-PTZ) pour vos travaux de rénovation thermique de toiture à ${name}. Attestations remises avant le début du chantier.` },
+    { question: `Quels sont vos délais d'intervention à ${name} ?`, answer: `Pour un diagnostic et devis à ${name}, nous intervenons sous 48 à 72h. Pour les travaux planifiés, le délai est généralement de 1 à 3 semaines selon la période et la charge de travail. En urgence, nous faisons notre maximum pour intervenir sous 24h. Contactez-nous au 06 69 43 41 42.` },
   ];
 
   return {
     h1: `Couvreur à ${name} (${code}) — Artisan Toiture Haute-Savoie`,
     metaDesc: `Couvreur professionnel à ${name} (${code}). Rénovation, nettoyage, traitement hydrofuge garanti 10 ans. Artisan RGE. Devis gratuit ☎ 06 69 43 41 42`,
-    intro: `Vous recherchez un couvreur professionnel à ${name} ? ${geo} RT Toiture 74 intervient à ${name} (${code}) et dans les communes voisines de ${nearby.join(", ")} pour tous vos travaux de toiture.`,
-    body: `${climat}
-
-${bati} Notre entreprise de couverture intervient à ${name} pour l'ensemble de nos prestations : démoussage et nettoyage de toiture, traitement fongicide, traitement hydrofuge garanti 10 ans, peinture de toiture, travaux de couverture et de zinguerie, ainsi que l'étanchéité de toit terrasse avec le système EPDM Retridex.
-
-En choisissant RT Toiture 74, artisan couvreur local, vous bénéficiez d'une réactivité maximale, d'un accompagnement personnalisé et d'un suivi rigoureux de votre chantier. Nous connaissons le parc immobilier de ${name} et des communes environnantes — ${nearby.join(", ")} — et vous proposons les solutions les plus adaptées à votre habitation et à son environnement.`,
+    intro: `Vous recherchez un couvreur qualifié à ${name} ? ${geo} RT Toiture 74 intervient à ${name} (${code}) et dans les communes voisines (${nearby.join(", ")}) pour tous vos travaux de toiture et de couverture.`,
+    sections: [
+      {
+        h2: `Expertise locale — Couvreur à ${name}`,
+        text: expertise,
+      },
+      {
+        h2: `Contexte climatique et matériaux à ${name}`,
+        text: `${climat}\n\n${bati}\n\nMatériaux recommandés à ${name} : ${materiaux}`,
+      },
+      {
+        h2: `Notre processus d'intervention à ${name}`,
+        text: `${processus}\n\n${realisation}`,
+      },
+    ],
     faqs: [...faqLocal.map(f => ({ question: f.q, answer: f.a })), ...baseFaqs],
   };
 }
@@ -128,8 +141,13 @@ export default function CommunePage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <h2 className="font-heading text-2xl font-bold mb-6">Votre Couvreur de Confiance à {commune.name}</h2>
-              {content.body.split("\n\n").map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
+              {content.sections.map((section, si) => (
+                <div key={si} className="mb-8">
+                  <h3 className="font-heading text-xl font-semibold mb-3 text-foreground">{section.h2}</h3>
+                  {section.text.split("\n\n").map((p, pi) => (
+                    <p key={pi} className="text-muted-foreground leading-relaxed mb-3">{p}</p>
+                  ))}
+                </div>
               ))}
 
               {/* Services */}
