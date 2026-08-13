@@ -172,6 +172,21 @@ const DEFAULT_PHOTOS = [
   { url: SI["etancheite-toit-terrasse-epdm"][0].url, alt: "Étanchéité toit terrasse EPDM Haute-Savoie", label: "Étanchéité toit terrasse" },
 ];
 
+const COMMUNE_VIDEOS = [
+  {
+    src: "/videos/avant-demoussage.mp4",
+    poster: "/images/chantier-avant-demoussage-velux.jpg",
+    label: "AVANT",
+    labelColor: "bg-red-500",
+  },
+  {
+    src: "/videos/apres-demoussage.mp4",
+    poster: "/images/chantier-apres-demoussage-velux.jpg",
+    label: "APRÈS",
+    labelColor: "bg-emerald-600",
+  },
+];
+
 export default function CommunePhotoGallery({ commune, slug }) {
   const photos = COMMUNE_PHOTOS[slug] || DEFAULT_PHOTOS;
 
@@ -181,7 +196,9 @@ export default function CommunePhotoGallery({ commune, slug }) {
         <h2 className="font-heading text-xl md:text-2xl font-bold mb-6 text-center">
           Nos réalisations à {commune} et en Haute-Savoie
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+
+        {/* Grille photos */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
           {photos.map((photo, i) => (
             <div key={i} className="group relative rounded-xl overflow-hidden aspect-[4/3] bg-muted">
               <img
@@ -198,6 +215,30 @@ export default function CommunePhotoGallery({ commune, slug }) {
             </div>
           ))}
         </div>
+
+        {/* Vidéos avant / après */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {COMMUNE_VIDEOS.map((v, i) => (
+            <div key={i} className="relative rounded-xl overflow-hidden bg-muted">
+              <span className={`absolute top-3 left-3 z-10 text-white text-xs font-bold px-2.5 py-1 rounded-full ${v.labelColor}`}>
+                {v.label}
+              </span>
+              <video
+                src={v.src}
+                poster={v.poster}
+                controls
+                muted
+                playsInline
+                preload="none"
+                className="w-full aspect-video object-cover"
+                aria-label={`Vidéo ${v.label.toLowerCase()} démoussage toiture à ${commune}`}
+              />
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-xs text-muted-foreground mt-3">
+          Vidéos de vrais chantiers réalisés par RT Toiture 74 en Haute-Savoie
+        </p>
       </div>
     </section>
   );
