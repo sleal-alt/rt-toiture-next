@@ -3,12 +3,28 @@ import Link from "next/link";
 import { SERVICES, COMMUNES } from "@/lib/siteData";
 import { ArrowRight, MapPin } from "lucide-react";
 
-// 5 communes clés à afficher en priorité
-const KEY_COMMUNES = ["annecy", "annemasse", "cluses", "sallanches", "megeve", "chamonix-mont-blanc", "bonneville", "saint-julien-en-genevois"];
+// Mapping service slug → chemin silo commune
+// À compléter au fur et à mesure des nouveaux silos créés
+const SERVICE_TO_COMMUNE_PATH = {
+  "zinguerie":                       "/zingueur",
+  "demoussage-nettoyage-toiture":    "/couvreur",   // → /demoussage-toiture quand le silo sera créé
+  "traitement-fongicide-toiture":    "/couvreur",
+  "traitement-hydrofuge-toiture":    "/couvreur",
+  "revetement-hydrofuge-teinte":     "/couvreur",
+  "peinture-toiture":                "/couvreur",
+  "couverture-toiture":              "/couvreur",
+  "etancheite-toit-terrasse-epdm":   "/couvreur",
+};
+
+const KEY_COMMUNES = [
+  "annecy", "annemasse", "cluses", "sallanches",
+  "megeve", "chamonix-mont-blanc", "bonneville", "saint-julien-en-genevois",
+];
 
 export default function InternalLinksBlock({ slug, serviceName }) {
   const otherServices = SERVICES.filter(s => s.slug !== slug).slice(0, 6);
   const featuredCommunes = COMMUNES.filter(c => KEY_COMMUNES.includes(c.slug)).slice(0, 8);
+  const communePath = SERVICE_TO_COMMUNE_PATH[slug] || "/couvreur";
 
   return (
     <section className="py-14 bg-muted/40 border-t border-border/50">
@@ -42,10 +58,10 @@ export default function InternalLinksBlock({ slug, serviceName }) {
             Zones d'intervention — Haute-Savoie (74)
           </h2>
           <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-            Nous intervenons également pour le {serviceName.toLowerCase()} à{" "}
+            Nous intervenons également pour {serviceName.toLowerCase()} à{" "}
             {featuredCommunes.slice(0, 3).map((c, i) => (
               <span key={c.slug}>
-                <Link href={`/couvreur/${c.slug}`} className="text-primary hover:underline font-medium">{c.name}</Link>
+                <Link href={`${communePath}/${c.slug}`} className="text-primary hover:underline font-medium">{c.name}</Link>
                 {i < 2 ? ", " : ""}
               </span>
             ))}{" "}et dans toute la Haute-Savoie.
@@ -54,7 +70,7 @@ export default function InternalLinksBlock({ slug, serviceName }) {
             {featuredCommunes.map(c => (
               <Link
                 key={c.slug}
-                href={`/couvreur/${c.slug}`}
+                href={`${communePath}/${c.slug}`}
                 className="inline-flex items-center gap-1 text-xs font-medium px-3 py-1.5 rounded-full bg-card border border-border/50 hover:border-primary/40 hover:text-primary transition"
               >
                 <MapPin className="w-3 h-3" />
