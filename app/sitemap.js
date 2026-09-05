@@ -27,6 +27,7 @@ export default function sitemap() {
     { url: BASE,                          lastModified: NOW, changeFrequency: 'weekly',  priority: 1.0 },
     { url: `${BASE}/services`,            lastModified: NOW, changeFrequency: 'weekly',  priority: 0.95 },
     { url: `${BASE}/couvreur`,            lastModified: NOW, changeFrequency: 'weekly',  priority: 0.90 },
+    { url: `${BASE}/demoussage-toiture`, lastModified: NOW, changeFrequency: 'weekly',  priority: 0.92 },
     { url: `${BASE}/devis`,               lastModified: NOW, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE}/contact`,             lastModified: NOW, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/realisations`,        lastModified: NOW, changeFrequency: 'monthly', priority: 0.85 },
@@ -65,5 +66,14 @@ export default function sitemap() {
     priority: HIGH_INTENT_SLUGS.has(a.slug) ? 0.85 : 0.72,
   }))
 
-  return [...staticPages, ...servicePages, ...communePages, ...zingueurPages, ...blogPages]
+  const demoussagePages = [
+    ...COMMUNES.map(c => ({
+      url: `${BASE}/demoussage-toiture/${c.slug}`,
+      lastModified: NOW,
+      changeFrequency: 'monthly',
+      priority: HIGH_PRIORITY_COMMUNES.has(c.slug) ? 0.90 : 0.82,
+    })),
+  ]
+
+  return [...staticPages, ...servicePages, ...communePages, ...zingueurPages, ...demoussagePages, ...blogPages]
 }
