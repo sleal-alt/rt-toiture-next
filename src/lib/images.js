@@ -9,14 +9,14 @@ export const IMAGES = {
 
 export const SERVICE_IMAGES = {
   "demoussage-nettoyage-toiture": [
+    { url: "/images/chantier-apres-demoussage-velux.jpg", alt: "Toiture propre après démoussage professionnel — velux et cheminée Haute-Savoie RT Toiture 74", caption: "Résultat final — toiture assainie et protégée" },
     { url: "/images/tuiles-propres-apres-nettoyage.jpg", alt: "Tuiles propres après démoussage professionnel Haute-Savoie — RT Toiture 74", caption: "Après nettoyage — résultat immédiat" },
-    { url: "/images/chantier-apres-demoussage-velux.jpg", alt: "Toiture nettoyée après démoussage RT Toiture 74 Haute-Savoie", caption: "Résultat final — toiture assainie" },
     { url: "/images/tuiles-mousses-lichens-avant.jpg", alt: "Tuiles avec mousses et lichens avant démoussage Haute-Savoie", caption: "Avant intervention — mousse et lichens" },
     { url: "/images/chantier-avant-demoussage-velux.jpg", alt: "Toiture couverte de lichens avant démoussage RT Toiture 74", caption: "État avant intervention — diagnostic complet" },
   ],
   "traitement-fongicide-toiture": [
-    { url: "/images/tuiles-propres-apres-nettoyage.jpg", alt: "Tuiles propres après traitement fongicide Haute-Savoie — RT Toiture 74", caption: "Après traitement fongicide — protection 3-5 ans" },
-    { url: "/images/chantier-apres-demoussage-velux.jpg", alt: "Toiture traitée fongicide — résultat RT Toiture 74", caption: "Résultat final — toiture assainie" },
+    { url: "/images/chantier-apres-demoussage-velux.jpg", alt: "Toiture traitée fongicide — résultat net Haute-Savoie RT Toiture 74", caption: "Résultat final — toiture assainie et protégée 3-5 ans" },
+    { url: "/images/tuiles-propres-apres-nettoyage.jpg", alt: "Tuiles propres après traitement fongicide Haute-Savoie — RT Toiture 74", caption: "Après traitement fongicide — protection durable" },
     { url: "/images/tuiles-mousses-lichens-avant.jpg", alt: "Mousses et lichens sur tuiles avant traitement fongicide Haute-Savoie", caption: "Avant traitement — prolifération fongique" },
     { url: "/images/chantier-avant-demoussage-velux.jpg", alt: "Toiture avec lichens avant traitement fongicide", caption: "État avant intervention — bilan complet" },
   ],
