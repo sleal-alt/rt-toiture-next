@@ -64,7 +64,7 @@ const localBusinessSchema = {
     latitude: 45.8715,
     longitude: 6.0594,
   },
-  hasMap: 'https://maps.google.com/?q=48+Route+des+Creusettes+74330+Poisy',
+  hasMap: 'https://www.google.com/maps/place/Reinhardt+Timoth%C3%A9e+R%C3%A9novation+Toiture-Couverture/@46.044944,6.4246654,17z/data=!3m1!1e3!4m6!3m5!1s0x2f687d4b5381194f:0x4bda54dbd36ba11f!8m2!3d46.044944!4d6.4246654!16s%2Fg%2F11yx_02np3',
   areaServed: [
     {
       '@type': 'AdministrativeArea',
@@ -87,7 +87,9 @@ const localBusinessSchema = {
     { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Certification RGE', name: 'Reconnu Garant de l\'Environnement' },
   ],
   knowsAbout: ['Démoussage toiture', 'Traitement hydrofuge', 'Couverture', 'Zinguerie', 'Étanchéité EPDM', 'Peinture toiture'],
-  sameAs: ['https://share.google/9bjVg8JW1pUi7lBct'],
+  sameAs: [
+    'https://www.google.com/maps/place/Reinhardt+Timoth%C3%A9e+R%C3%A9novation+Toiture-Couverture/@46.044944,6.4246654,17z/data=!3m1!1e3!4m6!3m5!1s0x2f687d4b5381194f:0x4bda54dbd36ba11f!8m2!3d46.044944!4d6.4246654!16s%2Fg%2F11yx_02np3',
+  ],
   taxID: '938 199 213',
   legalName: 'Reinhart Timothée Rénovation Toiture-Couverture',
 }
