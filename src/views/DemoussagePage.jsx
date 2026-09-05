@@ -43,6 +43,7 @@ const PHOTOS_DEMOUSSAGE = [
 ]
 
 const VIDEOS_DEMOUSSAGE = [
+  { src: "/videos/drone-demossage.mp4", poster: "/images/chantier-demoussage-chalet-savoie.jpg", label: "VUE DRONE", labelColor: "bg-purple-600" },
   { src: "/videos/avant-demoussage.mp4", poster: "/images/chantier-avant-demoussage-velux.jpg", label: "AVANT", labelColor: "bg-red-500" },
   { src: "/videos/apres-demoussage.mp4", poster: "/images/chantier-apres-demoussage-velux.jpg", label: "APRÈS", labelColor: "bg-emerald-600" },
 ]
@@ -352,8 +353,8 @@ export default function DemoussagePage() {
           </div>
 
           {/* Vidéos avant/après */}
-          <h3 className="font-heading text-lg font-bold mb-4 text-center">Vidéos chantier — Avant / Après démoussage</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+          <h3 className="font-heading text-lg font-bold mb-4 text-center">Vidéos chantier — Vue drone, Avant & Après démoussage</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {VIDEOS_DEMOUSSAGE.map((v, i) => (
               <div key={i} className="relative rounded-xl overflow-hidden bg-black">
                 <span className={`absolute top-2 left-2 z-10 text-white text-xs font-bold px-2 py-0.5 rounded ${v.labelColor}`}>

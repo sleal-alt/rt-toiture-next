@@ -269,6 +269,29 @@ export default function ServiceDetail() {
                       </button>
                     ))}
                   </div>
+
+                  {/* Vidéos chantier — démoussage uniquement */}
+                  {slug === "demoussage-nettoyage-toiture" && (
+                    <div className="mt-8">
+                      <h3 className="font-heading text-lg font-bold mb-4">Vidéos chantier — Vue drone, Avant & Après démoussage</h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        {[
+                          { src: "/videos/drone-demossage.mp4", poster: "/images/chantier-demoussage-chalet-savoie.jpg", label: "VUE DRONE", color: "bg-purple-600" },
+                          { src: "/videos/avant-demoussage.mp4", poster: "/images/chantier-avant-demoussage-velux.jpg", label: "AVANT", color: "bg-red-500" },
+                          { src: "/videos/apres-demoussage.mp4", poster: "/images/chantier-apres-demoussage-velux.jpg", label: "APRÈS", color: "bg-emerald-600" },
+                        ].map((v, i) => (
+                          <div key={i} className="relative rounded-xl overflow-hidden bg-black">
+                            <span className={`absolute top-2 left-2 z-10 text-white text-xs font-bold px-2 py-0.5 rounded ${v.color}`}>
+                              {v.label}
+                            </span>
+                            <video controls muted playsInline preload="none" poster={v.poster} className="w-full aspect-video">
+                              <source src={v.src} type="video/mp4" />
+                            </video>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
