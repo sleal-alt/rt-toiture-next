@@ -7,7 +7,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 // À compléter au fur et à mesure des nouveaux silos créés
 const SERVICE_TO_COMMUNE_PATH = {
   "zinguerie":                       "/zingueur",
-  "demoussage-nettoyage-toiture":    "/couvreur",   // → /demoussage-toiture quand le silo sera créé
+  "demoussage-nettoyage-toiture":    "/demoussage-toiture",
   "traitement-fongicide-toiture":    "/couvreur",
   "traitement-hydrofuge-toiture":    "/couvreur",
   "revetement-hydrofuge-teinte":     "/couvreur",
