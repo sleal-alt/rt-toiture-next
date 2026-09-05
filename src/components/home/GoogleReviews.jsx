@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Star, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionHeading from "@/components/shared/SectionHeading";
@@ -137,11 +137,28 @@ function ReviewCard({ review, index }) {
   );
 }
 
+const COLORS = ["bg-blue-500","bg-green-600","bg-purple-600","bg-orange-500","bg-rose-500","bg-teal-600","bg-indigo-600","bg-amber-600","bg-cyan-600","bg-pink-600"];
+
 export default function GoogleReviews() {
   const [page, setPage] = useState(0);
+  const [reviews, setReviews] = useState(REVIEWS);
+  const [meta, setMeta] = useState({ rating: 4.9, total: 8 });
+
+  useEffect(() => {
+    fetch('/api/reviews')
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (data?.reviews?.length) {
+          setReviews(data.reviews.map((r, i) => ({ ...r, color: COLORS[i % COLORS.length] })));
+          setMeta({ rating: data.rating, total: data.total });
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   const perPage = 4;
-  const totalPages = Math.ceil(REVIEWS.length / perPage);
-  const visible = REVIEWS.slice(page * perPage, page * perPage + perPage);
+  const totalPages = Math.ceil(reviews.length / perPage);
+  const visible = reviews.slice(page * perPage, page * perPage + perPage);
 
   return (
     <section className="py-20 lg:py-28 bg-gray-50">
@@ -161,7 +178,7 @@ export default function GoogleReviews() {
             </div>
             <div className="w-px h-10 bg-gray-200 hidden sm:block" />
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-gray-900 leading-none">4,9</span>
+              <span className="text-3xl font-bold text-gray-900 leading-none">{String(meta.rating).replace('.', ',')}</span>
               <div className="flex gap-0.5 mt-1">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
@@ -171,7 +188,7 @@ export default function GoogleReviews() {
             </div>
             <div className="w-px h-10 bg-gray-200 hidden sm:block" />
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-gray-900 leading-none">8</span>
+              <span className="text-3xl font-bold text-gray-900 leading-none">{meta.total}</span>
               <span className="text-xs text-gray-500 mt-1">avis</span>
             </div>
           </div>
