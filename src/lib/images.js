@@ -15,10 +15,10 @@ export const SERVICE_IMAGES = {
     { url: "/images/chantier-avant-demoussage-velux.jpg", alt: "Toiture couverte de lichens avant démoussage RT Toiture 74", caption: "État avant intervention — diagnostic complet" },
   ],
   "traitement-fongicide-toiture": [
-    { url: "/images/chantier-apres-demoussage-velux.jpg", alt: "Toiture traitée fongicide — résultat net Haute-Savoie RT Toiture 74", caption: "Résultat final — toiture assainie et protégée 3-5 ans" },
-    { url: "/images/tuiles-propres-apres-nettoyage.jpg", alt: "Tuiles propres après traitement fongicide Haute-Savoie — RT Toiture 74", caption: "Après traitement fongicide — protection durable" },
-    { url: "/images/tuiles-mousses-lichens-avant.jpg", alt: "Mousses et lichens sur tuiles avant traitement fongicide Haute-Savoie", caption: "Avant traitement — prolifération fongique" },
-    { url: "/images/chantier-avant-demoussage-velux.jpg", alt: "Toiture avec lichens avant traitement fongicide", caption: "État avant intervention — bilan complet" },
+    { url: "/images/fongicide-traitement-artisan-combinaison-haute-savoie.webp", alt: "Artisan traitement fongicide toiture Haute-Savoie — application professionnelle RT Toiture 74", caption: "Application traitement fongicide — artisan certifié RGE" },
+    { url: "/images/fongicide-antimousse-application-toiture-74.webp", alt: "Application traitement antimousse toiture 74 — artisan RT Toiture 74", caption: "Traitement antimousse — intervention sur tuiles canal" },
+    { url: "/images/fongicide-toiture-avant-apres-haute-savoie.jpg", alt: "Toiture avant et après traitement fongicide Haute-Savoie — RT Toiture 74", caption: "Avant / après — résultat traitement fongicide" },
+    { url: "/images/fongicide-resultat-tuiles-canal-avant-apres.jpg", alt: "Tuiles canal avant et après traitement fongicide — résultat RT Toiture 74", caption: "Résultat — tuiles assainies et protégées 3-5 ans" },
   ],
   "traitement-hydrofuge-toiture": [
     { url: "/images/apres-hydrofugation-tuiles.jpg", alt: "Tuiles après traitement hydrofuge — imperméabilisation RT Toiture 74 Haute-Savoie", caption: "Après hydrofuge — imperméabilisation totale" },
