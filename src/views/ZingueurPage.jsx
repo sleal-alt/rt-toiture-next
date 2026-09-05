@@ -235,6 +235,40 @@ export default function ZingueurPage() {
         </div>
       </section>
 
+      {/* Galerie réalisations */}
+      <section className="py-12 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="font-heading text-xl md:text-2xl font-bold mb-6 text-center">
+            Nos réalisations à {commune.name} et en Haute-Savoie
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+            {[
+              { url: "/images/chantier-demoussage-chalet-savoie.jpg", alt: `Chantier toiture chalet Haute-Savoie — RT Toiture 74 zingueur ${commune.name}`, label: "Chantier en cours" },
+              { url: "/images/chantier-apres-demoussage-velux.jpg", alt: `Toiture rénovée Haute-Savoie — RT Toiture 74 ${commune.name}`, label: "Toiture rénovée" },
+              { url: "/images/couvreur74-maison-renovee.jpg", alt: `Maison après travaux toiture et zinguerie — RT Toiture 74 ${commune.name}`, label: "Résultat final" },
+              { url: "/images/artisan-toit.jpg", alt: `Artisan zingueur RT Toiture 74 en intervention ${commune.name}`, label: "Artisan certifié RGE" },
+            ].map((photo, i) => (
+              <div key={i} className="group relative rounded-xl overflow-hidden aspect-[4/3] bg-muted">
+                <img
+                  src={photo.url}
+                  alt={photo.alt}
+                  title={photo.alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <p className="absolute bottom-2 left-3 right-3 text-white text-xs font-semibold drop-shadow leading-tight">
+                  {photo.label}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-xs text-muted-foreground">
+            Photos de vrais chantiers réalisés par RT Toiture 74 en Haute-Savoie
+          </p>
+        </div>
+      </section>
+
       <FAQSection faqs={content.faqs} title={`FAQ — Zingueur ${commune.name}`} />
       <GoogleReviews />
       <CTABand title={`Zingueur à ${commune.name} — Devis Gratuit`} />
