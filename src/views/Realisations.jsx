@@ -208,6 +208,38 @@ const PHOTOS = [
     category: "Rénovation complète",
     label: "APRÈS",
   },
+  {
+    url: "/images/urgence-toiture-bachage-avant-apres.jpg",
+    alt: "Urgence toiture bâchage avant-après intervention — RT Toiture 74 Haute-Savoie",
+    title: "Bâchage urgence toiture Haute-Savoie — avant et après intervention RT Toiture 74",
+    caption: "Urgence toiture — bâchage protecteur posé sous 48h",
+    category: "Urgence",
+    label: "AVANT/APRÈS",
+  },
+  {
+    url: "/images/urgence-toiture-bachage-intervention.jpg",
+    alt: "Intervention urgence toiture bâchage Haute-Savoie — artisan RT Toiture 74",
+    title: "Pose bâche urgence toiture — intervention rapide couvreur 74",
+    caption: "Bâchage d'urgence — sécurisation sous 48h",
+    category: "Urgence",
+    label: "CHANTIER",
+  },
+  {
+    url: "/images/urgence-toiture-faitage-degrade-diagnostic.jpg",
+    alt: "Faîtage toiture dégradé — diagnostic urgence couvreur Haute-Savoie RT Toiture 74",
+    title: "Diagnostic urgence faîtage dégradé — couvreur Haute-Savoie",
+    caption: "Faîtage endommagé — diagnostic avant réparation",
+    category: "Urgence",
+    label: "AVANT",
+  },
+  {
+    url: "/images/urgence-toiture-bachage-bache-bleue.jpg",
+    alt: "Bâche bleue urgence toiture après tempête Haute-Savoie — RT Toiture 74",
+    title: "Urgence toiture tempête — bâche protection posée rapidement RT Toiture 74",
+    caption: "Bâche d'urgence après tempête — sécurisation immédiate",
+    category: "Urgence",
+    label: "SÉCURISÉ",
+  },
 ];
 
 const VIDEOS = [
@@ -299,6 +331,8 @@ const LABEL_COLORS = {
   "EN COURS": "bg-blue-500",
   "CHANTIER": "bg-primary",
   "DRONE": "bg-purple-600",
+  "AVANT/APRÈS": "bg-orange-500",
+  "SÉCURISÉ": "bg-emerald-700",
 };
 
 const CATEGORIES = ["Tous", "Démoussage", "Peinture & Hydrofuge", "Hydrofuge", "Rénovation complète"];

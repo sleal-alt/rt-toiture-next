@@ -50,10 +50,16 @@ export const SERVICE_IMAGES = {
     { url: "/images/avant-hydrofugation-tuiles.jpg", alt: "Diagnostic étanchéité toiture avant intervention Haute-Savoie", caption: "Diagnostic avant pose — surface analysée" },
     { url: "/images/apres-hydrofugation-tuiles.jpg", alt: "Résultat final étanchéité toiture RT Toiture 74", caption: "Résultat final — imperméabilisation garantie" },
   ],
+  "urgence-toiture": [
+    { url: "/images/urgence-toiture-bachage-avant-apres.jpg", alt: "Urgence toiture bâchage avant-après Haute-Savoie — RT Toiture 74", caption: "Bâchage d'urgence — protection immédiate" },
+    { url: "/images/urgence-toiture-bachage-intervention.jpg", alt: "Intervention urgence toiture bâchage Haute-Savoie — RT Toiture 74", caption: "Pose bâche — artisan en urgence" },
+    { url: "/images/urgence-toiture-faitage-degrade-diagnostic.jpg", alt: "Diagnostic faîtage dégradé urgence toiture Haute-Savoie — RT Toiture 74", caption: "Faîtage dégradé — diagnostic d'urgence" },
+    { url: "/images/urgence-toiture-bachage-bache-bleue.jpg", alt: "Bâche bleue urgence toiture après tempête Haute-Savoie — RT Toiture 74", caption: "Bâche après tempête — sécurisation rapide" },
+  ],
   "zinguerie": [
-    { url: "/images/chantier-demoussage-chalet-savoie.jpg", alt: "Chantier zinguerie gouttières chalet Haute-Savoie RT Toiture 74", caption: "Chantier zinguerie — chalet savoyard" },
-    { url: "/images/chantier-apres-demoussage-velux.jpg", alt: "Zinguerie rénovée toiture Haute-Savoie — RT Toiture 74", caption: "Zinguerie et couverture rénovées" },
-    { url: "/images/couvreur74-maison-renovee.jpg", alt: "Gouttières et zinguerie posées — résultat RT Toiture 74", caption: "Descentes et gouttières neuves" },
-    { url: "/images/artisan-toit.jpg", alt: "Artisan zingueur RT Toiture 74 intervention Haute-Savoie", caption: "Zingueur expert — intervention sécurisée" },
+    { url: "/images/zinguerie-solin-cheminee-zinc.jpg", alt: "Solin habillage zinc cheminée toiture Haute-Savoie — RT Toiture 74", caption: "Habillage zinc cheminée — étanchéité parfaite" },
+    { url: "/images/zinguerie-bavette-solin-zinc-neuf.jpg", alt: "Bavette solin zinc neuf pose toiture Haute-Savoie — RT Toiture 74", caption: "Bavette zinc neuve — soudure soignée" },
+    { url: "/images/zinguerie-abergement-cheminee-zinc.jpg", alt: "Abergement cheminée zinc toiture tuiles Haute-Savoie — RT Toiture 74", caption: "Abergement cheminée zinc — résultat final" },
+    { url: "/images/zinguerie-pose-closoir-faitage-artisan.jpg", alt: "Artisan zingueur pose closoir faîtage toiture Haute-Savoie — RT Toiture 74", caption: "Pose closoir faîtage — artisan en intervention" },
   ],
 };

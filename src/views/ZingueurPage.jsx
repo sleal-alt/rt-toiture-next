@@ -243,10 +243,10 @@ export default function ZingueurPage() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
             {[
-              { url: "/images/chantier-demoussage-chalet-savoie.jpg", alt: `Chantier toiture chalet Haute-Savoie — RT Toiture 74 zingueur ${commune.name}`, label: "Chantier en cours" },
-              { url: "/images/chantier-apres-demoussage-velux.jpg", alt: `Toiture rénovée Haute-Savoie — RT Toiture 74 ${commune.name}`, label: "Toiture rénovée" },
-              { url: "/images/couvreur74-maison-renovee.jpg", alt: `Maison après travaux toiture et zinguerie — RT Toiture 74 ${commune.name}`, label: "Résultat final" },
-              { url: "/images/artisan-toit.jpg", alt: `Artisan zingueur RT Toiture 74 en intervention ${commune.name}`, label: "Artisan certifié RGE" },
+              { url: "/images/zinguerie-solin-cheminee-zinc.jpg", alt: `Solin zinc cheminée toiture ${commune.name} — zinguerie RT Toiture 74`, label: "Habillage cheminée zinc" },
+              { url: "/images/zinguerie-bavette-solin-zinc-neuf.jpg", alt: `Bavette solin zinc neuf toiture ${commune.name} — RT Toiture 74`, label: "Bavette zinc neuve" },
+              { url: "/images/zinguerie-abergement-cheminee-zinc.jpg", alt: `Abergement cheminée zinc ${commune.name} — zingueur RT Toiture 74`, label: "Abergement zinc" },
+              { url: "/images/zinguerie-pose-closoir-faitage-artisan.jpg", alt: `Artisan zingueur pose faîtage ${commune.name} — RT Toiture 74`, label: "Pose faîtage" },
             ].map((photo, i) => (
               <div key={i} className="group relative rounded-xl overflow-hidden aspect-[4/3] bg-muted">
                 <img
