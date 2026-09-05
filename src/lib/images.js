@@ -45,10 +45,10 @@ export const SERVICE_IMAGES = {
     { url: "/images/chantier-apres-demoussage-velux.jpg", alt: "Vue d'ensemble toiture rénovée Haute-Savoie RT Toiture 74", caption: "Vue d'ensemble après réfection" },
   ],
   "etancheite-toit-terrasse-epdm": [
-    { url: "/images/chantier-demoussage-chalet-savoie.jpg", alt: "Chantier étanchéité toiture Haute-Savoie — RT Toiture 74", caption: "Intervention étanchéité — chalet Haute-Savoie" },
-    { url: "/images/chantier-apres-demoussage-velux.jpg", alt: "Toiture traitée et étanche — résultat RT Toiture 74", caption: "Résultat : étanchéité parfaite" },
-    { url: "/images/avant-hydrofugation-tuiles.jpg", alt: "Diagnostic étanchéité toiture avant intervention Haute-Savoie", caption: "Diagnostic avant pose — surface analysée" },
-    { url: "/images/apres-hydrofugation-tuiles.jpg", alt: "Résultat final étanchéité toiture RT Toiture 74", caption: "Résultat final — imperméabilisation garantie" },
+    { url: "/images/epdm-toit-terrasse-velux-evacuation.jpg", alt: "Toit terrasse EPDM avec velux et évacuation — étanchéité Haute-Savoie RT Toiture 74", caption: "Toit terrasse EPDM — velux et évacuation intégrés" },
+    { url: "/images/epdm-toit-plat-membrane-grise.jpg", alt: "Membrane EPDM grise toit plat — étanchéité neuve Haute-Savoie RT Toiture 74", caption: "Membrane EPDM posée — finition soignée" },
+    { url: "/images/epdm-toit-terrasse-membrane-noire.jpg", alt: "Toit terrasse membrane EPDM noire — étanchéité toit plat 74 RT Toiture 74", caption: "Membrane EPDM noire — étanchéité parfaite" },
+    { url: "/images/epdm-pose-membrane-construction-neuve.jpg", alt: "Pose membrane EPDM construction neuve toit terrasse Haute-Savoie — RT Toiture 74", caption: "Pose EPDM — construction neuve, étanchéité garantie" },
   ],
   "urgence-toiture": [
     { url: "/images/urgence-toiture-bachage-avant-apres.jpg", alt: "Urgence toiture bâchage avant-après Haute-Savoie — RT Toiture 74", caption: "Bâchage d'urgence — protection immédiate" },
