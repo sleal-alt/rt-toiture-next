@@ -9,7 +9,7 @@ import JsonLd from '@/components/seo/JsonLd'
 export const metadata = {
   title: 'Traitement Hydrofuge Toiture Haute-Savoie (74) — Protection 10 ans Garanti | RT Toiture 74',
   description: 'Traitement hydrofuge toiture Haute-Savoie (74). Hydrofuge siloxane garanti 10 ans. Protection contre infiltrations, mousses et gel. Artisan RGE certifié. Devis gratuit ☎ 06 69 43 41 42.',
-  alternates: { canonical: 'https://www.rt-toiture74.fr/hydrofuge-toiture' },
+  alternates: { canonical: 'https://www.rt-toiture74.fr/services/traitement-hydrofuge-toiture' },
 }
 
 const BASE = 'https://www.rt-toiture74.fr'
@@ -21,47 +21,47 @@ const PRESTATIONS = [
   'Application sur tuiles, ardoises, béton',
   'Diagnostic humidité et test absorption',
   'Attestation de garantie 10 ans remise',
-  'Accès aides MaPrimeRénov\' (RGE)',
-  'Rapport d\'intervention avec photos',
+  "Accès aides MaPrimeRénov' (RGE)",
+  "Rapport d'intervention avec photos",
 ]
 
 const ZONES_PRINCIPALES = [
   { name: 'Annecy', desc: 'Lac & montagne — humidité permanente, traitement indispensable' },
   { name: 'Annemasse', desc: 'Bassin genevois — brouillards fréquents, tuiles très poreuses' },
   { name: 'Chamonix-Mont-Blanc', desc: 'Altitude — gel intense, cycles destructeurs sans protection' },
-  { name: 'Bonneville', desc: 'Vallée de l\'Arve — fond de vallée très humide' },
+  { name: 'Bonneville', desc: "Vallée de l'Arve — fond de vallée très humide" },
   { name: 'Megève', desc: 'Station — neige et fonte répétée accélèrent la dégradation' },
   { name: 'Sallanches', desc: 'Piedmont — exposition variée, hydrofuge protection optimale' },
 ]
 
-const FAQS_HUB = [
+const FAQS = [
   {
-    question: 'Qu\'est-ce qu\'un traitement hydrofuge de toiture ?',
-    answer: 'Le traitement hydrofuge consiste à appliquer un produit imperméabilisant sur les tuiles pour empêcher l\'eau de pénétrer dans les pores des matériaux. Les produits siloxane professionnels sont micro-poreux et respirants — ils laissent sortir la vapeur d\'eau résiduelle tout en bloquant l\'eau de pluie. Résultat : plus d\'infiltrations, plus de cycles gel-dégel destructeurs, plus de repousse rapide des mousses.',
+    question: "Qu'est-ce qu'un traitement hydrofuge de toiture ?",
+    answer: "Le traitement hydrofuge consiste à appliquer un produit imperméabilisant sur les tuiles pour empêcher l'eau de pénétrer dans les pores des matériaux. Les produits siloxane professionnels sont micro-poreux et respirants — ils laissent sortir la vapeur d'eau résiduelle tout en bloquant l'eau de pluie. Résultat : plus d'infiltrations, plus de cycles gel-dégel destructeurs, plus de repousse rapide des mousses.",
   },
   {
-    question: 'Quelle est la durée d\'un traitement hydrofuge professionnel ?',
-    answer: 'Un hydrofuge siloxane professionnel appliqué par RT Toiture 74 est garanti 10 ans. Les produits grande surface (bricolage) durent 2 à 3 ans maximum. La différence vient du produit lui-même (concentration, formulation) et de l\'application (2 passes croisées pour pénétration totale dans tous les pores).',
+    question: "Quelle est la durée d'un traitement hydrofuge professionnel ?",
+    answer: "Un hydrofuge siloxane professionnel appliqué par RT Toiture 74 est garanti 10 ans. Les produits grande surface (bricolage) durent 2 à 3 ans maximum. La différence vient du produit lui-même (concentration, formulation) et de l'application (2 passes croisées pour pénétration totale dans tous les pores).",
   },
   {
     question: 'Faut-il démoussager avant un traitement hydrofuge ?',
-    answer: 'Oui, c\'est indispensable. Un hydrofuge appliqué sur tuiles sales ou encrassées de mousses ne pénètre pas correctement et piège l\'humidité résiduelle, ce qui accélère la dégradation. RT Toiture 74 réalise systématiquement un démoussage + fongicide avant toute hydrofugation. Les deux interventions peuvent être combinées en une seule venue.',
+    answer: "Oui, c'est indispensable. Un hydrofuge appliqué sur tuiles sales ou encrassées de mousses ne pénètre pas correctement et piège l'humidité résiduelle, ce qui accélère la dégradation. RT Toiture 74 réalise systématiquement un démoussage + fongicide avant toute hydrofugation. Les deux interventions peuvent être combinées en une seule venue.",
   },
   {
-    question: 'Le traitement hydrofuge change-t-il l\'aspect de la toiture ?',
-    answer: 'L\'hydrofuge incolore est totalement invisible après séchage — vos tuiles conservent leur aspect naturel. L\'hydrofuge teinté permet de redonner une couleur uniforme à des tuiles délavées ou décolorées. Dans les deux cas, RT Toiture 74 vous présente un échantillon sur une tuile avant de lancer le traitement.',
+    question: "Le traitement hydrofuge change-t-il l'aspect de la toiture ?",
+    answer: "L'hydrofuge incolore est totalement invisible après séchage — vos tuiles conservent leur aspect naturel. L'hydrofuge teinté permet de redonner une couleur uniforme à des tuiles délavées ou décolorées. Dans les deux cas, RT Toiture 74 vous présente un échantillon sur une tuile avant de lancer le traitement.",
   },
   {
-    question: 'Quel est le prix d\'un traitement hydrofuge en Haute-Savoie ?',
-    answer: 'Le tarif d\'un traitement hydrofuge en Haute-Savoie varie entre 8 et 35 €/m² selon le type de produit (incolore ou teinté), la surface et la pente. Pour une maison de 80 m² de toiture, comptez entre 640 et 2 800 €. RT Toiture 74 établit un devis gratuit après visite sur place.',
+    question: "Quel est le prix d'un traitement hydrofuge en Haute-Savoie ?",
+    answer: "Le tarif d'un traitement hydrofuge en Haute-Savoie varie entre 8 et 35 €/m² selon le type de produit (incolore ou teinté), la surface et la pente. Pour une maison de 80 m² de toiture, comptez entre 640 et 2 800 €. RT Toiture 74 établit un devis gratuit après visite sur place.",
   },
 ]
 
-export default function HydrofugeIndexPage() {
+export default function TraitementHydrofugePage() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: FAQS_HUB.map(faq => ({
+    mainEntity: FAQS.map(faq => ({
       '@type': 'Question',
       name: faq.question,
       acceptedAnswer: { '@type': 'Answer', text: faq.answer },
@@ -73,7 +73,8 @@ export default function HydrofugeIndexPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Accueil', item: BASE },
-      { '@type': 'ListItem', position: 2, name: 'Hydrofuge Toiture Haute-Savoie', item: `${BASE}/hydrofuge-toiture` },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: `${BASE}/services` },
+      { '@type': 'ListItem', position: 3, name: 'Traitement Hydrofuge Toiture', item: `${BASE}/services/traitement-hydrofuge-toiture` },
     ],
   }
 
@@ -81,7 +82,10 @@ export default function HydrofugeIndexPage() {
     <>
       <JsonLd data={faqSchema} />
       <JsonLd data={breadcrumbSchema} />
-      <Breadcrumbs items={[{ label: 'Hydrofuge Toiture Haute-Savoie' }]} />
+      <Breadcrumbs items={[
+        { label: 'Services', href: '/services' },
+        { label: 'Traitement Hydrofuge Toiture' }
+      ]} />
 
       {/* Hero */}
       <section className="bg-accent py-16 lg:py-24">
@@ -94,7 +98,7 @@ export default function HydrofugeIndexPage() {
             Traitement Hydrofuge Toiture Haute-Savoie — Protection 10 ans Garanti
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            RT Toiture 74 intervient sur 28 communes pour imperméabiliser votre toiture avec un hydrofuge siloxane professionnel garanti 10 ans. Artisan RGE certifié — accès MaPrimeRénov'. Devis gratuit sous 24h.
+            RT Toiture 74 imperméabilise votre toiture avec un hydrofuge siloxane professionnel garanti 10 ans. Artisan RGE certifié — accès MaPrimeRénov'. Devis gratuit sous 24h.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a href={COMPANY.phoneTel}>
@@ -212,7 +216,7 @@ export default function HydrofugeIndexPage() {
         </div>
       </section>
 
-      {/* Galerie photos chantiers */}
+      {/* Galerie photos */}
       <section className="py-10">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="font-heading text-xl font-bold mb-6 text-center">Photos de chantiers — Hydrofuge Haute-Savoie</h2>
@@ -220,7 +224,7 @@ export default function HydrofugeIndexPage() {
             {[
               { src: '/images/fongicide-hydrofuge-application-en-cours.jpg', alt: 'Application hydrofuge sur toiture par artisan RT Toiture 74', label: 'CHANTIER' },
               { src: '/images/fongicide-traitement-artisan-combinaison-haute-savoie.webp', alt: 'Artisan traitement hydrofuge toiture Haute-Savoie — combinaison protection', label: 'ARTISAN' },
-              { src: '/images/fongicide-toiture-avant-apres-haute-savoie.jpg', alt: 'Toiture avant et après traitement hydrofuge Haute-Savoie — RT Toiture 74', label: 'AVANT/APRÈS' },
+              { src: '/images/fongicide-toiture-avant-apres-haute-savoie.jpg', alt: 'Toiture avant et après traitement hydrofuge Haute-Savoie', label: 'AVANT/APRÈS' },
               { src: '/images/fongicide-resultat-tuiles-canal-avant-apres.jpg', alt: 'Tuiles canal avant et après hydrofugation — résultat professionnel', label: 'RÉSULTAT' },
               { src: '/images/fongicide-antimousse-application-toiture-74.webp', alt: 'Application antimousse et hydrofuge toiture 74 — RT Toiture 74', label: 'TRAITEMENT' },
               { src: '/images/avant-hydrofugation-tuiles.jpg', alt: 'Tuiles poreuses avant traitement hydrofuge — état initial', label: 'AVANT' },
@@ -230,6 +234,27 @@ export default function HydrofugeIndexPage() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <span className="absolute top-2 left-2 text-white text-xs font-bold px-2 py-0.5 rounded bg-primary">{p.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Protocole 4 étapes */}
+      <section className="py-12 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="font-heading text-xl font-bold mb-8 text-center">Notre protocole en 4 étapes</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { n: '01', t: 'Diagnostic', d: 'Test absorption eau + état tuiles' },
+              { n: '02', t: 'Démoussage', d: 'Nettoyage basse pression si besoin' },
+              { n: '03', t: 'Fongicide', d: 'Traitement biocide anti-mousses' },
+              { n: '04', t: 'Hydrofuge', d: '2 passes siloxane, garanti 10 ans' },
+            ].map(step => (
+              <div key={step.n} className="text-center p-4 bg-card border border-border/50 rounded-xl">
+                <div className="w-10 h-10 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center mx-auto mb-2">{step.n}</div>
+                <p className="font-semibold text-sm mb-1">{step.t}</p>
+                <p className="text-xs text-muted-foreground">{step.d}</p>
               </div>
             ))}
           </div>
@@ -265,8 +290,8 @@ export default function HydrofugeIndexPage() {
             Questions fréquentes — Traitement Hydrofuge Toiture 74
           </h2>
           <div className="space-y-4">
-            {FAQS_HUB.map((faq, i) => (
-              <details key={i} className="p-5 bg-muted/40 rounded-2xl group cursor-pointer">
+            {FAQS.map((faq, i) => (
+              <details key={i} className="p-5 bg-muted/40 rounded-2xl cursor-pointer">
                 <summary className="font-semibold text-sm leading-relaxed list-none flex items-start gap-2">
                   <span className="text-primary font-bold shrink-0">Q.</span>
                   {faq.question}
@@ -278,19 +303,19 @@ export default function HydrofugeIndexPage() {
         </div>
       </section>
 
-      {/* Maillage vers demoussage */}
+      {/* Maillage services */}
       <section className="py-10 bg-muted/20">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <p className="text-sm font-semibold mb-3">Services complémentaires</p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/demoussage-toiture" className="px-4 py-2 bg-card border border-border/50 rounded-full text-sm hover:border-primary/40 hover:text-primary transition">
+            <Link href="/services/demoussage-nettoyage-toiture" className="px-4 py-2 bg-card border border-border/50 rounded-full text-sm hover:border-primary/40 hover:text-primary transition">
               Démoussage Toiture Haute-Savoie
             </Link>
-            <Link href="/couvreur" className="px-4 py-2 bg-card border border-border/50 rounded-full text-sm hover:border-primary/40 hover:text-primary transition">
-              Couvreur Haute-Savoie
+            <Link href="/services/couverture-toiture" className="px-4 py-2 bg-card border border-border/50 rounded-full text-sm hover:border-primary/40 hover:text-primary transition">
+              Couverture Toiture
             </Link>
-            <Link href="/zingueur" className="px-4 py-2 bg-card border border-border/50 rounded-full text-sm hover:border-primary/40 hover:text-primary transition">
-              Zingueur Haute-Savoie
+            <Link href="/services/zinguerie" className="px-4 py-2 bg-card border border-border/50 rounded-full text-sm hover:border-primary/40 hover:text-primary transition">
+              Zinguerie
             </Link>
           </div>
         </div>
@@ -300,7 +325,7 @@ export default function HydrofugeIndexPage() {
       <section className="py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold mb-3 text-center">
-            Hydrofuge toiture disponible sur {COMMUNES.length} communes de Haute-Savoie
+            Traitement hydrofuge disponible sur {COMMUNES.length} communes de Haute-Savoie
           </h2>
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
             Sélectionnez votre commune pour accéder à la page dédiée : tarifs indicatifs, spécificités locales et exemples de réalisations hydrofuge à proximité.

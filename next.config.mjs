@@ -4,6 +4,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/hydrofuge-toiture',
+        destination: '/services/traitement-hydrofuge-toiture',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig

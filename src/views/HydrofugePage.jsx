@@ -295,8 +295,8 @@ export default function HydrofugePage() {
                 <Link href={`/zingueur/${slug}`} className="flex items-center gap-2 text-primary hover:underline text-sm">
                   <ArrowRight className="w-4 h-4" /> Zingueur {commune.name} — gouttières zinc et zinguerie
                 </Link>
-                <Link href="/hydrofuge-toiture" className="flex items-center gap-2 text-primary hover:underline text-sm">
-                  <ArrowRight className="w-4 h-4" /> Hydrofuge Toiture Haute-Savoie — toutes les communes
+                <Link href="/services/traitement-hydrofuge-toiture" className="flex items-center gap-2 text-primary hover:underline text-sm">
+                  <ArrowRight className="w-4 h-4" /> Traitement Hydrofuge Toiture — tous nos services
                 </Link>
               </div>
 
