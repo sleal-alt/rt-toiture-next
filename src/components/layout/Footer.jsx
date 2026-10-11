@@ -12,6 +12,7 @@ const GOOGLE_BUSINESS_URL = "https://share.google/9bjVg8JW1pUi7lBct";
 const SILO_CONFIG = {
   "/zingueur":           { basePath: "/zingueur",          label: "Zingueur",    index: "/zingueur" },
   "/demoussage-toiture": { basePath: "/demoussage-toiture", label: "Démoussage",  index: "/demoussage-toiture" },
+  "/hydrofuge-toiture":  { basePath: "/hydrofuge-toiture",  label: "Hydrofuge",   index: "/services/traitement-hydrofuge-toiture" },
   "/couvreur":           { basePath: "/couvreur",           label: "Couvreur",    index: "/couvreur" },
 };
 
