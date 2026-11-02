@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   if (!commune) return {}
   const { name, code, nearby = [] } = commune
   return {
-    title: `Couvreur à ${name} (${code}) — Artisan Toiture RGE | RT Toiture 74`,
+    title: `Couvreur à ${name} (${code}) — Artisan Toiture RGE`,
     description: `Couvreur professionnel à ${name} (${code}). Démoussage, traitement hydrofuge garanti 10 ans, couverture, zinguerie. Artisan RGE certifié. Intervention rapide. ☎ Devis gratuit 06 69 43 41 42.`,
     alternates: { canonical: `https://www.rt-toiture74.fr/couvreur/${params.slug}` },
     openGraph: {

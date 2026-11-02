@@ -1,7 +1,7 @@
 import Services from '@/views/Services'
 
 export const metadata = {
-  title: 'Services Toiture Haute-Savoie — Démoussage, Hydrofuge, Couverture | RT Toiture',
+  title: 'Services Toiture Haute-Savoie — Démoussage, Hydrofuge, Couverture',
   description: "Tous nos services de toiture en Haute-Savoie (74) : démoussage, traitement hydrofuge, peinture, couverture, zinguerie, étanchéité EPDM. Artisan couvreur certifié RGE. Devis gratuit.",
   alternates: { canonical: 'https://www.rt-toiture74.fr/services' },
   openGraph: { url: 'https://www.rt-toiture74.fr/services' },

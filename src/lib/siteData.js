@@ -26,7 +26,7 @@ export const SERVICES = [
     shortTitle: "Démoussage & Nettoyage",
     icon: "Droplets",
     description: "Nettoyage professionnel de votre toiture en Haute-Savoie. Élimination mousse, lichens et salissures.",
-    metaTitle: "Démoussage Toiture Haute-Savoie 74 — Artisan RGE | RT Toiture",
+    metaTitle: "Démoussage Toiture Haute-Savoie 74 — Artisan RGE",
     metaDescription: "Démoussage et nettoyage de toiture en Haute-Savoie (74). Élimination mousse, lichens, algues. Traitement préventif inclus. Artisan certifié RGE. ☎ Devis gratuit 24h.",
   },
   {
@@ -35,7 +35,7 @@ export const SERVICES = [
     shortTitle: "Traitement Fongicide",
     icon: "Shield",
     description: "Protection durable contre mousses et champignons. Traitement fongicide professionnel en Haute-Savoie.",
-    metaTitle: "Traitement Fongicide Toiture Haute-Savoie — RT Toiture 74",
+    metaTitle: "Traitement Fongicide Toiture Haute-Savoie — Anti-Mousse & Lichens",
     metaDescription: "Traitement fongicide professionnel en Haute-Savoie. Protection durable anti-mousses et champignons pour toiture tuiles, ardoises. Artisan RGE. Devis gratuit 06 69 43 41 42.",
   },
   {
@@ -44,7 +44,7 @@ export const SERVICES = [
     shortTitle: "Traitement Hydrofuge",
     icon: "ShieldCheck",
     description: "Imperméabilisation de votre toiture avec garantie 10 ans. Protection hydrofuge haute performance.",
-    metaTitle: "Traitement Hydrofuge Toiture Garanti 10 ans — Haute-Savoie | RT Toiture",
+    metaTitle: "Traitement Hydrofuge Toiture Garanti 10 ans — Haute-Savoie",
     metaDescription: "Imperméabilisation toiture en Haute-Savoie. Traitement hydrofuge garanti 10 ans, protège contre gel, pluie et neige alpine. Artisan RGE certifié. ☎ 06 69 43 41 42.",
   },
   {
@@ -53,7 +53,7 @@ export const SERVICES = [
     shortTitle: "Hydrofuge Teinté",
     icon: "Paintbrush",
     description: "Redonnez couleur et protection à votre toiture avec notre revêtement hydrofuge teinté professionnel.",
-    metaTitle: "Revêtement Hydrofuge Teinté Toiture 74 — Couleur & Protection | RT Toiture",
+    metaTitle: "Revêtement Hydrofuge Teinté Toiture 74 — Couleur & Protection",
     metaDescription: "Revêtement hydrofuge teinté pour toiture en Haute-Savoie. Rénovation esthétique + protection imperméable. Large choix de teintes. Artisan RGE. Devis gratuit sous 24h.",
   },
   {
@@ -62,7 +62,7 @@ export const SERVICES = [
     shortTitle: "Peinture Toiture",
     icon: "PaintBucket",
     description: "Rénovation esthétique de votre toiture par peinture professionnelle en Haute-Savoie.",
-    metaTitle: "Peinture Toiture Haute-Savoie (74) — Artisan Couvreur | RT Toiture",
+    metaTitle: "Peinture Toiture Haute-Savoie (74) — Artisan Couvreur",
     metaDescription: "Peinture toiture professionnelle en Haute-Savoie. Rénovation esthétique, protection longue durée, large gamme de couleurs. Artisan RGE. ☎ Devis gratuit 06 69 43 41 42.",
   },
   {
@@ -71,7 +71,7 @@ export const SERVICES = [
     shortTitle: "Couverture",
     icon: "Home",
     description: "Pose, réparation et réfection complète de couverture en Haute-Savoie par artisan certifié.",
-    metaTitle: "Couverture Toiture Haute-Savoie — Pose, Réparation, Réfection | RT Toiture",
+    metaTitle: "Couverture Toiture Haute-Savoie — Pose, Réparation, Réfection",
     metaDescription: "Artisan couvreur en Haute-Savoie (74). Pose et réfection complète de couverture tuiles, ardoises, zinc. Certifié RGE, garantie décennale. ☎ Devis gratuit 06 69 43 41 42.",
   },
   {
@@ -80,7 +80,7 @@ export const SERVICES = [
     shortTitle: "Étanchéité EPDM",
     icon: "Layers",
     description: "Étanchéité professionnelle de toit terrasse avec système EPDM Retridex. Solution durable et performante.",
-    metaTitle: "Étanchéité Toit Terrasse EPDM Haute-Savoie — Retridex | RT Toiture",
+    metaTitle: "Étanchéité Toit Terrasse EPDM Haute-Savoie — Retridex",
     metaDescription: "Étanchéité toit terrasse EPDM Retridex en Haute-Savoie. Solution imperméable durable, garantie 20 ans. Artisan certifié RGE. Devis gratuit sous 24h. ☎ 06 69 43 41 42.",
   },
   {
@@ -89,7 +89,7 @@ export const SERVICES = [
     shortTitle: "Zinguerie",
     icon: "Wrench",
     description: "Travaux de zinguerie : gouttières, chéneaux, descentes EP, habillage de toit en Haute-Savoie.",
-    metaTitle: "Zinguerie Haute-Savoie — Gouttières, Chéneaux, Descentes EP | RT Toiture",
+    metaTitle: "Zinguerie Haute-Savoie — Gouttières, Chéneaux, Descentes EP",
     metaDescription: "Zinguerie professionnelle en Haute-Savoie (74). Pose et réparation gouttières, chéneaux, descentes EP, habillage zinc. Artisan RGE. ☎ Devis gratuit 06 69 43 41 42.",
   },
 ];

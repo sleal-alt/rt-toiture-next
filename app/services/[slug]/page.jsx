@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
   if (!service) return {}
   const canonical = CANONICAL_OVERRIDES[params.slug] || `https://www.rt-toiture74.fr/services/${params.slug}`
   return {
-    title: service.metaTitle || `${service.title} — Haute-Savoie | RT Toiture`,
+    title: service.metaTitle || `${service.title} — Haute-Savoie`,
     description: service.metaDescription || service.description,
     alternates: { canonical },
     openGraph: {

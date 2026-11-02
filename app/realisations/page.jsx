@@ -1,7 +1,7 @@
 import Realisations from '@/views/Realisations'
 
 export const metadata = {
-  title: 'Réalisations Toiture Haute-Savoie — Photos Avant/Après Chantiers | RT Toiture 74',
+  title: 'Réalisations Toiture Haute-Savoie — Photos Avant/Après Chantiers',
   description: "Photos avant/après de nos chantiers toiture en Haute-Savoie : démoussage Annecy, peinture toiture Bonneville, hydrofuge Chamonix, zinguerie Cluses. Artisan RGE certifié RT Toiture 74.",
   alternates: { canonical: 'https://www.rt-toiture74.fr/realisations' },
   openGraph: {

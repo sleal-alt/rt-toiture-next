@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   if (!commune) return {}
   const { name, code } = commune
   return {
-    title: `Démoussage Toiture à ${name} (${code}) — Nettoyage & Traitement Mousse | RT Toiture 74`,
+    title: `Démoussage Toiture à ${name} (${code}) — Nettoyage & Traitement Mousse`,
     description: `Démoussage toiture à ${name} (${code}). Nettoyage mousse, lichens, algues. Traitement fongicide + hydrofuge garanti 10 ans. Artisan RGE certifié. Devis gratuit ☎ 06 69 43 41 42.`,
     alternates: { canonical: `https://www.rt-toiture74.fr/demoussage-toiture/${params.slug}` },
     openGraph: {

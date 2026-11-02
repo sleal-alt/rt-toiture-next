@@ -7,7 +7,7 @@ import Breadcrumbs from '@/components/shared/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
 
 export const metadata = {
-  title: 'Traitement Hydrofuge Toiture Haute-Savoie (74) — Protection 10 ans Garanti | RT Toiture 74',
+  title: 'Traitement Hydrofuge Toiture Haute-Savoie (74) — Protection 10 ans Garanti',
   description: 'Traitement hydrofuge toiture Haute-Savoie (74). Hydrofuge siloxane garanti 10 ans. Protection contre infiltrations, mousses et gel. Artisan RGE certifié. Devis gratuit ☎ 06 69 43 41 42.',
   alternates: { canonical: 'https://www.rt-toiture74.fr/services/traitement-hydrofuge-toiture' },
 }

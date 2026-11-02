@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   if (!commune) return {}
   const { name, code } = commune
   return {
-    title: `Traitement Hydrofuge Toiture à ${name} (${code}) — Protection 10 ans | RT Toiture 74`,
+    title: `Traitement Hydrofuge Toiture à ${name} (${code}) — Protection 10 ans`,
     description: `Traitement hydrofuge toiture à ${name} (${code}). Hydrofuge siloxane garanti 10 ans. Protection contre infiltrations, mousses et gel. Artisan RGE certifié. Devis gratuit ☎ 06 69 43 41 42.`,
     alternates: { canonical: `https://www.rt-toiture74.fr/hydrofuge-toiture/${params.slug}` },
     openGraph: {

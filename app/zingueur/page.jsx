@@ -6,7 +6,7 @@ import CTABand from '@/components/shared/CTABand'
 import Breadcrumbs from '@/components/shared/Breadcrumbs'
 
 export const metadata = {
-  title: 'Zingueur Haute-Savoie (74) — Gouttières Zinc & Zinguerie | RT Toiture 74',
+  title: 'Zingueur Haute-Savoie (74) — Gouttières Zinc & Zinguerie',
   description: 'Zingueur professionnel en Haute-Savoie (74). Gouttières zinc, chéneaux, solins, noues, zinguerie façade sur 28 communes. Zinc titane norme EN 988, garantie décennale. Devis gratuit ☎ 06 69 43 41 42.',
   alternates: { canonical: 'https://www.rt-toiture74.fr/zingueur' },
 }

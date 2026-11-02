@@ -3,7 +3,7 @@ import { COMMUNES, COMPANY } from '@/lib/siteData'
 import { MapPin, ArrowRight, Phone, Shield, Award, Clock, Check } from 'lucide-react'
 
 export const metadata = {
-  title: 'Couvreur Haute-Savoie (74) — Artisan RGE Certifié | RT Toiture 74',
+  title: 'Couvreur Haute-Savoie (74) — Artisan RGE Certifié',
   description: 'Couvreur professionnel en Haute-Savoie (74) : démoussage, hydrofuge, réfection toiture, zinguerie. RT Toiture 74 intervient dans 28 communes. Artisan RGE certifié. Devis gratuit sous 24h.',
   alternates: { canonical: 'https://www.rt-toiture74.fr/couvreur' },
 }

@@ -1,7 +1,7 @@
 import Blog from '@/views/Blog'
 
 export const metadata = {
-  title: 'Blog Toiture — Conseils et Guides Haute-Savoie | RT Toiture',
+  title: 'Blog Toiture — Conseils et Guides Haute-Savoie',
   description: "Conseils d'expert sur l'entretien et la rénovation de toiture en Haute-Savoie. Guides démoussage, hydrofuge, isolation, matériaux adaptés au climat alpin. RT Toiture 74.",
   alternates: { canonical: 'https://www.rt-toiture74.fr/blog' },
   openGraph: { url: 'https://www.rt-toiture74.fr/blog' },

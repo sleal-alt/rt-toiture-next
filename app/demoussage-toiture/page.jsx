@@ -6,7 +6,7 @@ import CTABand from '@/components/shared/CTABand'
 import Breadcrumbs from '@/components/shared/Breadcrumbs'
 
 export const metadata = {
-  title: 'Démoussage Toiture Haute-Savoie (74) — Nettoyage Mousse & Traitement | RT Toiture 74',
+  title: 'Démoussage Toiture Haute-Savoie (74) — Nettoyage Mousse & Traitement',
   description: 'Démoussage toiture en Haute-Savoie (74). Nettoyage mousse, lichens, algues. Traitement fongicide + hydrofuge garanti 10 ans. Artisan RGE sur 28 communes. Devis gratuit ☎ 06 69 43 41 42.',
   alternates: { canonical: 'https://www.rt-toiture74.fr/demoussage-toiture' },
 }

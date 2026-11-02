@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   if (!commune) return {}
   const { name, code } = commune
   return {
-    title: `Zingueur à ${name} (${code}) — Gouttières Zinc & Zinguerie | RT Toiture 74`,
+    title: `Zingueur à ${name} (${code}) — Gouttières Zinc & Zinguerie`,
     description: `Zingueur professionnel à ${name} (${code}). Gouttières zinc, chéneaux, solins, noues, zinguerie façade. Artisan RGE certifié. Devis gratuit ☎ 06 69 43 41 42.`,
     alternates: { canonical: `https://www.rt-toiture74.fr/zingueur/${params.slug}` },
     openGraph: {
